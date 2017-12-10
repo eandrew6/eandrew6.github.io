@@ -1,0 +1,108 @@
+body {
+margin-top: 20px; background-color: #555555;
+text-align:center; 
+}
+
+#majority {
+width:900px;
+margin: 0px auto; padding: 20px;
+text-align: left; 
+border:1px double #777777;
+background-color: #fff;
+}    
+
+/* NAVIGATION */
+
+ul#mainNav {
+padding: 0;
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 120px;
+margin-right: 110px;
+}
+    
+#mainNav li {
+float: left;
+width: 10em; 
+}
+
+#mainNav a {
+text-decoration: none;
+color: #000000;
+font-size: 11px;
+text-align: center;
+border: 1px dashed #999999;
+border-bottom: none;
+display: block;
+padding: 7px 5px 2px 30px;
+background: #E7E7E7 url('images/link.png') no-repeat left center;
+}
+
+#mainNav a:hover {
+font-weight: bold;
+background: #B2F511 url('images/go.png') no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+text-align: center;
+background: #E7E7E7 url('images/link.png') no-repeat 5px 52%;
+}
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+height: 1px;
+}
+
+h2 {
+color: #777777; font: 25pt 'Bookman'; text-align: center;
+text-shadow: 1px 1px 1px #fff;  
+margin-left: 215px; 
+margin-right: 215px;
+font-family: fantasy;
+}
+
+.w3c {
+text-align: center;
+}
+
+#div_1 {
+background-color: #cc3366; 
+text-align: center; 
+font: 12pt cursive; 
+margin-left: 120px; 
+margin-right: 100px;
+border-style: double solid; 
+padding: 1em; 
+border-color: #777777; 
+width: 600px;
+font-family: fantasy;
+font-size: 14pt;
+}
+
+#image_1 {
+margin-left: 120px; 
+margin-right: 100px;
+}
+
+#words {
+color: #fff;
+}
+
+#words_1 {
+color: #0000ff;
+}
+
+#web_image {
+text-align: center;
+}
+
+#caption {
+text-align: center; 
+}
+
+#address {
+font: 'OldEnglish'; 
+font-style:italic;
+}

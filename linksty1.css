@@ -1,0 +1,138 @@
+body {
+margin-top: 20px; 
+background-color: #000000;
+text-align:center; 
+}
+
+#content {
+width:950px;
+margin: 0px auto;
+padding: 5px; 
+text-align: left; 
+border:1px dashed #333;
+background-color:#fff;
+}
+
+/* NAVIGATION */
+
+ul#mainNav {
+padding: 0;
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 150px;
+margin-right: 130px;    
+}
+    
+#mainNav li {
+float: left;
+width: 10em; 
+}
+
+#mainNav a {
+text-decoration: none;
+color: #000000;
+font-size: 11px;
+text-align: center;
+border: 1px dashed #999999;
+border-bottom: none;
+display: block;
+padding: 7px 5px 2px 30px;
+background: #E7E7E7 url('images/link.png') no-repeat left center;
+}
+
+#mainNav a:hover {
+font-weight: bold;
+background: #B2F511 url('images/go.png') no-repeat 5px 50%;
+}
+
+a#homeLink {
+text-align: center;
+background: #E7E7E7 url('images/link.png') no-repeat 5px 52%;
+}
+
+* html #mainNav a {
+height: 1px;
+}
+
+h1 {
+text-align: center;
+margin-top: 20px; 
+margin-left: 200px;
+margin-right: 200px; 
+font-family: fantasy;
+font-size: 25pt;    
+} 
+
+#h3 {
+font-family: fantasy;
+text-align: center;
+margin: 0px;
+}
+
+p.main  {  
+font: 18pt 'courier'; 
+color: #777777; 
+background: #eeeeee; 
+text-indent: .5in; 
+margin-left: 50px;
+margin-right: 50px; 
+text-align: justify;
+border: double;
+padding: 20px;
+}
+
+p.lil {
+font-size: 12pt; 
+font-variant: small-caps;
+text-align: center;
+font-weight: bold;
+margin-left: 200px; 
+margin-right: 200px; 
+color: #777777;
+background: #dddddd;
+}
+
+p.newext {
+font: 10pt fantasy;
+text-align: center;
+margin-bottom: auto;
+margin-top: auto;    
+}
+
+#new  {
+font-family: fantasy;  
+padding: 5px; 
+line-height: 30pt; 
+border-style: ridge;
+border: 3px solid #000;
+background-color: #6a5acd;
+font-size: 12pt;color: #ffffff;
+text-align: justify;
+font-weight: bold;
+margin-left: 190px;
+margin-right: 200px;
+width: 550px;
+}
+
+a {
+color: #a020f0; 
+text-decoration: none;
+}
+
+a:hover {   
+color:#8f0052;
+text-decoration: underline;
+background-color: #ccff33; 
+}
+
+address {
+font-family: cursive; 
+font-size: 10pt;
+font-weight: bold;
+color: #000000;
+}
+
+.center {
+text-align: center;
+}

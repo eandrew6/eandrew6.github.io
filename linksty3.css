@@ -1,0 +1,63 @@
+/*some styles overrided by embedded*/
+h2 {
+/*background-color: #eeeeee;*/
+font: 22pt fantasy;
+color: #ffffff;
+text-align: center;
+margin-top: 10px;
+margin-left: 150px;
+margin-right: 150px;
+margin-bottom: 0px;    
+font-weight: bold;
+}
+
+/*some styles overrided by embedded*/
+p.main {
+font: 18pt lucida console;
+color: #111111;
+background: #3399FF;
+text-indent: 1in;
+margin-left: 200px;
+margin-right: 200px;
+text-align: center;
+text-indent: .5in;
+border: ridge;
+padding: 10px;
+}
+
+/*some styles overrided by embedded*/
+a {   
+color: #3333ff; 
+text-decoration: underline; 
+}
+
+/*style overrided by embedded*/
+
+a:hover {     
+color: #ccff00; 
+background-color: red;
+}
+
+.w3c {
+text-align: left;
+}
+
+#span_hi {   
+font-weight: bold;
+}
+
+#span_1 {    
+color: #3300FF;
+}
+
+#span_2 {
+color: #660033;
+}
+
+#span_3 {   
+color: #006633;
+}
+
+#span_4 {   
+color: #cc3300;
+}
