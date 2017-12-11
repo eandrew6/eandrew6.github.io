@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animation | ERICA ANDREWS</title>
+
+<style type="text/css">
+
+body    {
+background-color: #000000;
+text-align: center;
+font-family: fantasy;
+}
+
+#print   {
+background-image: url('./background_two.jpg');
+border: 0px;
+margin: auto;
+margin-top: 50px;
+width: 1000px;
+height: 450px;
+text-align: center;
+}
+
+#shadow {
+font-family: fantasy;
+font-size: 1.9em;
+color: #ffffff;
+text-shadow: 11px 11px 11px #ffffff;
+}
+
+#align  {
+text-align: center;
+margin-left: 500px;
+}
+
+h3  {
+font-family: fantasy;
+font-size: 1.2em;
+color: #000000;
+text-shadow: 11px 11px 11px #ffffff;
+text-align: left;
+margin-left: 70px;
+}
+
+footer  {
+text-align: center;
+margin-top:  50px;
+}
+
+/*CSS3 Animation    */
+div {
+width: 100px;
+height: 30px;
+margin-left: 50px;
+background-color: #ccccff;
+font-weight: bold;
+position: relative;
+animation-name:anima;
+animation-duration:5s;
+animation-iteration-count:infinite;
+
+/* Safari 4.0 - 8.0 */
+/*            -webkit-animation-name:anima;*/
+/*            -webkit-animation-duration:5s; */
+/*            -webkit-animation-iteration-count:infinite; */
+            }
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+/*            #div1 {-webkit-animation-timing-function: linear;}*/
+/*            #div2 {-webkit-animation-timing-function: ease;}*/
+/*            #div3 {-webkit-animation-timing-function: ease-in;}*/
+/*            #div4 {-webkit-animation-timing-function: ease-out;}*/
+/*            #div5 {-webkit-animation-timing-function: ease-in-out;}*/
+
+/* Standard syntax */
+@keyframes anima    {
+from {left: 0px;}
+to {left: 300px;}
+}
+
+/* Safari 4.0 - 8.0 */
+/*        @-webkit-keyframes anima */
+/*        {*/
+/*            from {left: 0px;}*/
+/*            to {left: 300px;}*/
+/*        }*/
+
+
+/* CSS3 Animation ended   */
+</style>
+</head>
+
+<body>
+    <header>
+        <h1 id="shadow">Animation</h1>
+    </header>
+<section id="print">
+        <!--CSS3 Animation      -->
+        <p><strong>Note:</strong> The animation-timing-function property is not supported in Internet Explorer 9 and earlier versions.</p>
+        <h3>CSS3 Animation</h3>
+
+        <div id="div1">linear</div>
+        <div id="div2">ease</div>
+        <div id="div3">ease-in</div>
+        <div id="div4">ease-out</div>
+        <div id="div5">ease-in-out</div>
+        <!--CSS3 Animation ended    -->
+    <section id="align">
+        <h3>Animated gif created using PhotoScape X</h3>
+        <img src="./aniturtle.gif" alt="animation gif">
+        <figure>
+            <figcaption>Image provided by www.dribbble.com</figcaption>
+        </figure>
+    </section>
+    
+        <form>
+            <input type="button" value="Close Window" onclick="window.close()">
+        </form>
+</section>
+</body>
+</html>

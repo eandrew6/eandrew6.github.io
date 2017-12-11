@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Five | ERICA ANDREWS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This will be my first project site">
+    <meta name="keywords" content="multimedia, animation, audio, video, iframe">
+    <meta name="author" content="Erica Andrews">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+
+body    {
+font-family: fantasy;
+background-image: url('./background.jpg');
+}
+
+#print  {
+margin: 180px;
+text-align: center;
+font-size: 16pt;
+color: #ccffff;
+}
+
+#shadow {
+text-shadow: 10px 10px 10px #000000;
+}
+
+#footer {
+text-align: center;
+margin: 200px;
+}
+
+#link   {
+margin: 20px;
+}
+
+a.links:hover   {
+background-color: #66ccff;
+}
+ 
+#home   {
+font-size: 10pt;
+}
+        
+a.hover:hover   {
+background-color: #66ccff;
+}
+    
+#form   {
+text-align: center;
+}
+
+</style>
+
+    <script>
+        function new_window(url)    {
+        link =
+        window.open(url,
+        '_new', 'toolbar=0,menubar=0,scrollbars=0,status=0,resizable=1,top=10,left=350,fullscreen=0,Height=670px,Width=1020px', '')
+        }
+    </script>
+
+<!--"change URL using javascript Jquery": Stack Overflow-->
+    <script>
+        /*
+        function that returns a query string parameter value
+        this function works with many parameters
+        Eg: www.example.com/#cbp=ajax/project.aspx?myParam=hello&id=1283&otherParam=234
+        to get the param value just give it the parameters name
+        getQueryStringValue("id") returns : 1283
+        getQueryStringValue("myParam") returns : "hello"
+        */
+        function getQueryStringValue( name ){
+          name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+          var regexS = "[\\?&]" + name + "=([^&#]*)";
+          var regex = new RegExp( regexS );
+          var results = regex.exec( window.location.href );
+          if( results == null )
+            return "";
+          else
+            return results[1];
+        }
+
+        //current url
+        var currentUrl = location.href;
+        //check if current url contains www.example.com/ajax/project.aspx
+        if (currentUrl.indexOf("https://ericaandrews.github.io/projectfive.html") != -1 ){
+            //new url for redirection
+            var newUrl = "projectfive.html" + getQueryStringValue( "id" );
+            //redirect to new page
+            location.href = newUrl;
+        }
+    </script>
+<!-- Visit "http://stackoverflow.com/questions/23052278/change-url-using-javascript-jquery" for how to-->
+</head>
+
+<body>
+    <section id="print">
+        <canvas id="top" width="350" height="10" style="border:0px solid #d3d3d3">your browser does not support the canvas tag </canvas>
+        
+        <h1 id="shadow">MULTIMEDIA</h1>
+        <script type="text/javascript">
+            var a = document.getElementById("top");
+            var ctx = a.getContext("2d");
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"white");
+            grd.addColorStop(1,"#6495ED");
+            ctx.fillStyle=grd;
+            ctx.fillRect(0,0,500,80);
+        </script>
+        
+        <nav id="link">
+            <a class="links" href="javascript:new_window('animation.html')">ANIMATION</a> |
+            <a class="links" href="javascript:new_window('audio.html')">AUDIO</a> |
+            <a class="links" href="javascript:new_window('video.html')">VIDEO</a> |
+            <a class="links" href="javascript:new_window('iframe.html')">IFRAME</a>
+        </nav>
+
+        <canvas id="bottom" width="350" height="10" style="border:0px solid #d3d3d3">your browser does not support the canvas tag</canvas>
+
+        <script type="text/javascript">
+            var b = document.getElementById("bottom");
+            var ctx = b.getContext("2d");
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"white");
+            grd.addColorStop(1,"#6495ED");
+            ctx.fillStyle=grd;
+            ctx.fillRect(0,0,500,80);
+        </script>
+        <br><br><br><br>
+        <form id="form">
+            <input type="button" value="Close Window" onclick="window.close()">
+        </form>
+    </section>
+</body>
+</html>
