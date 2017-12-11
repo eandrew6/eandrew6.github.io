@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iframe | ERICA ANDREWS</title>
+    <meta charset='utf-8'>
+
+<style type="text/css">
+
+body    {
+background-color: #000000;
+text-align: center;
+font-family: fantasy;
+}
+
+#print  {
+background-image: url('./background_two.jpg');
+border: 0px;
+margin: auto;
+margin-top: 50px;
+width: 1000px;
+height: 450px;
+}
+
+#shadow {
+font-family: fantasy;
+font-size: 0.9em;
+color: #ffffff;
+text-shadow: 11px 11px 11px #ffffff;
+}
+
+th  {
+font-family: fantasy;
+font-size: 1.2em;
+color: #000000;
+text-shadow: 11px 11px 11px #ffffff;
+text-align:right;
+}
+
+a:hover {
+color: #ccffff;
+}
+
+#iframe1    {
+margin-left: 80px;
+}
+
+form    {
+margin-top: 30px;
+}
+
+footer  {
+margin-top: 60px;
+}
+    </style>
+</head>
+<body>
+    <header id="shadow">
+        <h1>Iframe</h1>
+    </header>
+
+    <div id="print">
+        <table>
+            <tbody>
+            <tr>
+            <th>Character</th>
+            <th>Description</th>
+            </tr>
+
+            <tr>
+            <td>
+            <a href="./pinkpanther.jpg" target="ifr" onclick="window.ifdesc.location='pinkpanther.html'">The Pink Panther</a>
+            </td>
+
+            <td rowspan="5">
+            <iframe id="iframe1" width="450" height="380" name="ifr"></iframe>
+            <iframe width="300" height="380" name="ifdesc"></iframe>
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+            <a href="./mario.jpg" target="ifr" onclick="window.ifdesc.location='mario.html'">Mario</a>
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+            <a href="./snoopy.jpg" target="ifr" onclick="window.ifdesc.location='snoopy.html'">Snoopy</a></td>
+            </tr>
+
+
+            <tr>
+            <td>
+            <a href="./bugsbunny.jpg" target="ifr" onclick="window.ifdesc.location='bugsbunny.html'">Bugs Bunny</a></td>
+            </tr>
+
+            <tr>
+            <td>
+            <a href="./garfield.jpg" target="ifr" onclick="window.ifdesc.location='garfield.html'">Garfield</a></td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <form>
+            <input type="button" value="Close Window" onclick="window.close()">
+        </form>
+    </div>
+
+</body>
+</html>
