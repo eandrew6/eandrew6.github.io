@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<!--<head>   -->
+    <title>Project Six | ERICA ANDREWS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This will be my first project site">
+    <meta name="keywords" content="cascading, style, sheets">
+    <meta name="author" content="Erica Andrews">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+header  {
+font-family: fantasy;
+font-size: 25pt;
+color: #ccffcc;
+position: absolute;
+top: 100px; left: 50px;
+text-shadow: 1px 1px 2px #000000, 0 0 25px #6666ff, 0 0 5px #ff9900;
+}
+
+body    {
+background-image:url(IMAGES_6_CNIT132/dayvsnight.jpg);
+background-repeat:repeat-x;
+background-position:top;
+}
+    
+#moon_1 {
+position: absolute;
+top: 550px;
+left: 160px;
+z-index: 10;
+}
+    
+#sun_1  {
+position: absolute;
+top: 600px;
+left: 220px;
+z-index: 20;
+}
+
+#moon_2 {
+position: absolute;
+top: 320px;
+left: 1160px;
+z-index: 20;
+}
+    
+#sun_2  {
+position: absolute;
+top: 370px;
+left: 1080px;
+z-index: 10;
+}
+        
+#box_1  {
+font-family: fantasy;
+font-size: 10pt;
+color: #333399;
+text-align: center;
+position: absolute;
+top: 210px;
+left: 75px;
+width: 350px;
+background: #ccffcc;
+border-radius: 50px/15px;
+}
+
+#box_2  {
+font-family: fantasy;
+font-size: 10pt;
+color:#333399;
+text-align: center;
+position: absolute;
+top: 90px;
+left: 765px;
+width: 650px;
+background: #ccffcc;
+border-radius: 15px 50px;
+}
+    
+#box_3  {
+font-family: fantasy;
+font-size: 10pt;
+color:#333399;
+text-align: center;
+position: absolute;
+top: 510px;
+left: 1000px;
+width: 355px;
+background: #ccffcc;
+border-radius: 15px 50px 30px;
+}
+    
+#box_4   {
+font-family: fantasy;
+font-size: 10pt;
+color:#333399;
+text-align: center;
+position: absolute;
+top: 700px;
+left: 40px;
+width: 525px;
+background: #ccffcc;
+border-radius: 15px 50px 30px 5px;
+}
+    
+#box_table  {
+font-family: fantasy;
+font-size: 8pt;
+color: #333399;
+text-align: center;
+position: absolute;
+top: 300px;
+left: 570px;
+width: 300px;
+background: #eeeeee;
+border-radius: 50%;
+z-index: 30;
+}
+    
+table   {
+margin: auto;
+}
+    
+th  {
+text-decoration: underline;
+}
+    
+a:hover {
+color: #ff9900;
+}
+    
+a:link  {
+color: #663399;
+}
+
+a:visited   {
+color: #336600;
+}
+ 
+a:active    {
+color: #ff6600;
+}
+
+img {
+border-radius: 25px;
+border: 2px solid #eeeeee;
+}
+    
+#fig_background {
+font-family: cursive;
+font-size: 5pt;
+color: #777777;
+width: auto;
+text-align: center;
+}
+    
+#fig_1  {
+font-family: cursive;
+font-size: 5pt;
+color: #777777;
+position: absolute;
+top: 520px;
+left: 30px;
+width: 150px;
+text-align: center;
+}
+    
+#fig_2  {
+font-family: cursive;
+font-size: 5pt;
+color: #777777;
+position: absolute;
+top: 630px;
+left: 300px;
+width: 150px;
+text-align: center;
+}
+    
+#fig_3  {
+font-family: cursive;
+font-size: 5pt;
+color: #777777;
+position: absolute;
+top: 290px;
+left: 1200px;
+width: 200px;
+text-align: center;
+}
+    
+#fig_4  {
+font-family: cursive;
+font-size: 5pt;
+color: #777777;
+position: absolute;
+top: 455px;
+left: 945px;
+width: 200px;
+text-align: center;
+}
+    
+footer  {
+border-radius: 25px;
+border: 2px solid #eeeeee;
+position: absolute;
+top: 820px;
+left: 780px;
+width: 200px;
+text-align: center;
+}
+        
+form    {
+font-family: fantasy;
+position: absolute;
+top: 745px;
+left: 880px;
+}
+</style>
+<!--</head>-->
+
+<body>
+    <header>Cascading Style Sheets-Positioning</header>
+    <div id="moon_1">
+        <img src="IMAGES_6_CNIT132/moon.jpg" width="100" height="80" alt="moon">
+    </div>
+    <div id="sun_1">
+        <img src="IMAGES_6_CNIT132/sun.jpg" width="100" height="70" alt="sun">
+    </div>
+    <div id="moon_2">
+        <img src="IMAGES_6_CNIT132/moon_2.jpg" width="100" height="80" alt="moon">
+    </div>
+   <div id="sun_2">
+        <img src="IMAGES_6_CNIT132/sun_2.jpg" width="100" height="90" alt="sun">
+    </div>
+    <div id="fig_1">
+        <figure>
+        <figcaption>
+            Image provided by www.digital-photography-school.com
+        </figcaption>
+        </figure>
+    </div>
+     <div id="fig_2">
+        <figure>
+        <figcaption>
+            Images provided by www.flowvella.com
+        </figcaption>
+        </figure>
+    </div>
+    <div id="fig_3">
+        <figure>
+        <figcaption>
+            Image provided by www.bbc.com
+        </figcaption>
+        </figure>
+    </div>
+     <div id="fig_4">
+        <figure>
+        <figcaption>
+            Images provided by www.flickr.com
+        </figcaption>
+        </figure>
+    </div>
+    <div id="fig_background">
+        <figure>
+        <figcaption>
+            Background image provided by www.247animalwelfare.eu
+        </figcaption>
+        </figure>
+    </div>
+    <section>
+        <div id="box_1">
+        <h1><a href="https://www.w3schools.com/css/css3_shadows.asp" target="_blank">
+            CSS Shadow Effect
+            </a></h1>
+        <p>For this project, we are to apply a CSS shadow effect to the header within the web page created. We are to also apply what is called "absolute positioning" to the header, which definitely displays, depending on the positioning setting choosen, a layered like affect to the header. After applying the shadow effect to my header, I could see a major difference in the headers appearance before and after. At least for me, using two or more different colors for the shadow effect and applying positioning can display a unique, "double" header. I look forward to experimenting more with shadow effects.</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="box_2">
+        <h1><a href=https://www.w3schools.com/css/css_background.asp target="_blank">
+            Background Image
+            </a></h1>
+        <p>Within the elements to include for this project, the required "background-strip" image was definitely one of my favorites. We are to choose an image and apply CSS3 background elements, choosing between left, right, or top positioning. We can also choose what is known as a "fixed background" image in the center of the page. Applying the background-strip left me with way to many choices to choose from, as they all seem to provide great design to a page. I definitely look forward to applying different types of styles of background-strips in the future.</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="box_table">
+        <h1><a href=" https://www.w3schools.com/cssref/sel_hover.asp" target="_blank">
+            Links with Hover
+            </a></h1>
+        <p>For one of our table elements to be included in our page, I decided on the topic of "CSS :hover Selectors". The following are different types of :hover selectors to choose from in CSS:</p>
+        <table>
+                <tr>
+                    <th>A:Hover</th>
+                </tr>
+                <tr>
+                    <td>unvisited link - a:link</td>
+                </tr>
+                <tr>
+                    <td>visited link - a:visited</td>
+                </tr>
+                <tr>
+                    <td>mouse over link - a:hover</td>
+                </tr>
+                <tr>
+                    <td>selected link - a:active</td>
+                </tr>
+        </table>
+            <p>The CSS :hover selector can also be applied to paragraphs and headers.</p>
+            <h1><a href="https://www.w3schools.com/css/css3_borders.asp" target="_blank">
+                Rounded Corners
+                </a></h1>
+        <p>For one of our table elements to include in our page, I decided on the topic of "CSS Rounded Corners". With CSS "border-radius", the following are different types of rounded corner styles to choose from:</p>
+        <table>
+                <tr>
+                    <th>Rounded Corners</th>
+                </tr>
+                <tr>
+                    <td>Four values - border radius</td>
+                </tr>
+                <tr>
+                    <td>Three values - border radius</td>
+                </tr>
+                <tr>
+                    <td>Two values - border radius</td>
+                </tr>
+                <tr>
+                    <td>Elliptical corners - border radius</td>
+                </tr>
+        </table>
+        </div>
+    </section>
+
+    <section>
+        <div id="box_4">
+            <h1><a href="https://www.w3schools.com/css/css_dimension.asp" target="_blank">
+                Width Attribute
+                </a></h1>
+        <p>We are also to include a "width" attribute in our sections of text. The width attribute is generally applied to "div sectioning" within this project. It appears to allow the sections of the text created in my page to "box" together, allowing for more control over a "vertical or horizontal" type display. Along with absolute positioning, the width attribute assist with controlling the overall display of a particular section. Both elements combined within a div definitely provide a way to really create a unique page display. I definitely could use more experience with these elements, but mainly because it seems like a lot of fun to apply them in a pages CSS3.</p>
+        </div>
+    </section>
+
+     <section>
+         <div id="box_3">
+             <h1><a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp" target="_blank">
+                 Overlapping Images
+                 </a></h1>
+        <p>Another element to be included in this project is a use of image overlapping displayed on the web page created. Using what is called a "z-index", we are to choose at least two images to overlap each other. It is noted that using fairly small images might be best, displaying a bit of a "logo" type image. I choose to overlap four images in order to experiment a bit more with the z-index and absolute positioning. In my opinion, given the right elements choosen, the resulting display can be quite interesting. I would like to experiment more with different sized images to overlap, depending on the theme of the page.</p>
+        </div>
+    </section>
+    <br><br><br><br>
+     <form>
+        <input type="button" value="Close Window" onclick="window.close()">
+    </form>
+</body>
+</html>
