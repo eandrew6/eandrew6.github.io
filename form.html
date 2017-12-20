@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<!--<head>-->
+    <title>Forms | ERICA ANDREWS</title>
+
+<!--javascript required input alert upon submit    -->
+<script>
+    function validateForm(){
+        var name_1 = document.forms["myForm"]["name"].value;
+        var email_1 = document.forms["myForm"]["email"].value;
+        var comment_1 = document.forms["myForm"]["comments"].value;
+
+        if(name_1 == "")
+        {
+            alert("Please enter your name");
+            return false;
+        }
+        if(email_1 == "")
+        {
+            alert("Please enter your email");
+            return false;
+        }
+        if(comment_1 == "")
+        {
+            alert("Please enter your comment");
+            return false;
+        }
+    }
+</script>
+
+    <style type="text/css">
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
+        }
+        body
+        {
+            text-align: center;
+            font-family: fantasy;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        form
+        {
+            width: 500px;
+            margin:0px auto;
+            text-align: left;
+            background: #dddddd;
+            width: 500px;
+            padding: 12px;
+            font-size: 10pt;
+        }
+        td.space
+        {
+            text-align: left;
+            font-size: 10pt;
+        }
+        .print1
+        {
+            font-size: 8pt;
+            margin: 0px;
+            padding: 0px;
+        }
+        .highlight
+        {
+            background-color: #ffff99;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        legend
+        {
+            text-align: center;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+<!--</head>-->
+<body>
+    <header>Form</header>
+    <a href="https://ericaandrews.github.io/projectnine.html">Home Page</a>
+    <p>Please fill out the feedback form below and click submit. The <span class="highlight">* labeled</span> next to some are<span class="highlight"> required fields</span>.</p>
+
+    <form  name="myForm" action="form.php" enctype="text/plain" id="myform" onsubmit="return validateForm()" method="post">
+        <fieldset>
+             Name: * <input type="text" name="name" size="45" maxlength="50">
+                <br>
+             Email: * <input type="text" name="email" size="45" maxlength="50">
+                <br>
+             Occupation: <input type="text" name="occupation" size="45" maxlength="50">
+                <br>
+        </fieldset>
+
+        <p>Which of the following pages did you view so far?</p>
+        <p class="print1">Choose all that apply:</p>
+        <table>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Message Alert" value=messageAlert checked="checked">Message Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Input Box with Button with Alert" value=inputBoxWithButtonWithAlert>Input Box with Button with Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="OnMouseOverOnMouseOut Event" value=onMouseOver/OnMouseOutEvent>OnMouseOver/OnMouseOut Event Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Drop-Down Menu Nav" value=dropDownMenuNav>Drop-Down Menu Nav Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                    <input type="checkbox" name="Pop-Up Window" value=popUpWindow>Pop-Up Window Site
+                </td>
+            </tr>
+            <tr>
+                 <td class="space">
+                    <input type="checkbox" name="Password Protection" value=passwordProtection>Password Protection Site
+                </td>
+            </tr>
+            <tr>
+                 <td class="space">
+                    <input type="checkbox" name="JQuery" value=jQuery>JQuery Site
+                </td>
+            </tr>
+        </table>
+
+        <p>Which one would you say captured your interest the most?</p>
+        <p class="print1">Choose one only:</p>
+        <table>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=messageAlert checked="checked">Message Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=inputBoxWithButtonWithAlert>Input Box with Button with Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=onMouseOver/OnMouseOutEvent>OnMouseOver/OnMouseOut Event Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=dropDownMenuNav>Drop-Down Menu Nav Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=popUpWindow>Pop-Up Window Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=passwordProtection>Password Protection Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=jQuery>JQuery Site
+                </td>
+            </tr>
+        </table>
+
+        <p>Are you interested in any of the following?</p>
+            <select name="interest" size="3" multiple="multiple">
+            <option value="none">None</option>
+            <option value="webDevelopment">Web Development</option>
+            <option value="webDesign">Web Design</option>
+            <option value="softwareDevelopment">Software Development</option>
+            <option value="computerProgramming">Computer Programming</option>
+            </select>
+
+        <p>Comments*</p>
+        <textarea name="comments" rows="5" cols="75"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
