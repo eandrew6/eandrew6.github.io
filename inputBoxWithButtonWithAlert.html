@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!--head-->
+    <title>Input Box with Button with Alert | ERICA ANDREWS</title>
+    <style type="text/css">
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
+        }
+        body
+        {
+            text-align: center;
+            font-family: fantasy;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        p
+        {
+          font-size: 16px;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 400px;
+        }
+    </style>
+    <script>
+        function process(string)
+        {
+            if(string == "c" || string == "C")
+            {
+                alert("That is Correct!");
+            }
+            else
+            {
+                alert("Not quite... Hint: The language has one syllable in its name.");
+            }
+        }
+    </script>
+    <script>
+        function processTwo(stringTwo)
+        {
+            if(stringTwo == "javascript" || stringTwo == "Javascript" || stringTwo == "JavaScript")
+            {
+                alert("That is Correct!");
+            }
+            else
+            {
+                alert("Not quite... Hint: The library name has three syllables.");
+            }
+        }
+    </script>
+<!--head-->
+<body>
+    <header>Input Box with Button with Alert</header>
+    <a href="https://ericaandrews.github.io/projectnine.html">Home Page</a>
+    <br><br>
+    <!--    JavaScript is derived from the programming language called "C".-->
+    <!--    jQuery is a JavaScript Library.-->
+    <p>JavaScript is derived from the programming language called ____.</p>
+    <form name="myForm">
+        <input name="textOne" type="text" size="10">
+        <input name="submit" type="button" value="Submit" onclick="process(document.forms['myForm'].elements['textOne'].value)">
+        <input type="reset" value="Reset">
+    </form><br><br>
+    <p>jQuery is a ____ Library.</p>
+    <form name="myFormTwo">
+        <input name="textTwo" type="text" size="10">
+        <input name="submit" type="button" value="Submit" onclick="processTwo(document.forms['myFormTwo'].elements['textTwo'].value)">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
