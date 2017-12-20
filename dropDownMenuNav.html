@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<!--head-->
+    <title>Drop-Down Menu Nav | ERICA ANDREWS</title>
+    <style type="text/css">
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
+        }
+        body
+        {
+            text-align: center;
+            font-family: fantasy;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 500px;
+        }
+    </style>
+    <script>
+        function go(form)
+        {
+            var num=form.end.selectedIndex
+            url=form.end.options[num].value;
+            window.open(url, "_blank");
+        }
+    </script>
+<!--head-->
+<body>
+    <header>Drop-Down Menu Nav</header>
+    <a href="https://ericaandrews.github.io/projectnine.html">Home Page</a><br><br><br>
+    <p>To learn more about different types of Galaxies, choose from the following menu:</p>
+    <form name="myForm">
+        <select name="end" size="1">
+            <option selected="selected">------------------Galaxy Sources------------------</option>
+            <option value="https://www.britannica.com/topic/galaxy/Types-of-galaxies/">Britannica: Types of Galaxies</option>
+            <option value="https://en.wikipedia.org/wiki/List_of_galaxies">Wikipedia: List of Galaxies</option>
+            <option value="http://www.nationalgeographic.com/science/space/universe/galaxies/">National Geographic: Galaxies</option>
+            <option value="http://www.space.com/15680-galaxies.html">Space: Galaxies-Collisions, Types &amp; Other Facts</option>
+        </select>
+        <input type="button" value="Select" onclick="go(this.form)">
+    </form>
+
+</body>
+</html>
