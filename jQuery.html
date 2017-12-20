@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!--head-->
+    <title>JQuery | ERICA ANDREWS</title>
+    <style type="text/css">
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
+        }
+        body
+        {
+            text-align: center;
+            font-family: fantasy;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        figure
+        {
+            font-family: cursive;
+            font-size: 9pt;
+            text-align: center;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 250px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").fadeTo("slow",0.25);
+            });
+        });
+    </script>
+<!--head-->
+<body>
+    <header>JQuery</header>
+    <a href="https://ericaandrews.github.io/projectnine.html">Home Page</a><br><br><br>
+    <p>With the assistance of the magnificent javascript library called "jQuery", select the button to fade the below image.</p><br><br>
+    <div>
+        <img src="projectnine/night.jpg" width="300" height="200" alt="image"><br>
+        <button>Click Here</button>
+    </div>
+
+        <figure>Background Image provided by imgur.com</figure>
+ 
+</body>
+</html>
