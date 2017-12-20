@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head-->
+    <title>Project Nine | ERICA ANDREWS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This will be my first project site">
+    <meta name="keywords" content="javascript">
+    <meta name="author" content="Erica Andrews">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body
+        {
+            background: #3399ff url("http://i.stack.imgur.com/spmUM.gif");
+            background-size: 25%;
+            background-repeat: repeat;
+            background-position: center;
+        }
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 50px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ff6600, 0 0 5px #777777;
+        }
+        ul
+        {
+            list-style-type: none;
+            margin: auto;
+            width: 1500px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li
+        {
+            float: left;
+            font-family: fantasy;
+            margin-left: 10px;
+            padding-top: 50px;
+        }
+
+        li a
+        {
+            display: inline-block;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            border: 2px solid #eeeeee;
+            border-radius: 25px;
+            background-color: #000000;
+        }
+
+        li a:hover
+        {
+            background-color: #111111;
+        }
+        figure
+        {
+            font-family: cursive;
+            font-size: 9pt;
+            text-align: center;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 550px;
+        }
+        #form
+        {
+            text-align: center;
+            margin-top: 190px;
+        }
+        a.hover
+        {
+            color: white;
+        }
+        a.hover:hover
+        {
+            background-color: #dddddd;
+        }
+    </style>
+
+    <!--    header growth javascript-->
+    <script>
+        txtsize=0;
+        maxsize=51;
+
+        var timergrow;
+        var timer;
+
+        function writeMsg()
+        {
+        if (txtsize<maxsize)
+            {
+            document.getElementById('msg').style.fontSize=txtsize+"px"
+            txtsize++
+            timer=setTimeout("writeMsg()",50)
+            }
+        }
+        function steveGrow(){
+        timergrow = setInterval("grow()",30);
+        }
+        function stopTimer()
+        {
+        clearTimeout(timer)
+        }
+        function stopInt()
+        {
+        clearInterval(timergrow)
+        }
+    </script>
+
+    <!--    pop-up window-->
+    <script>
+        function new_window(url)
+        {
+            link= window.open(url, '_new0','toolbar=0,menubar=0,scrollbars=1,status=1,resizable=1,top=1,left=150,fullscreen=0,Height=420px,Width=400px','')
+        }
+    </script>
+<!--head-->
+
+<body onload="writeMsg();" onunload="stopTimer(); stopInt();">
+    <header id="msg">JavaScript</header>
+    <ul>
+        <li><a href="https://ericaandrews.github.io/messageAlert.html">Message Alert</a></li>
+        <li><a href="inputBoxWithButtonWithAlert.html">Input Box with Button with Alert</a></li>
+        <li><a href="onMouseOver_onMouseOut_Event.html">OnMouseOver/OnMouseOut Event</a></li>
+        <li><a href="dropDownMenuNav.html">Drop-Down Menu Nav</a></li>
+        <li><a href=# onclick="new_window('popUpWindow.html')">Pop-Up Window</a></li>
+        <li><a href="passwordProtection.html">Password Protection</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href=jQuery.html>jQuery</a></li>
+    </ul>
+<!--        <figure>Background Image provided by imgur.com</figure>-->
+    <form id="form">
+        <input type="button" value="Close Window" onclick="window.close()">
+    </form>
+
+</body>
+</html>
