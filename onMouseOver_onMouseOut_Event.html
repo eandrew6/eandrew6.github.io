@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "utf-8">
+<!--head-->
+    <title>OnMouseOver/OnMouseOut Event | ERICA ANDREWS</title>
+    <style type="text/css">
+        header
+        {
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
+        }
+        body
+        {
+            text-align: center;
+            font-family: fantasy;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        figure
+        {
+            font-family: cursive;
+            font-size: 5pt;
+            text-align: center;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 350px;
+        }
+    </style>
+    <script>
+        function mouseEvent()
+        {
+            document.getElementById("galaxySpiral").src = "barredSpiral.jpg"
+        }
+
+        function restoreEvent()
+        {
+            document.getElementById("galaxySpiral").src = "spiral.jpg"
+        }
+    </script>
+        <script>
+        function mouseEventTwo()
+        {
+            document.getElementById("galaxyCul").src = "lenticular.jpg"
+        }
+
+        function restoreEventTwo()
+        {
+            document.getElementById("galaxyCul").src = "peculiar.jpg"
+        }
+    </script>
+        <script>
+        function mouseEventThree()
+        {
+            document.getElementById("galaxyE").src = "irregullar.jpg"
+        }
+
+        function restoreEventThree()
+        {
+            document.getElementById("galaxyE").src = "elliptical.jpg"
+        }
+    </script>
+<!--head-->
+<body>
+    <header>OnMouseOver/OnMouseOut Event</header>
+    <a href="projectnine.html">Home Page</a><br><br><br>
+    <p>There are many different types of Galaxies within our Universe. Wave your mouse over the images to view the different types.</p>
+    <img src="barredSpiral.jpg" width="200" height="150" alt="Image of Galaxy" id="galaxySpiral" onmouseover="mouseEvent()" onmouseout="restoreEvent()">
+    <img src="lenticular.jpg" width="200" height="150" alt="Image of Galaxy" id="galaxyCul" onmouseover="mouseEventTwo()" onmouseout="restoreEventTwo()">
+    <img src="irregullar.jpg" width="200" height="150" alt="Image of Galaxy" id="galaxyE" onmouseover="mouseEventThree()" onmouseout="restoreEventThree()">
+
+        <figure>Images provided by empoweryourknowledgeandhappytrivia.wordpress.com</figure>
+
+</body>
+
+</html>
