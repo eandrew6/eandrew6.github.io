@@ -13,7 +13,7 @@ font-family: fantasy;
 }
 
 #print  {
-background-image: url('background_two.jpg');
+background-image: url('projectfive/background_two.jpg');
 border: 0px;
 margin: auto;
 margin-top: 50px;
@@ -43,11 +43,6 @@ color: #ccffff;
 #iframe1    {
 margin-left: 30px;
 }
-/*
-#garfield    {
-margin-top: 100px;       
-}
-*/
 
 tbody{
 width:100%;    
@@ -61,18 +56,19 @@ footer  {
 margin-top: 60px;
 }
 
-/*
-iframe{
-width: 300px;
-}
-*/
-
 @media screen and (max-width: 1200px)
 {
     iframe{
         width: 360px;
         height: 300px;
     }
+    
+/*
+    #about a[href]::after {
+        background-image: url(projectfive/mario.jpg);
+        z-index: 1;
+    }
+*/
 }
 @media screen and (max-width: 1000px)
 {
@@ -80,6 +76,12 @@ width: 300px;
         width: 300px;
         height: 300px;
     }
+   
+/*
+    #about a[href]::after {
+        content: url(projectfive/mario.jpg);
+    }
+*/
 }
 @media screen and (max-width: 800px)
 {
@@ -87,7 +89,24 @@ width: 300px;
         width: 220px;
         height: 300px;
     }
+/*
+    #about a[href]::after {
+        content: url(projectfive/mario.jpg);
+    }
+*/
 }
+@media screen and (max-width: 700px)
+{
+    iframe{
+        width: 140px;
+        height: 300px;
+    }
+/*
+    #about a[href]::after {
+        content: url(projectfive/mario.jpg);
+    }
+*/
+}    
     </style>
 </head>
 <body>
@@ -105,7 +124,9 @@ width: 300px;
 
             <tr>
             <td>
+            <section id="about">   
             <a href="pinkpanther.jpg" target="ifr" onclick="window.ifdesc.location='https://ericaandrews.github.io/pinkpanther.html'">The Pink Panther</a><br><br>
+            </section>     
             </td>
 
             <td rowspan="5">
