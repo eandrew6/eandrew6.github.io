@@ -59,55 +59,38 @@ margin-top: 60px;
 @media screen and (max-width: 1200px)
 {
     iframe{
-        width: 360px;
+        max-width: 360px;
         height: 300px;
     }
-    
-/*
-    #about a[href]::after {
-        background-image: url(projectfive/mario.jpg);
-        z-index: 1;
-    }
-*/
 }
 @media screen and (max-width: 1000px)
 {
     iframe{
-        width: 300px;
+        max-width: 300px;
         height: 300px;
     }
-   
-/*
-    #about a[href]::after {
-        content: url(projectfive/mario.jpg);
-    }
-*/
 }
 @media screen and (max-width: 800px)
 {
     iframe{
-        width: 220px;
+        max-width: 220px;
         height: 300px;
     }
-/*
-    #about a[href]::after {
-        content: url(projectfive/mario.jpg);
-    }
-*/
 }
 @media screen and (max-width: 700px)
 {
     iframe{
-        width: 140px;
+        max-width: 140px;
         height: 300px;
     }
-/*
-    #about a[href]::after {
-        content: url(projectfive/mario.jpg);
-    }
-*/
 }    
-    </style>
+</style>
+<script type="text/javascript">
+    function p() 
+    { 
+     document.getElementById("pinkpanther").href="pinkpanther.jpg";
+    };
+</script>   
 </head>
 <body>
     <header id="shadow">
@@ -124,8 +107,8 @@ margin-top: 60px;
 
             <tr>
             <td>
-            <section id="about">   
-            <a href="pinkpanther.jpg" target="ifr" onclick="window.ifdesc.location='https://ericaandrews.github.io/pinkpanther.html'">The Pink Panther</a><br><br>
+            <section id="about">
+            <a href="#" id="pinkpanther" target="ifr" onclick="p(); window.ifdesc.location='https://ericaandrews.github.io/pinkpanther.html';" >The Pink Panther</a><br><br>
             </section>     
             </td>
 
