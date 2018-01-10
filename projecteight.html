@@ -98,11 +98,19 @@
         }
         table
         {
-            width: 100%;
+            width: 95%;
         }
         #width
         {
             width: 95%;
+        }
+        @media screen and (max-width: 300px){
+
+            #td{
+                font-size: 5pt;
+            }
+        }
+
         }
     </style>
 
@@ -135,19 +143,19 @@
                 <tr>
                     <td class="space">
                     <input type="hidden" name="hw[]" value>
-                    <input type="checkbox" name="hw[]" value=HW_1 checked="checked" id="width">Project One
+                    <input type="checkbox" name="hw[]" value=HW_1 checked="checked"><span id="td">Project One</span>
                     </td>
                     <td class="space">
-                    <input type="checkbox" name="hw[]" value=HW_2 id="width">Project Two
+                        <input type="checkbox" name="hw[]" value=HW_2><span id="td">Project Two</span>
                     </td>
                     <td class="space">
-                    <input type="checkbox" name="hw[]" value=HW_4 id="width">Project Four
+                        <input type="checkbox" name="hw[]" value=HW_4><span id="td">Project Four</span>
                     </td>
                     <td class="space">
-                    <input type="checkbox" name="hw[]" value=HW_5 id="width">Project Five
+                        <input type="checkbox" name="hw[]" value=HW_5><span id="td">Project Five</span>
                     </td>
                     <td class="space">
-                    <input type="checkbox" name="hw[]" value=HW_6 id="width">Project Six
+                        <input type="checkbox" name="hw[]" value=HW_6><span id="td">Project Six</span>
                     </td>
                 </tr>
             </table>
@@ -157,22 +165,24 @@
             </p>
             <table>
                 <tr>
+                    <div id="width">
                     <td class="space">
                     <input type="hidden" name="choice" value>
-                    <input type="radio" name="choice" value=HW_1 checked="checked">Project One
+                        <input type="radio" name="choice" value=HW_1 checked="checked"><span id="td">Project One</span>
                     </td>
                     <td class="space">
-                    <input type="radio" name="choice" value=HW_2>Project Two
+                        <input type="radio" name="choice" value=HW_2><span id="td">Project Two</span>
                     </td>
                     <td class="space">
-                    <input type="radio" name="choice" value=HW_4>Project Four
+                        <input type="radio" name="choice" value=HW_4><span id="td">Project Four</span>
                     </td>
                     <td class="space">
-                    <input type="radio" name="choice" value=HW_5>Project Five
+                        <input type="radio" name="choice" value=HW_5><span id="td">Project Five</span>
                     </td>
                     <td class="space">
-                    <input type="radio" name="choice" value=HW_6>Project Six
+                        <input type="radio" name="choice" value=HW_6><span id="td">Project Six</span>
                     </td>
+                    </div>
                 </tr>
             </table>
 
