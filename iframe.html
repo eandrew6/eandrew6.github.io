@@ -6,13 +6,13 @@
 
 <style type="text/css">
 
-body    {
+body {
 background-color: #000000;
 text-align: center;
 font-family: fantasy;
 }
 
-#print  {
+#print {
 background-image: url('background_two.jpg');
 border: 0px;
 margin: auto;
@@ -40,21 +40,22 @@ a:hover {
 color: #ccffff;
 }
 
-#iframe1    {
+#iframe1 {
 margin-left: 30px;
 }
 
-tbody{
+tbody {
 width:100%;    
 } 
     
-form    {
+form  {
 margin-top: 30px;
 }
 
-footer  {
+footer {
 margin-top: 60px;
 }
+    
 
 @media screen and (max-width: 1200px)
 {
@@ -83,6 +84,13 @@ margin-top: 60px;
         max-width: 140px;
         height: 300px;
     }
+} 
+@media screen and (max-width: 400px)   
+{
+    iframe{
+        max-width: 80px;
+        height: 300px;
+    }   
 }    
 </style>
 <script type="text/javascript">
@@ -133,20 +141,17 @@ margin-top: 60px;
             <td>
             <a href="bugsbunny.jpg" target="ifr" onclick="window.ifdesc.location='https://ericaandrews.github.io/bugsbunny.html'">Bugs Bunny</a><br><br><br><a href="garfield.jpg" id="garfield" target="ifr" onclick="window.ifdesc.location='https://ericaandrews.github.io/garfield.html'">Garfield</a></td>
             </tr>
-
+                
             <tr>
             <td>
 <!--            <a href="garfield.jpg" target="ifr" onclick="window.ifdesc.location='https://ericaandrews.github.io/garfield.html'">Garfield</a></td>-->
             </td>
             </tr>
-
             </tbody>
         </table>
-
         <form>
             <input type="button" value="Close Window" onclick="window.close()">
         </form>
     </div>
-
 </body>
 </html>
