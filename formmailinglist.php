@@ -11,7 +11,7 @@ mail($to, $subject, $mailheaders);
 ?>
 
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://hills.ccsf.edu/~eandrew6/foodprogram/formmailinglist.php -->
+<!-- saved from url=(0052)https://ericaandrews.github.io/formmailinglist.php -->
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="js fa-events-icons-ready gr__demo_drupalizing_com fa-events-icons-failed gr__hills_ccsf_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 <meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
@@ -144,7 +144,7 @@ mail($to, $subject, $mailheaders);
   
     
       <div class="content" style="font-family: 'Open Sans';">
-<form class="contact-message-feedback-form contact-message-form contact-form" action="https://hills.ccsf.edu/~eandrew6/foodprogram/form.php" data-user-info-from-browser="" data-drupal-selector="contact-message-feedback-form" method="post" id="contact-message-feedback-form" accept-charset="UTF-8" data-drupal-form-fields="edit-name,edit-mail,edit-subject-0-value,edit-message-0-value,edit-submit">
+<form class="contact-message-feedback-form contact-message-form contact-form" action="https://ericaandrews.github.io/form.php" data-user-info-from-browser="" data-drupal-selector="contact-message-feedback-form" method="post" id="contact-message-feedback-form" accept-charset="UTF-8" data-drupal-form-fields="edit-name,edit-mail,edit-subject-0-value,edit-message-0-value,edit-submit">
   <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
       <label for="edit-name" class="js-form-required form-required">Your name</label>
         <input data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
@@ -264,8 +264,8 @@ mail($to, $subject, $mailheaders);
     <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
     <ul class="social-links social-links--inline text-center">
     <li><a class="hover-color-behance" href="">Erica Andrews</a></li>
-    <li><a class="hover-color-facebook" href="https://hills.ccsf.edu/~eandrew6/foodprogram/privacydisclosure.htm">Privacy Disclosure</a></li>
-	<li><a class="hover-color-twitter" href="https://hills.ccsf.edu/~eandrew6/foodprogram/sitemap.htm">Site Map</a></li>
+    <li><a class="hover-color-facebook" href="https://ericaandrews.github.io/privacydisclosure.htm">Privacy Disclosure</a></li>
+	<li><a class="hover-color-twitter" href="https://ericaandrews.github.io/sitemap.htm">Site Map</a></li>
         </ul></div>
       
     </div>
