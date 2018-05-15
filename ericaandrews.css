@@ -16,6 +16,7 @@
                 margin: auto;
                 background-image: url('images/water.gif');
                 background-size: cover;
+                border: 2px hidden;
                 border-radius: 5px 70px 5px; 
                 word-wrap: break-word;
             }
