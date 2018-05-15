@@ -16,7 +16,6 @@
                 margin: auto;
                 background-image: url('images/water.gif');
                 background-size: cover;
-                border: 2px solid #777;
                 border-radius: 5px 70px 5px; 
                 word-wrap: break-word;
             }
@@ -27,6 +26,18 @@
                 margin: auto;
                 background-image: url('images/water.gif');
                 background-size: cover;
+                border-radius: 5px 70px 5px;
+                word-wrap: break-word;
+            }
+            #contact
+            {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                padding-bottom: 10px;
+                background-image: url('images/water.gif');
+                background-size: cover;
+                border: 2px solid #777;
                 border-radius: 5px 70px 5px;
                 word-wrap: break-word;
             }
@@ -130,18 +141,6 @@
                 border-radius: 5px 70px 5px;
             }
 */
-            #contact
-            {
-                text-align: center;
-                width: 80%;
-                margin: auto;
-                padding-bottom: 10px;
-                background-image: url('images/water.gif');
-                background-size: cover;
-                border: 2px solid #777;
-                border-radius: 5px 70px 5px;
-                word-wrap: break-word;
-            }
             .space
             {
                 padding: 10px;
