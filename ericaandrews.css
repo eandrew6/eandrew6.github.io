@@ -221,8 +221,13 @@
                     width: 85%;
                 }
             }
+/*tablet view*/
             @media screen and (max-width: 1000px)
             {
+                h1
+                {
+                    margin-top: 100px;
+                }
                 #home
                 {
                     margin-top: 70px;
@@ -243,8 +248,13 @@
                     word-wrap: break-word;
                 }
             }
+/*mobile view*/
             @media screen and (max-width: 685px)
             {
+                h1
+                {
+                    margin-top: 200px;
+                }
                 ul li.right, ul li.u, ul li, ul li.utwo
                 {
                     float: left;
