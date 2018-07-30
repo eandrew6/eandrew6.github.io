@@ -150,16 +150,20 @@
                     margin-top: 70px;
                     background-image: url('images/water.gif');
                     background-size: 300%;
+                    margin-bottom: 10px;
                 }
                 #about
                 {
                     background-image: url('images/water.gif');
                     background-size: 300%;
+                    margin-bottom: 10px;
+
                 }
                 #contact
                 {
                     background-image: url('images/water.gif');
                     background-size: 300%;
+                    margin-bottom: 10px;
                 }
             }
 /*mobile view*/
@@ -182,10 +186,13 @@
                     margin-top: 100px;
                     background-image: url('images/water.gif');
                     background-size: 420%;
+                    margin-bottom: 10px;
+
                 }
                 #about
                 {
                     background-image: url('images/water.gif');
                     background-size: 420%;
+                    margin-bottom: 10px;
                 }
             }
