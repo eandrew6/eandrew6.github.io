@@ -4,6 +4,7 @@
                 margin: 0;
                 background-image: url('images/water.gif');
                 background-size: cover;
+                font-size: 10pt;
             }
             #h1
             {
@@ -143,7 +144,7 @@
                 }
                 #h1
                 {
-                    margin-top: 100px;
+                    margin-top: 10px;
                 }
                 #home
                 {
@@ -175,7 +176,7 @@
                 }
                 #h1
                 {
-                    margin-top: 200px;
+                    margin-top: 80px;
                 }
                 #ul li.right, #ul li
                 {
