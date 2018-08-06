@@ -83,6 +83,10 @@
             {
                 width: 80%;
             }
+            #img
+            {
+                border-radius: 25px;
+            }
 /*tablet view to full screen view*/
             @media screen and (min-width: 1000px)
             {
@@ -142,7 +146,7 @@
             {
                 #img
                 {
-                    display: none;
+/*                    display: none;*/
                     
                 }
                 #h1
@@ -175,7 +179,7 @@
             {
                 #img
                 {
-                    display: none; 
+/*                    display: none; */
                 }
                 #h1
                 {
