@@ -119,7 +119,7 @@ if (mail($to, $subject, $msg, $mailheaders)) {
     <header><h1>Thank You</h1></header>
     <p id="p">eureka.web.dev@gmail.com</p>
            <div id="link">
-            <a href="https://hills.ccsf.edu/~eandrew6/ericaandrews/ericaandrews.html">Home</a>
+            <a href="https://ericaandrews.github.io/contact.html">Home</a>
             </div>
           <br>
             <div id="form">
