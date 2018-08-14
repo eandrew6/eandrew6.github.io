@@ -37,7 +37,7 @@
         </div>
         <div id="contact">
             <h4>CONTACT</h4>
-            <form action="form.html" method="post">
+            <form action="contact.html" method="post">
               NAME:<input text="type" name="name" size="120" maxlength="125" autofocus="" id="inputtextarea" required="required">
               <br>
               EMAIL:<input text="type" name="email" size="120" maxlength="125" id="inputtextarea" required="required">
@@ -74,5 +74,58 @@
         <footer id="footer">
             <h4>Copyright &copy; ERICA ANDREWS 2018</h4>
         </footer>
+        
+            <?php
+
+    $msg = "E-mail sent from Erica's 'Contact Form' site\n";
+    $msg .= "Sender's Name:  $_POST[name]\n";
+    $msg .= "Sender's E-mail:  $_POST[email]\n";
+    $msg .= "Sender's Occupation:  $_POST[occupation]\n";
+
+    $msg.= "\nSender's response to whether they have web site development experience: ";
+
+        $selected=$_POST['selected'];
+        if($selected){
+            foreach ($selected as $s) {$msg .= "$s  ";}
+        }
+
+    $msg .= "\nSender's response, after selected 'yes', to how much web site development experience they have: ";
+
+        $selections=$_POST['selections'];
+        if ($selections){
+         foreach ($selections as $ss) {$msg .=  "$ss  ";}
+        }
+
+    $msg .= "\nSender's Comments & Questions:   $_POST[comments]\n";
+
+    $to = "e.r.andrews@outlook.com";
+    $subject = "Erica Andrews Contact Form";
+    $mailheaders = "From: Erica Andrews Contact Form\n";
+
+    mail($to, $subject, $msg, $mailheaders);
+    ?>
+    <p id="p">eureka.web.dev@gmail.com</p>
+           <div id="link">
+            <a href="https://ericaandrews.github.io/contact.html">Home</a>
+            </div>
+          <br>
+            <div id="form">
+                <p><b>The following email has been sent to Erica Andrews:</b></p>
+                <p>
+                    <b>Your Name: </b>    
+                    <?php echo "$_POST[name]"; ?>
+                    <br><br>      
+                    <b>Your Email: </b>
+                    <?php echo "$_POST[email]"; ?>
+                    <br><br>
+                    <b>Your Occupation: </b>
+                    <?php echo "$_POST[occupation]"; ?>
+                    <br><br>
+                    <b>Your Comments and Questions: </b>
+                    <?php echo "$_POST[comments]"; ?>
+                    <br>
+                </p>
+            </div>
+  
     </body>
 </html>
