@@ -1,41 +1,3 @@
-<?php
-
-$msg = "E-mail sent from Erica's 'Contact Form' site\n";
-$msg .= "Sender's Name:  $_POST[name]\n";
-$msg .= "Sender's E-mail:  $_POST[email]\n";
-$msg .= "Sender's Occupation:  $_POST[occupation]\n";
-
-$msg.= "\nSender's response to whether they have web site development experience: ";
-
-    $selected=$_POST['selected'];
-    if($selected){
-        foreach ($selected as $s) {$msg .= "$s  ";}
-    }
-
-$msg .= "\nSender's response, after selected 'yes', to how much web site development experience they have: ";
-
-	$selections=$_POST['selections'];
-	if ($selections){
-	 foreach ($selections as $ss) {$msg .=  "$ss  ";}
-	}
-
-$msg .= "\nSender's Comments & Questions:   $_POST[comments]\n";
-
-$to = "e.r.andrews@outlook.com";
-$subject = "Erica Andrews Contact Form";
-$mailheaders = "From: Erica Andrews Contact Form\n";
-
-mail($to, $subject, $msg, $mailheaders);
-
-if (mail($to, $subject, $msg, $mailheaders)) {
-   echo("<p>Email successfully sent!</p>");
-  } else {
-   echo("<p>Email delivery failed</p>");
-  }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
@@ -117,6 +79,42 @@ if (mail($to, $subject, $msg, $mailheaders)) {
 <body>
      <br>
     <header><h1>Thank You</h1></header>
+    <?php
+
+    $msg = "E-mail sent from Erica's 'Contact Form' site\n";
+    $msg .= "Sender's Name:  $_POST[name]\n";
+    $msg .= "Sender's E-mail:  $_POST[email]\n";
+    $msg .= "Sender's Occupation:  $_POST[occupation]\n";
+
+    $msg.= "\nSender's response to whether they have web site development experience: ";
+
+        $selected=$_POST['selected'];
+        if($selected){
+            foreach ($selected as $s) {$msg .= "$s  ";}
+        }
+
+    $msg .= "\nSender's response, after selected 'yes', to how much web site development experience they have: ";
+
+        $selections=$_POST['selections'];
+        if ($selections){
+         foreach ($selections as $ss) {$msg .=  "$ss  ";}
+        }
+
+    $msg .= "\nSender's Comments & Questions:   $_POST[comments]\n";
+
+    $to = "e.r.andrews@outlook.com";
+    $subject = "Erica Andrews Contact Form";
+    $mailheaders = "From: Erica Andrews Contact Form\n";
+
+    mail($to, $subject, $msg, $mailheaders);
+
+    if (mail($to, $subject, $msg, $mailheaders)) {
+       echo("<p>Email successfully sent!</p>");
+      } else {
+       echo("<p>Email delivery failed</p>");
+      }
+
+    ?>
     <p id="p">eureka.web.dev@gmail.com</p>
            <div id="link">
             <a href="https://ericaandrews.github.io/contact.html">Home</a>
