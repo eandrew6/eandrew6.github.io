@@ -7,7 +7,7 @@
         <meta name="keywords" content="Erica, Andrews, freelance, web, developer, projects">
         <meta name="author" content="Erica Andrews">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="ericaandrews.css" type="text/css">
+        <link rel="stylesheet" href="contact.css" type="text/css">
     </head>
     <body id="body">
         <header>
@@ -32,35 +32,35 @@
             <h4 style="margin-bottom: -20px;">VOLUNTEER WEB DEVELOPER</h4>
             <p style="margin-bottom: -20px;">e.randrews@outlook.com</p>
             <p style="margin-bottom: -5px;">415-871-3227</p>
-            <a href="https://ericaandrews.github.io/ericaandrews/images/ericaandrews.jpg" target="_blank"><img src="images/ericaandrews.jpg" id="img" width="50px" height="50px"></a>
+            <a href="https://ericaandrews.github.io/contact/images/ericaandrews.jpg" target="_blank"><img src="images/ericaandrews.jpg" id="img" width="50px" height="50px"></a>
             <p style="margin-top: -5px;">I am goal oriented toward a career in computer science and passionate for an overall understanding of computer programming. I am currently practiced in web development and seek expansion of my current knowledge of engineering.</p>
         </div>
         <div id="contact">
             <h4>CONTACT</h4>
-            <form action="form.php" method="post">
-              NAME:<input text="type" name="name" size="120" maxlength="125" autofocus="" id="inputtextarea" required="required">
+            <form action="mailto:e.r.andrews@outlook.com?Subject=Email%20sent%20from%20Erica%20Andrews%20'Contact'%20submission" method="post" id="myform" enctype="text/plain">
+              NAME: <input type="text" name="Sender's Name" size="120" maxlength="125" autofocus="" id="name" required="required">
               <br>
-              EMAIL:<input text="type" name="email" size="120" maxlength="125" id="inputtextarea" required="required">
+              EMAIL:<input type="text" name="Sender's Email" size="120" maxlength="125" id="email" required="required">
               <br>
-              OCCUPATION:<input text="type" name="occupation" size="111" maxlength="125" id="inputtextarea">
+              OCCUPATION:<input type="text" name="Sender's Occupation" size="111" maxlength="125" id="occupation">
               <br><br>
-              Have you any experience within the tech field?
-              <input type="hidden" name="selected[]" value>
-              <select name="selected[]">
-                <option selected="selected">No</option>
+              Have you any experience in the tech field?
+              <input type="hidden" value>
+              <select name="Have you any experience in the tech field">
+                <option> No</option>
                 <option>Yes</option>
               </select>
               <br>
               If so, how long has your experience been within the tech field?
-              <input type="hidden" name="selections[]" value>
-              <select name="selections[]">
+              <input type="hidden" value>
+              <select name="If so, how long has your experience been within the tech field">
                 <option value="0 to 6 months">0 to 6 months</option>
                 <option value="6 months to 1 year">6 months to 1 year</option>
                 <option value="1 to 2 years">1 to 2 years</option>
                 <option value="2 years +">2 years +</option>
               </select>
               <p>COMMENTS/QUESTIONS</p>
-              <textarea rows="5" name="comments" cols="75" id="inputtextarea"></textarea>
+              <textarea rows="5" name="Sender's Comments" cols="75" id="comments"></textarea>
               <br>
               <input type="submit" value="Submit">
               <input type="reset" value="Reset">
