@@ -8,6 +8,38 @@
         <meta name="author" content="Erica Andrews">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="contact.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .sidenav a
+        {
+        }
+        .dropdown-btn
+        {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            border: none;
+            background: none;
+            outline: none;
+            color: #fff;
+            font-family: fantasy;
+            font-size: 10pt;
+        }
+        .dropdown-btn:hover
+        {
+            color: #f1f1f1;
+            background-color: green;
+        }
+        .dropdown-container
+        {
+            display: none;
+            font-size: 6pt;
+        }
+        .active
+        {
+            background-color: green;
+            color: #fff;
+        }
+    </style>    
     </head>
     <body id="body">
         <header>
@@ -17,12 +49,36 @@
 
 <!--                <li><a href="https://ericaandrews.github.io/ericaandrews.htm" title="EricaAndrews" target="_blank">ERICA ANDREWS</a></li>-->
                 <li><a href="https://ericaandrews.github.io/index.htm" title="HaightAshburyFoodProgram" target="_blank">HAIGHT ASHBURY FOOD PROGRAM</a></li>
-                <li><a href="https://github.com/ericaandrews/ericaandrews.github.io" title="HTML_CSS">HTML&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;CSS<br>Completed Exercises</a></li>
-                <li><a href="https://github.com/ericaandrews/java" title="JAVA">JAVA<br> Completed Exercises</a></li>
-                <li><a href="https://github.com/ericaandrews/python" title="Python">PYTHON<br>Completed Exercises</a></li>
-                <li><a href="https://github.com/ericaandrews/php" title="PHP">PHP<br>Completed Exercises</a></li>
-                <li><a href="https://github.com/ericaandrews/unix" title="Unix">UNIX<br>Completed Exercises</a></li>
-                <li><a href="https://github.com/ericaandrews/javascript" title="Javascript">JAVASCRIPT<br>Completed Exercises</a></li>
+               
+                <button class="dropdown-btn">COMPLETED EXERCISES</button>
+                    <div class="dropdown-container">    
+                        <li><a href="https://github.com/ericaandrews/ericaandrews.github.io" title="HTML_CSS">HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;<br>&nbsp;&nbsp;JQUERY&nbsp;&nbsp;|&nbsp;&nbsp;PHP<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/java" title="JAVA">JAVA<br> Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/python" title="Python">PYTHON<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/php" title="PHP">PHP<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/unix" title="Unix">UNIX<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/javascript" title="Javascript">JAVASCRIPT<br>Completed Exercises</a></li>
+                     </div>    
+                <script>
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    for(i = 0; i < dropdown.length; i++)
+                    {
+                        dropdown[i].addEventListener("click", function()
+                        {
+                            this.classList.toggle("active");
+                            var dropdownContent = this.nextElementSibling;
+                            if(dropdownContent.style.display === "block") 
+                            {
+                                dropdownContent.style.display = "none";    
+                            }
+                            else
+                            {
+                                dropdownContent.style.display = "block";    
+                            }
+                        });    
+                    }
+                </script>
                 <li><a href="https://github.com/ericaandrews" title="GitHub" target="_blank">GITHUB</a></li>
                 <li><a href="https://www.linkedin.com/in/ericarandrews/" title="LinkedIn" target="_blank">LINKEDIN</a></li>
                 <li><a href="https://twitter.com/justatweetea" title="Twitter" target="_blank">TWITTER</a></li>
