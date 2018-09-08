@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book>
+    <title>Book 1</title>
+    <author>SJR</author>
+  </book>
+  <book>
+    <title>Book 2</title>
+    <author>MCZ</author>
+  </book>
+  <book>
+    <title>Book 3</title>
+    <author>NKK</author>
+  </book>
+</bookstore>
