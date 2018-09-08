@@ -26,6 +26,7 @@
     <xsl:for-each select="Accounts/Client">       
       <tr style="text-align:right">  
         <td><xsl:value-of select="Account_Total"/></td>
+<!--
         <xsl:choose>
             <xsl:when test="(Account_Total &lt;= * 80000)">
                 <td style="color:red;font-weight:bold;">
@@ -36,6 +37,7 @@
                 <td><xsl:value-of select="Account_Total"/></td>
             </xsl:otherwise>
         </xsl:choose>
+-->
         </tr> 
     </xsl:for-each>
       
