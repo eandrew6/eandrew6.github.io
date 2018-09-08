@@ -3,13 +3,13 @@
 <xsl:template match="/">
 <html>
 <body>
-  <h3>Books Collection</h3>
+  <h1>List of Clients</h1>
   <table border="2">
-    <tr bgcolor="red"><th>Title</th><th>Author</th></tr>
-    <xsl:for-each select="bookstore/book">
+    <tr bgcolor="red"><th>Name</th><th>Phone</th><th>Email</th><th>Account Total</th></tr>
+    <xsl:for-each select="Accounts/Client/Name">
       <tr>
-        <td><xsl:value-of select="title"/></td>
-        <td><xsl:value-of select="author"/></td>
+        <td><xsl:value-of select="First"/></td>
+        <td><xsl:value-of select="Last"/></td>
       </tr>
     </xsl:for-each>
   </table>
