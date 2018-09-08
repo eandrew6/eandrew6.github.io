@@ -6,20 +6,26 @@
   <h1>List of Clients</h1>
   <table border="2">
     <tr bgcolor="red"><th>Name</th><th>Phone</th><th>Email</th><th>Account Total</th></tr>
-    <xsl:for-each select="Accounts/Client">
+    <xsl:for-each select="Accounts/Client/Name">
       <tr>
-        <td><xsl:value-of select="Name/First/Last"/></td>
+        <td><xsl:value-of select="First"/><xsl:value-of select="Last"/></td>
       </tr>
+    </xsl:for-each>
+    <xsl:for-each select="Accounts/Client/Phone">
       <tr>
         <td><xsl:value-of select="Phone"/></td>
       </tr>
+    </xsl:for-each>
+    <xsl:for-each select="Accounts/Client/Email">
       <tr>
         <td><xsl:value-of select="E-mail"/></td>
-      </tr>  
+      </tr>
+    </xsl:for-each>
+    <xsl:for-each select="Accounts/Client/Account_Total">
       <tr>
         <td><xsl:value-of select="Account_Total"/></td>
       </tr>
-    </xsl:for-each>
+    </xsl:for-each>  
   </table>
 </body>
 </html>
