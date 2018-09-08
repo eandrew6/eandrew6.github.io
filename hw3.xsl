@@ -8,7 +8,8 @@
     <tr bgcolor="blue"><th>Name</th><th>Phone</th><th>Email</th><th>Account Total</th></tr>
     <xsl:for-each select="Accounts/Client/Name">
       <tr>
-        <td><xsl:value-of select="First"/>&#160;&#160;<xsl:value-of select="Last"/></td>
+        <td><xsl:value-of select="First"/></td>
+        <td><xsl:value-of select="Last"/></td>
       </tr>
     </xsl:for-each>
     <xsl:for-each select="Accounts/Client">
