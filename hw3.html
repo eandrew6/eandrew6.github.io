@@ -36,21 +36,16 @@ body{
  window.onload = function () {
     var c = new CanvasJS.Chart("chart",
     { 
-      title: {
-        text: "HW3",
-        textFontFamily: "courier"  
-           },
       axisX: {
-        title: "Term",
-        titleFontFamily: "courier"
+        titleFontFamily: "courier",
       },
       axisY: {
-        title: "Students",
         titleFontFamily: "courier"  
       },    
       data: [
       {        
         type: "column",
+        color: "blue",
         dataPoints: [
         { label: "Spring 16", y: 160},
         { label: "Fall 16", y: 170},
@@ -68,5 +63,5 @@ body{
 </head>
     
 <body>
-<div id="chart"></div>
+    <div id="chart"></div>
 </body>
