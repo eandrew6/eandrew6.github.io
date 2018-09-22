@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="D3 homework">
+<title>D3 Homework</title>
+<style>
+#chart rect{
+  fill: #4aaeea;
+}
+
+#chart text{
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end; 
+}
+
+.axis text{
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line{
+  fill: none;
+  stroke : #fff;
+  shape-rendering: crispEdges;
+}
+
+body{
+  background: #1a1a1a;
+  color : #eaeaea;
+  padding : 10px;
+}
+</style>
+    
+<script>
+ window.onload = function () {
+    var c = new CanvasJS.Chart("chart",
+    { 
+      title: {
+        text: "HW3",
+        textFontFamily: "courier"  
+           },
+      axisX: {
+        title: "Term",
+        titleFontFamily: "courier"
+      },
+      axisY: {
+        title: "Students",
+        titleFontFamily: "courier"  
+      },    
+      data: [
+      {        
+        type: "column",
+        dataPoints: [
+        { label: "Spring 16", y: 160},
+        { label: "Fall 16", y: 170},
+        { label: "Spring 17", y: 120},
+        { label: "Fall 17", y: 185},
+        { label: "Spring 18", y: 190},
+        { label: "Fall 18", y: 195}
+        ]
+      }]
+    });
+    c.render();
+  }   
+</script>   
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>   
+</head>
+    
+<body>
+<div id="chart"></div>
+</body>
