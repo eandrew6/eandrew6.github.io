@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <!-- Simple XML file with no CSS -->
-<?xml-stylesheet type="text/xsl" href="xml_json/hw4.xsl"?>
+<?xml-stylesheet type="text/xsl" href="
+      ericaandrews.github.io/hw4.xsl
+    "?>
 
 <Accounts>
 
