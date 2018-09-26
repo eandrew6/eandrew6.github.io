@@ -8,8 +8,7 @@
 <body>
     <h1>ABC Financial Startup</h1>
 
-    <img style="margin: 50%;" src="
-      ericaandrews.github.io/financialstartup.jpg
+    <img style="margin: 50%;" src="financialstartup.jpg
     "/>
 
     <p>We are a very young financial manager company and we are proud of our clients</p> 
