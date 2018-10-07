@@ -4,7 +4,7 @@
 <html>
 <body>
     <h1>ABC Financial Startup</h1>
-    <span style="margin:50%;"><img src="https://ericaandrews.github.io/financialstartup.jpg" width="230px" height="140px"/></span>
+    <span style="margin:50%;"><img src="https://ericaandrews.github.io/xml_json/financialstartup.jpg" width="230px" height="140px"/></span>
     <p>We are a very young financial manager company and we are proud of our clients</p> 
     <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(Accounts/*)"/>clients!</p>
     <p>These are our clients: 

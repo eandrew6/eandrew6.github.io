@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Simple XML file with no CSS -->
-<?xml-stylesheet type="text/xsl" href="ericaandrews.github.io/hw3.xsl"?>
+<?xml-stylesheet type="text/xsl" href="ericaandrews.github.io/xml_json/hw3.xsl"?>
 
 <Accounts>
 
