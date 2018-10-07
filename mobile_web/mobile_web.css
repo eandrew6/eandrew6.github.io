@@ -1,0 +1,7 @@
+header{text-align: center;}
+img{float: left; margin-right: 10px; width: 100px; height: 120px;}
+body{background-color: #006666; color: #ccc;}
+a:hover{background-color: #666; color: #fff; text-decoration: none; border-radius: 5px;}
+a{color: #ccc;}
+button{font-size: 10pt; color: #006666; border-radius: 10px;}
+button:hover{background-color: #666; color: #fff;}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="This is my first website page in CNIT 133M">
+    <meta charset="utf-8">
+    <title>Erica Andrews</title>
+    <link rel="stylesheet" href="mobile_web.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            var div = $("h1");
+            div.animate({fontSize: '44pt'}, "slow");
+            $("h1").css("color", "#009999");
+            $("body").css("color", "#000");
+            $("img").css("border", "3px solid");
+            div.animate({fontSize: '24pt'}, "slow");
+        });
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Mobile Web w/ HTML, CSS, &amp; JS</h1>    
+        <h3>CNIT 133M</h3>
+    </header>
+    <hr><br>
+    <img src="images_mobile_web/ericaandrews.jpg" alt="image"><br><br><br>
+    <p>Hello, my name is Erica Andrews and I am a Computer Science major at City College of San Francisco. I have attended City College of San Francisco for at least two years and I have taken many courses. I am currently Volunteering as a Lab Aid for a student with disabilities and volunteering for various companies and non-profits. I plan to apply for the certificates offered, present what I have learned to potential employers, and show what I have learned within my portfolio.</p> 
+    <p id="p">I am taking this course to learn about Mobile Web and to fufill the requirements for certificates. I have taken CS and CNIT courses before but this will be my first course on the subject of Mobile Web. I plan to learn from this course and apply what I learn to my personal projects. I also would like to apply what I learn from this course to professional assignments in the future. </p>
+    <hr>
+    <header>
+        <h2>Technologies for this class</h2>
+    </header>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <header>
+        <h2>Resources</h2>
+    </header>
+    <ul>
+        <li><a href="https://hills.ccsf.edu/~eandrew6/cnit133/cnit133.html" target="_blank">Interactive Web Pages with Javascript</a> &#58; is a website with web pages on basic operations, functions, looping statements, arrays, objects, ajax applications, etc...using Javascript.</li>
+        <li><a href="https://hills.ccsf.edu/~eandrew6/untitled/ericaandrews.html" target="_blank">Advanced HTML and CSS</a> &#58; is a website with web pages on previous assignments and tips &amp; tricks using HTML and CSS.</li>
+    </ul>
+    <button>Started animation</button>
+</body>
+</html>
