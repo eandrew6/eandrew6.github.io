@@ -118,36 +118,25 @@
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 	}
 
-/*Structure*/
-@media screen and (min-width:481px) {
-    body, .header, .navigation, .footer {
-        width: 960px;
-    }
-    .header, .navigation, .footer {
-        clear: both;
-    }
-    
-    #points{
-        width: 240px;
-        float: right;
-    }
-    #main {
-        margin: 10px 260px 0 250px;
-        width: 460px;
-    }
+@media screen and (max-width:930px) {
+    div#header{width: 90%;}
+    div#footer{width: 90%;}
+    div.content{width: 100%;}
+    div.col-right{float: left; margin-left: 5%; margin-bottom:20px;}
+    div.sidebar-left{float: left; margin-left: 5%;}
+    div.col-right p{width:100%;}
+}@media screen and (max-width:700px) {
+   div.col-right p{width:90%;} 
+}@media screen and (max-width:650px) {
+   div.col-right p{width:80%;} 
+}@media screen and (max-width:580px) {
+   div.col-right p{width:80%;} 
+}@media screen and (max-width:560px) {
+   div.col-right p{width:70%;} 
+}@media screen and (max-width:550px) {
+   div.col-right p{width:60%;} 
+}@media screen and (max-width:500px) {
+   div.col-right p{width:60%;} 
+}@media screen and (max-width:450px) {
+   div.col-right p{width:50%;} 
 }
-  
-@media screen and (max-width:480px) {
-    body, .header, .footer, .navigation {width:320px;}
-    .column {margin: 10px 0; border-bottom:1px dashed #7b96bc;}
-    .navigation ul li {width: 106.6667px;}
-    #visit, #points, #main {width:320px;}   
-}
-
-
-
-
-
-
-
-
