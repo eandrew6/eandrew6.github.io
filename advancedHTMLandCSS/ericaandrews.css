@@ -1,0 +1,59 @@
+#about,
+#picture {
+    width: 50%
+}
+
+#about,
+header,
+ul {
+    text-align: center
+}
+
+body {
+    font-family: monospace;
+    background-color: #eee
+}
+
+header {
+    font-size: 12pt
+}
+
+#about {
+    border-style: hidden;
+    background: #fff;
+    margin-left: 50px
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    display: inline;
+    padding: 20px
+}
+
+a {
+    color: #888
+}
+
+a:hover {
+    color: red
+}
+
+#about a[href$=".html"]::after,
+#about a[href$=".htm"]::after {
+    content: url(homework1/browser.png);
+    padding: 5px
+}
+
+#about a[href$=".pdf"]::after {
+    content: url(homework1/pdf.png);
+    padding: 5px
+}
+
+#about a::after {
+    content: url(homework1/intmark.png);
+    padding: 5px
+}
