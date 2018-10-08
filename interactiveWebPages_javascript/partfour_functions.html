@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Functions Part Four' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>PART FOUR_FUNCTIONS</title>
+<link rel="stylesheet" href="partfour_functions.css" type="text/css">   
+</head>    
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_three.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_functions.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_functions.html">Part 2 -</a></li>
+                <li id="navpartssss"><a href="partthree_functions.html">Part 3 -</a></li>
+                <li id="navpartsssss"><a href="partfour_functions.html">Part 4 </a></li>
+            </ul>
+            </div>
+            <header>Learn Multiplication</header>
+            <div id="centered">
+                <p id="p">'Computers are playing an increasing role in education. The following webpage contains: a program that will help an elementary school student learn multiplication.'.</p><br>
+                <form>
+                 <table>     
+                    <tr><td>How much is <span id="randomnumone"></span> times <span id="randomnumtwo"></span>?</td></tr>
+                     <tr><td><input type="number" id="answer"></td></tr>
+                     <tr><td><button type="button" onclick="calculate()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr> 
+                <script>
+                 let randomnumone = document.getElementById("randomnumone").innerHTML = Math.floor(Math.random() * 10);
+                 let randomnumtwo = document.getElementById("randomnumtwo").innerHTML = Math.floor(Math.random() * 10);
+
+                function correct(){
+                    document.getElementById("answer").value = answer;
+                }  
+
+                function notcorrect(){
+                    document.getElementById("answer").value = answer;
+                }    
+
+                function calculate(){
+                    let answer = document.getElementById("answer").value;
+                    let calculation = Number(randomnumone) * Number(randomnumtwo);
+
+                    if(Number(calculation) == Number(answer)){
+                        alert("Very good!");
+                        let c = confirm("Select OK if you would like to continue");
+
+                        if(c == true){ 
+                            randomnumone = document.getElementById("randomnumone").innerHTML = Math.floor(Math.random() * 10);
+                            randomnumtwo = document.getElementById("randomnumtwo").innerHTML = Math.floor(Math.random() * 10);
+                            calculation = Number(randomnumone) * Number(randomnumtwo);
+                            correct();
+                        } 
+                        if(c == false){
+                            alert("Thank you for playing");
+                        }
+                    }
+                    else{
+                        alert("No. Please try again."); 
+                        notcorrect();
+                    }
+                }
+                </script>
+            </table>
+         </form>
+        </div>
+    </div>
+</body> 
+</html>    

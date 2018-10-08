@@ -1,0 +1,32 @@
+    body{font-family: 'Verdana'; background-color: #ccffff;}
+    #border{border-style: dotted;border-color: #66ccff;background-color: #fff;padding: 10px;margin-left: 15%;margin-right: 15%;}
+    #center{padding: 20px; width: 100%; text-align: center; margin: 0px auto;}
+    #nav{color: #3300ff;font-weight: bold;background-color: #eee; padding: 10px;list-style-type: none;}
+    #navparts{display: inline; text-align: center;}
+    #navpartss{display: inline; text-align: center;}
+    #navpartsss{display: inline; text-align: center;}
+    #navpartssss{display: inline; text-align: center;}
+    #navpartsssss{display: inline; text-align: center;}
+    #navpartssssss{display: inline; text-align: center;}
+    header{text-align: center;color: #cc0099;font-weight: bold;font-size: 20pt;}
+    ul{display: inline;list-style-type: none;margin-left: 20px;}
+    li{margin-bottom: 10px;}
+    a{text-decoration: none;}
+    a:visited{color: #3300ff;}
+    #centered{text-align: center; margin: 50px;}
+    #slidedown{text-align: center; border: solid 1px; width:100%; margin: 0 auto; padding: 5px;}
+    #final{text-align: right; border: solid 1px; width: 100%; margin: 0 auto; display: none; padding: 5px;}
+    #pone, #ptwo, #pthree, #p_interest, #p_mail, #p_order, #p_square{text-align: center; font-size: 8pt;}
+    #scriptone{text-align: center; font-size: 10pt;}
+    #scripttwo{text-align: center; font-size: 10pt;}
+    input{text-align: right; background-color: #cc9900;}
+    #column{column-count: 3;}
+    #draggable {border: 1px solid;margin: 20px;}
+    table, th, td{border: 1px solid;font-size: 8pt; margin: 0 auto; border-collapse: collapse;}
+    #maroon_white_one, #maroon_white_two, #maroon_white_three, #maroon_white_four, #maroon_white_five, #maroon_white_six{background-color: #800; color: #fff;}
+    #amnt_one, #amnt_three, #amnt_five, #amnt_seven, #amnt_nine, #amnt_one_six, #amnt_three_six, #amnt_five_six, #amnt_seven_six, #amnt_nine_six, #amnt_one_seven, #amnt_three_seven, #amnt_five_seven, #amnt_seven_seven, #amnt_nine_seven, #amnt_one_eight, #amnt_three_eight, #amnt_five_eight, #amnt_seven_eight, #amnt_nine_eight, #amnt_one_nine, #amnt_three_nine, #amnt_five_nine, #amnt_seven_nine, #amnt_nine_nine, #amnt_one_ten, #amnt_three_ten, #amnt_five_ten, #amnt_seven_ten, #amnt_nine_ten, #yellow_one, #yellow_two, #yellow_three, #yellow_four, #yellow_five, #yellow_six, #yellow_seven, #yellow_eight, #yellow_nine, #yellow_ten, #yellow_eleven, #yellow_twelve, #yellow_thirteen, #yellow_fourteen, #yellow_fifteen, #yellow_sixteen, #yellow_seventeen, #yellow_eighteen, #yellow_nineteen, #yellow_twenty, #yellow_twenty_one, #yellow_twenty_two, #yellow_twenty_three, #yellow_twenty_four, #yellow_twenty_five, #yellow_twenty_six, #yellow_twenty_seven, #yellow_twenty_eight, #yellow_twenty_nine, #yellow_thirty{background-color: yellow;}
+    tr{background-color: #cc9900;}
+    #background_one, #background_two, #background_three, #background_four, #background_five, #background_six, #background_seven, #background_eight{background-color: beige;}
+    #one, #two, #three, #four, #five{background-color: #eee; text-align: center;}
+    #qtyone, #qtytwo, #qtythree, #qtyfour, #qtyfive, #amntone, #amnttwo, #amntthree, #amntfour, #amntfive, #totlamnt{background-color: #fff;}
+    #asterisks{background-color: #eee;}

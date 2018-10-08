@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Part Three - Object Model and Miscellaneous' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>PART THREE - OBJECT MODEL_MISCELLANEOUS JQUERY</title>
+<link rel="stylesheet" href="homework_seven_objectModel_miscellaneousJquery.css" type="text/css">  
+<style>
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25.00%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>    
+</head>
+<body>
+    <div id="border">
+        <div id="center">
+            <span id="nav">
+                <a href="homework_seven_objectModel_miscellaneousJquery.html" id="navparts">Home -</a>
+                <a href="partone_objectModel_miscellaneousJquery.html" id="navpartss">Part 1 -</a>
+                <a href="parttwo_objectModel_miscellaneousJquery.html" id="navpartsss">Part 2 -</a>
+                <a href="partthree_objectModel_miscellaneousJquery.html" id="navpartssss">Part 3 </a>
+            </span>
+            </div>
+            <header>jQuery_Slide Show</header>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="IMG_3265.jpg" style="width:100%" alt="image">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="IMG_3267.jpg" style="width:100%" alt="image">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="IMG_3270.jpg" style="width:100%" alt="image">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="IMG_3269.jpg" style="width:100%" alt="image">
+  </div>  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="IMG_3265.jpg" style="width:100%" onclick="currentSlide(1)" alt="image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_3267.jpg" style="width:100%" onclick="currentSlide(2)" alt="image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_3270.jpg" style="width:100%" onclick="currentSlide(3)" alt="image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_3269.jpg" style="width:100%" onclick="currentSlide(4)" alt="image">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</div>
+</body>    
+</html>

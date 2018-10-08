@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'AJAX_PHP' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>AJAX_APPLICATIONS_PHP</title>
+<link rel="stylesheet" href="homework_eight_ajax_applications.css" type="text/css">    
+</head>
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_eight_ajax_applications.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_ajax_applications.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_ajax_applications.html">Part 2 </a></li>
+            </ul>
+        </div>
+            <header>AJAX_FORM</header>
+            <p>This webpage contains a form and an Ajax script that will receive data sent from the server. The form contains four input text boxes, for Name, Time, Date&#40;day, date format&#41;, and Date&#40;mm/dd/yy format&#41;. After the user enters their name in the Name text box and then clicks outside this text box, the Ajax script should access three php scripts on the server which will contain the Time, Date&#40;day, date format&#41;, and Date&#40;mm/dd/yy format&#41; and return the Time and Date formats into their respective text boxes.</p>
+         <form> 
+            First name: <input type="text" onchange="showHint(this.value)"><br><br>
+        </form>
+            Time: <br><span id="time"><input name="time" disabled></span><br><br>
+            Day, Date: <br><span id="date"><input name="date" size="20" disabled></span><br><br>
+            Date: <br><span id="datetwo"><input name="datetwo" disabled></span><br><br>
+        <script>
+            function showHint(str) {
+            //time    
+                if (str.length == 0) { 
+                    document.getElementById("time").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("time").innerHTML = this.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "time.php?q=" + str, true);
+                    xmlhttp.send();
+                }
+            //date    
+                 if (str.length == 0) { 
+                    document.getElementById("date").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("date").innerHTML = this.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "date.php?q=" + str, true);
+                    xmlhttp.send();
+                }
+            //datetwo
+                if (str.length == 0) { 
+                    document.getElementById("datetwo").innerHTML = "";
+                    return;
+                } else {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("datetwo").innerHTML = this.responseText;
+                        }
+                    };
+                    xmlhttp.open("GET", "datetwo.php?q=" + str, true);
+                    xmlhttp.send();
+                }    
+            }
+        </script> 
+    </div>
+</body>    
+</html>

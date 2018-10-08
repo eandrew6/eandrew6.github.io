@@ -1,0 +1,21 @@
+    body{font-family: 'Verdana'; background-color: #ccffff;}
+    #border{border-style: dotted;border-color: #66ccff;background-color: #fff;padding: 10px;margin-left: 15%; margin-right: 15%;}
+    #center{padding: 20px; width: 100%; text-align: center; margin: 0px auto;}
+    #nav{color: #3300ff;font-weight: bold;background-color: #eee; padding: 10px;list-style-type: none;}
+    #navparts{display: inline; text-align: center;}
+    #navpartss{display: inline; text-align: center;}
+    #navpartsss{display: inline; text-align: center;}
+    #navpartssss{display: inline; text-align: center;}
+    #navpartsssss{display: inline; text-align: center;}
+    #navpartssssss{display: inline; text-align: center;}
+    header{text-align: center;color: #cc0099;font-weight: bold;font-size: 20pt;}
+    ul{display: inline;list-style-type: none;margin-left: 20px;}
+    li{margin-bottom: 10px;}
+    a{text-decoration: none;}
+    a:visited{color: #3300ff;}
+    #centered{text-align: right; margin: 50px;}
+    #centeredd{text-align: left; margin: 50px;}
+    #slidedown{text-align: center; border: solid 1px; width:100%; margin: 0 auto; padding: 5px;}
+    #final{text-align: right; border: solid 1px; width: 100%; margin: 0 auto; display: none; padding: 5px;}
+    #p{text-align: left; font-size: 8pt;}
+    input{text-align: right;}

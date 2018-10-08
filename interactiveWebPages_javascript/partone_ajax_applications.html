@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'AJAX_PHP' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>AJAX_APPLICATIONS_PHP</title>
+<link rel="stylesheet" href="homework_eight_ajax_applications.css" type="text/css"> 
+<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "partone_ajax_applications.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>    
+</head>
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_eight_ajax_applications.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_ajax_applications.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_ajax_applications.html">Part 2 </a></li>
+            </ul>
+        </div>
+            <header>AJAX_PHP</header>
+        <p>This webpage recreates the 'gethint' Ajax example from <a href="https://www.w3schools.com/php/php_ajax_php.asp">W3Schools</a>. The following allows the user to type in the field below for name suggestions:</p>
+        <form> 
+            First name: <input type="text" onkeyup="showHint(this.value)">
+        </form>
+            <p>Suggestions: <span id="txtHint"></span></p>
+    </div>
+</body>    
+</html>

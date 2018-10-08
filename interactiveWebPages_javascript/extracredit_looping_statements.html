@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Extra Credit Looping Statements' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>EXTRA CREDIT_LOOPING STATEMENTS</title>
+    <link rel="stylesheet" href="partone_looping_statements.css" type="text/css">
+</head>    
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_four.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_looping_statements.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_looping_statements.html">Part 2 -</a></li>
+                <li id="navpartssss"><a href="partthree_looping_statements.html">Part 3 -</a></li>
+                <li id="navpartsssss"><a href="extracredit_looping_statements.html">Extra Credit </a></li>
+            </ul>
+        </div>
+            <header>Square</header><br>
+            <p id="p_square">This webpage reads in the size of the side of a square and displays a hollow square of that size constructed of asterisks.</p><br>
+
+            <form>
+                Enter a number between 2 and 10 for the size of a square: <input id="asterisks" type="number" min="2" max="10"><br><br>
+                <button type="button" onclick="square()">Submit</button>
+                <button type="reset">Reset</button>
+               <br><br>    
+            <script>
+            function square(){
+                let size = document.getElementById("asterisks").value;
+                var asterisks;
+                if(size < 2 || size > 10){
+                    alert("Please enter a numeric value between 2 and 10.");
+                }
+                if(size >= 2 && size <= 10){
+                    for(var i = 1; i <= Number(size); i++){
+                        for(var x = 1; x <= Number(size); x++){
+                            if(i==1 || i==Number(size) || x==1 || x==Number(size)){
+                                asterisks = document.write('<span style="font-family: monospace;">*</span>');
+                            }
+                            else{
+                                asterisks = document.write(" ");
+                                asterisks = document.write("&nbsp;");
+                            }
+                        } 
+                    document.write("<br>");
+                    }
+                }
+                document.write("<br>");
+                document.write('<span style="font-family: monospace;">Refresh the page to return to the form.</span>');    
+            }
+            </script>  
+            </form>
+        <br>
+    </div>
+</body> 
+</html>    

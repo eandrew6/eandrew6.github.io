@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Arrays Part Two' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>PART TWO_ARRAYS</title>
+    <link rel="stylesheet" href="homework_five_arrays.css" type="text/css"> 
+<style>
+.button, .buttons {
+    background-color: #ddd;
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+}
+.button:hover, .button:focus, .buttons:hover, .buttons:focus {
+    background-color: #2980B9;
+}
+.pulldown, .pulldowns {
+    position: relative;
+    display: inline-block;
+
+}
+.content, .contents {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    min-width: 160px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.content a, .contents a {
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+.pulldown a:hover, .pulldowns a:hover {background-color: #ddd}
+.links, .linkss {display:block;}
+p{font-size: 8pt;}    
+</style>
+</head>
+<body>
+<div id="border">
+  <div id="center">
+    <ul id="nav">
+     <li id="navparts"><a href="homework_five_arrays.html">Home -</a></li>
+     <li id="navpartss"><a href="partone_textbox_radiobuttons_checkboxes_selectitems.html">Part 1 -</a></li>
+     <li id="navpartsss"><a href="parttwo_pulldown_menus.html">Part 2 -</a></li>
+     <li id="navpartssss"><a href="partthree_statename_statecapital_population.html">Part 3</a></li>
+    </ul>
+<br><br><br>   
+<header>Pull Down Menus</header>
+<p>This webpage contains a script that utilizes 2 pulldown menus. The first one utilizes an onchange event handler. The second utilizes a button with an onclick event handler to navigate to a page after an option is selected.</p>      
+<p>Onclick Event Handler</p>
+<div class="pulldown">
+<button onclick="myFunction()" class="button">Pull Down Menu</button>
+  <div id="onClick" class="content">
+    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia: Javascript</a>
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">Wikipedia: HTML</a>
+    <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Wikipedia: CSS</a>
+    <a href="https://en.wikipedia.org/wiki/Array_data_type" target="_blank">Wikipedia: Array</a>
+  </div>
+</div>
+<br><br>    
+<p>Onchange Event Handler</p>
+    <div class="pulldowns">
+    <select onchange="window.open(this.options[this.selectedIndex].value)" class="buttons" id="onChange">
+    <option>Please select from the following: </option>    
+    <option value="https://en.wikipedia.org/wiki/JavaScript">Wikipedia: Javascript</option>
+    <option value="https://en.wikipedia.org/wiki/HTML">Wikipedia: HTML</option>
+    <option value="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia: CSS</option>
+    <option value="https://en.wikipedia.org/wiki/Array_data_type">Wikipedia: Array</option>
+    </select>    
+    </div>    
+<script>
+
+function myFunction() {
+    document.getElementById("onClick").classList.toggle("links");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.button')) {
+
+    var pulldowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < pulldowns.length; i++) {
+      var openPulldown = pulldowns[i];
+      if (openPulldown.classList.contains('links')) {
+        openPulldown.classList.remove('links');
+      }
+    }
+  }
+}
+
+//function myFunctions(){
+//    let onChange = document.getElementById("onChange");
+//    onChange.onchange = function(){
+//        window.open(this.options[this.selectedIndex].value);    
+//     }
+//    }
+</script>
+ </div> 
+     </div> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    font-size: 12pt;
+}
+body {
+    font-family: monospace;
+    background-color: deepskyblue;
+}
+ul {
+    text-align: center;
+    display: inline;
+}
+li a {
+    color: #fff;
+}

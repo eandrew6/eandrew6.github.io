@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Part One Looping Statements' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>PART ONE_LOOPING STATEMENTS</title>
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+<!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+<link rel="stylesheet" href="partone_looping_statements.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#draggable" ).draggable();
+    } );
+    </script>    
+</head>    
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_four.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_looping_statements.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_looping_statements.html">Part 2 -</a></li>
+                <li id="navpartssss"><a href="partthree_looping_statements.html">Part 3 -</a></li>
+                <li id="navpartsssss"><a href="extracredit_looping_statements.html">Extra Credit </a></li>
+            </ul>
+        </div>
+            <header>For, While, and DoWhile Statements</header><br> 
+            <div id="draggable" class="ui-widget-content">
+                <p id="pone">Part 1a: This webpage calculates the product and sum of every third integer from 5 to 20 inclusive and then displays the results</p><br>
+                <div id="scriptone">
+                <script>
+                    var product = 1;
+                    var sum = 0;
+                    for(var integer = 5;integer <= 20;integer += 3){
+                        product *= integer;
+                        sum += integer;
+                    }
+                    document.write("The product of every third integer from 5 to 20 is " + product);
+                    document.write("<br><br>The sum of every third integer from 5 to 20 is " + sum);
+                </script>
+                </div><br>
+                <p id="ptwo">Part 1b: This webpage calculates the product and sum of every fourth integer from 3 to 31 inclusive and then displays the results</p><br>
+                <div id="scripttwo">
+                <script>
+                    var product = 1;
+                    var sum = 0;
+                    var integer = 3;
+                    while(integer <= 31){
+                        product *= integer;
+                        sum += integer; 
+                        integer += 4;
+                    }
+                    document.write("The product of every fourth integer from 3 to 31 is " + product);
+                    document.write("<br><br>The sum of every fourth integer from 3 to 31 is " + sum);
+                </script>
+                </div><br>
+                <p id="pthree">This section can be dragged around this webpage</p>
+            </div>            
+    </div>
+</body> 
+</html>    
