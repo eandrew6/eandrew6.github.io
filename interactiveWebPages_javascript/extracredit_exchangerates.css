@@ -1,0 +1,31 @@
+    body{font-family: 'Verdana'; background-color: #ccffff;}
+    #border{border-style: dotted;border-color: #66ccff;background-color: #fff;padding: 10px;margin-left: 15%; margin-right: 15%; text-align: center;}
+    #center{padding: 20px; width: 75%; margin: 0px auto;}
+    #nav{color: #3300ff;font-weight: bold;background-color: #eee; padding: 10px;list-style-type: none;}
+    #navparts{display: inline; text-align: center;}
+    #navpartss{display: inline; text-align: center;}
+    #navpartsss{display: inline; text-align: center;}
+    #navpartssss{display: inline; text-align: center;}
+    #navpartsssss{display: inline; text-align: center;}
+    #navpartssssss{display: inline; text-align: center;}
+    header{text-align: center;color: #cc0099;font-weight: bold;font-size: 20pt;}
+    ul{display: inline;list-style-type: none;margin-left: 20px;}
+    li{margin-bottom: 10px;}
+    a{text-decoration: none;}
+    a:visited{color: #3300ff;}
+    #ab{font-weight: bold;font-family:'Times New Roman';color: red;}
+    #twelve{font-weight: bold;font-family: 'Arial';color: blue;}
+    #thirtyfour{font-weight: bold;font-family: 'Impact';color: green;font-style: italic;}
+    #centered{text-align: center;margin: 50px;}
+    form{margin: 25px;}
+    table{width: 50%;margin: 30px auto;}
+    table, th, td{border: 1px solid;border-collapse: collapse;text-align: left;font-size: 10pt;}
+    #rightjustify, #rightjustifys, #rightjustifyss, #rightjustifysss, #rightjustifyssss, #rightjustifysssss{text-align: right;}
+    #display, #exchangerates{text-align: center;padding: 10px;border: 1px solid;width: 60%;margin: 30px auto;}
+    #exchangerates{padding: 20px;display: none;}
+    #monetary, #monetarys, #monetaryss {font-weight: bold;text-align: center;background-color: #ccffff;}
+    #britishpound{text-align: right;}
+    #canadiandollar{text-align: right;}
+    #euro{text-align: right;}
+    #japaneseyen{text-align: right;}
+    #mexicanpeso{text-align: right;}

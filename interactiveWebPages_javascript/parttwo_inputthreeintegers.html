@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Input Three Intgers' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>INPUT THREE INTEGERS_PART TWO</title>
+<link rel="stylesheet" href="parttwo_inputthreeintegers.css" type="text/css">
+   
+</head>    
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_two_basic_operations.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_document.write_statements.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_inputthreeintegers.html">Part 2 -</a></li>
+                <li id="navpartssss"><a href="partthree_jquery.html">Part 3 -</a></li>
+                <li id="navpartsssss"><a href="partfour_calculationtable.html">Part 4 -</a></li>
+                <li id="navpartssssss"><a href="extracredit_exchangerates.html">Extra Credit</a></li>
+            </ul>
+            </div>
+            <header>Homework 2 Part Two</header>
+            <form>    
+            Integer one: <input type="number" name="one" /><br>  
+            Integer two: <input type="number" name="two"/><br>   
+            Integer three: <input type="number" name="three"/><br><br>
+            <input type="button" value="Submit" onclick="sum_int(); average_int(); product_int(); smallest_int(); largest_int();"/>
+            <input type="reset" value="Reset"/><br><br>    
+            Sum: <input type="number" name="sum" readonly/><br> 
+            Average: <input type="number" name="average" readonly/><br>    
+            Product: <input type="number" name="product" readonly/><br>
+            Smallest: <input type="number" name="smallest" readonly/><br>  
+            Largest: <input type="number" name="largest" readonly/>    
+            </form>
+        <script>
+            function sum_int(){
+                let one = document.getElementsByName("one")[0].value;
+                let two = document.getElementsByName("two")[0].value;
+                let three = document.getElementsByName("three")[0].value;
+                let sum = Number(one) + Number(two) + Number(three);
+                document.getElementsByName("sum")[0].value = sum;
+            }
+
+            function average_int(){
+                let one = document.getElementsByName("one")[0].value;
+                let two = document.getElementsByName("two")[0].value;
+                let three = document.getElementsByName("three")[0].value;
+                let average = ((Number(one) + Number(two) + Number(three))/3);
+                document.getElementsByName("average")[0].value = average;
+            }    
+
+            function product_int(){
+                let one = document.getElementsByName("one")[0].value;
+                let two = document.getElementsByName("two")[0].value;
+                let three = document.getElementsByName("three")[0].value;
+                let product = Number(one) * Number(two) * Number(three);
+                document.getElementsByName("product")[0].value = product;
+            }    
+
+            function smallest_int(){
+//              var smallest = 0;
+                let one = document.getElementsByName("one")[0].value;
+                let two = document.getElementsByName("two")[0].value;
+                let three = document.getElementsByName("three")[0].value;
+//                if(((Number(one) < Number(two)) && (Number(one) < Number(three)))){
+//                   smallest = Number(one);
+//                }
+//                else if(((Number(two) < Number(three)) && (Number(two) < Number(one)))){
+//                   smallest = Number(two);
+//                }
+//                else if(((Number(three) < Number(one)) && (Number(three) < Number(two)))){
+//                   smallest = Number(three);
+//                }  
+                let smallest = Math.min(Number(one), Number(two), Number(three));
+                document.getElementsByName("smallest")[0].value = smallest;
+            }    
+
+            function largest_int(){
+//              var largest = 0;
+                let one = document.getElementsByName("one")[0].value;
+                let two = document.getElementsByName("two")[0].value;
+                let three = document.getElementsByName("three")[0].value;       
+//                if(((Number(one) > Number(two)) && (Number(one) > Number(three)))){
+//                   largest = Number(one);
+//                }
+//                else if(((Number(two) > Number(three)) && (Number(two) > Number(one)))){
+//                   largest = Number(two);
+//                }
+//                else if(((Number(three) > Number(one)) && (Number(three) > Number(two)))){
+//                   largest = Number(three);
+//                }  
+                let largest = Math.max(Number(one), Number(two), Number(three));
+                document.getElementsByName("largest")[0].value = largest;
+            }    
+        </script>
+    </div>
+</body> 
+</html>    

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is my 'Exchange Rates' website page in CNIT 133">
+    <meta charset="utf-8">
+    <title>EXTRA CREDIT_EXCHANGE RATES</title>
+<link rel="stylesheet" href="extracredit_exchangerates.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+    $("#display").click(function(){
+        $("#exchangerates").slideToggle("slow");
+    });
+    $('#textfield').focus(function() {
+		$(this).css('background-color','lightblue');
+	}); 
+});    
+</script>      
+</head>    
+<body>
+    <div id="border">
+        <div id="center">
+            <ul id="nav">
+                <li id="navparts"><a href="homework_two_basic_operations.html">Home -</a></li>
+                <li id="navpartss"><a href="partone_document.write_statements.html">Part 1 -</a></li>
+                <li id="navpartsss"><a href="parttwo_inputthreeintegers.html">Part 2 -</a></li>
+                <li id="navpartssss"><a href="partthree_jquery.html">Part 3 -</a></li>
+                <li id="navpartsssss"><a href="partfour_calculationtable.html">Part 4 -</a></li>
+                <li id="navpartssssss"><a href="extracredit_exchangerates.html">Extra Credit</a></li>
+            </ul>
+            </div>
+            <header>Homework 2 Extra Credit</header>
+                <p id="display">Click to show the 'Monetary Exchange Rates'</p>
+                <div id="exchangerates">     
+                    <p>The foreign exchange rates on <span id="date"></span></p>
+                    <script>
+                        var d = new Date(); 
+                        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        document.getElementById("date").innerHTML = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+                    </script>
+                    <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values:</p>  
+                <form>   
+                <table>
+                <tr><td colspan="3" id="monetary">Monetary Exchange Rates</td></tr> 
+                <tr id="monetarys"><td>Currency</td><td>Rate</td><td>Value</td></tr> 
+                <tr><td>British Pound</td><td id="rightjustify"><input size="10" value="0.77521" readonly/></td>
+                    <td id="britishpound"></td></tr>   
+                <tr><td>Canadian Dollar</td><td id="rightjustifys"><input size="10" value="1.34461" readonly/></td>
+                    <td id="canadiandollar"></td></tr>    
+                <tr><td>Euro</td><td id="rightjustifyss"><input size="10" value="0.88754" readonly/></td>
+                    <td id="euro"></td></tr>    
+                <tr><td>Japanese Yen</td><td id="rightjustifysss"><input size="10" value="109.350" readonly/></td>
+                    <td id="japaneseyen"></td></tr>    
+                <tr><td>Mexican Peso</td><td id="rightjustifyssss"><input size="10" value="18.2806" readonly/></td>
+                    <td id="mexicanpeso"></td></tr> 
+                <tr>
+                    <td id="monetaryss" colspan="2">Enter Amount of U.S. Dollars</td>
+                    <td id="rightjustifysssss"><input size="10" id="textfield"/><button type="button" onclick="aFunction()">Submit</button><button type="reset" value="Reset">Reset</button></td>
+                </tr>
+                    <script>
+                        function aFunction() 
+                        {
+                            let textfield = document.getElementById("textfield").value;
+                            var britishpound = 0.77521 * Number(textfield);
+                            var canadiandollar = 1.34461 * Number(textfield);
+                            var euro = 0.88754 * Number(textfield);
+                            var japaneseyen = 109.350 * Number(textfield);
+                            var mexicanpeso = 18.2806 * Number(textfield);
+                            var bp = britishpound.toFixed(2);
+                            var cd = canadiandollar.toFixed(2);
+                            var eu = euro.toFixed(2);
+                            var jy = japaneseyen.toFixed(2);
+                            var mp = mexicanpeso.toFixed(2);
+                            document.getElementById("britishpound").innerHTML = bp;
+                            document.getElementById("canadiandollar").innerHTML = cd;
+                            document.getElementById("euro").innerHTML = eu;
+                            document.getElementById("japaneseyen").innerHTML = jy;
+                            document.getElementById("mexicanpeso").innerHTML = mp;
+                        }
+                    </script>
+                </table>
+                </form>     
+                </div> 
+    </div>
+</body> 
+</html>    
