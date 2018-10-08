@@ -1,4 +1,5 @@
-	body, h1, h2, h3, p, img, ul, li{
+/*	CNIT133M*/
+    body, h1, h2, h3, p, img, ul, li{
 		border:0; margin:0; padding:0;
 	}
 		/*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
@@ -24,8 +25,8 @@
 		color:#fff;	/* sets the the color of all header text to white */
 		-webkit-border-bottom-right-radius: 4px;
 		-webkit-border-bottom-left-radius: 4px;
-		-moz-border-radius-bottomright: 4px;
-		-moz-border-radius-bottomleft: 4px;
+		-moz-border-bottom-right-radius: 4px;
+		-moz-border-bottom-left-radius: 4px;
 		border-bottom-right-radius: 4px;
 		border-bottom-left-radius: 4px;	/* these 6 lines of border-radius code make rounded corners for the bottom work in firefox, safari, chrome, opera and IE9 */
 		margin:0 auto; /* by declaring a width on any block element (like a div), giving it a css property of margin:0 auto will center that block element on page */
@@ -49,7 +50,7 @@
 		background:#4a4a4a;	/* this is a dark grey background for the link */
 		color:#fff;	/* this makes the link text white */
 		-moz-border-radius:2px; 
-		webkit-border-radius:2px; 
+		-webkit-border-radius:2px; 
 		border-radius:2px;	/* these 3 lines of border-radius code make rounded corners work in firefox, safari, chrome, opera and IE9 */
 		border:1px solid #595959; /* this adds a light grey solid border of 1px width around the link */
 		padding:3px 10px;	/* as the name implies, this adds extra padding around the link, so that the borders don't bump up against the link text */
@@ -62,7 +63,9 @@
 	}
 	
 	div.content{
+/*        Addition*/
         display: flex;
+        
 		margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
 		width:900px;
 
@@ -140,6 +143,7 @@
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 	}
 
+/*Addition*/
 @media screen and (max-width:930px) {
    div#header{width: 90%;}
    div#footer{width: 90%;}
