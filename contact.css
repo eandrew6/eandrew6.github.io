@@ -1,6 +1,7 @@
             #body
             {
                 font-family: fantasy;
+                color: #444;
                 margin: 0;
                 background-image: url('images/water.gif');
                 background-size: cover;
@@ -16,7 +17,7 @@
                 width: 80%;
                 margin: auto;
                 background-image: url('images/water.gif');
-                background-size: cover;
+                background-size: 300%;
                 border: 2px hidden;
                 border-radius: 5px 70px 5px; 
                 padding: 7px;
@@ -27,7 +28,7 @@
                 width: 80%;
                 margin: auto;
                 background-image: url('images/water.gif');
-                background-size: cover;
+                background-size: 300%;
                 border-radius: 5px 70px 5px;
                 padding: 7px;
             }
@@ -38,10 +39,32 @@
                 margin: auto;
                 padding-bottom: 10px;
                 background-image: url('images/water.gif');
-                background-size: cover;
+                background-size: 300%;
                 border: 2px solid #777;
                 border-radius: 5px 70px 5px;
                 padding: 7px;
+            }
+            #contactGallery
+            {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                padding-bottom: 10px;
+                background-image: url('images/water.gif');
+                background-size: 300%;
+                border: 2px solid #777;
+                border-radius: 5px 70px 5px;
+                padding: 7px;
+            }
+            #photoGallery img
+            {
+                border: 10px #ccc solid;
+                border-radius: 15px;
+                text-align: left;
+            }
+            #photoGallery img:hover
+            {
+                border: 10px #fff solid;
             }
             #footer
             {
@@ -85,7 +108,8 @@
             }
             #img
             {
-                border-radius: 25px;
+                border-radius: 15px;
+                border: 3px #ccc solid;
             }
 /*tablet view to full screen view*/
             @media screen and (min-width: 1000px)
@@ -140,6 +164,12 @@
                     margin-left: 13%;
                     width: 85%;
                 }
+                #contactGallery
+                {
+                    margin-top: 10px;
+                    margin-left: 13%;
+                    width: 85%;
+                }
             }
 /*tablet view*/
             @media screen and (max-width: 1000px)
@@ -151,8 +181,8 @@
                 }
                 #ul li a
                 {
-/*                    display: block;*/
                     padding: 6px;
+/*                    display: block;*/
 /*                    text-decoration: none;*/
                 }
                 #h1
@@ -174,6 +204,12 @@
 
                 }
                 #contact
+                {
+                    background-image: url('images/water.gif');
+                    background-size: 300%;
+                    margin-bottom: 10px;
+                }
+                #contactGallery
                 {
                     background-image: url('images/water.gif');
                     background-size: 300%;
@@ -201,7 +237,10 @@
                     background-image: url('images/water.gif');
                     background-size: 420%;
                     margin-bottom: 10px;
-
+                }
+                #contactGallery
+                {
+                    background-size: 200%;
                 }
                 #about
                 {
