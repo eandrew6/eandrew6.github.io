@@ -4,10 +4,42 @@
         <title>HOME | ERICA ANDREWS</title>
         <meta charset="utf-8">
         <meta name="description" content="Home page web site">
-        <meta name="keywords" content="Erica, Andrews, freelance, web, developer, projects">
+        <meta name="keywords" content="Erica, Andrews, volunteer, web, developer, projects">
         <meta name="author" content="Erica Andrews">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="contact.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .sidenav a
+        {
+        }
+        .dropdown-btn
+        {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            border: none;
+            background: none;
+            outline: none;
+            color: #fff;
+            font-family: fantasy;
+            font-size: 10pt;
+        }
+        .dropdown-btn:hover
+        {
+            color: #f1f1f1;
+            background-color: green;
+        }
+        .dropdown-container
+        {
+            display: none;
+            font-size: 6pt;
+        }
+        .active
+        {
+            background-color: green;
+            color: #fff;
+        }
+    </style>    
     </head>
     <body id="body">
         <header>
@@ -17,11 +49,43 @@
 
 <!--                <li><a href="https://ericaandrews.github.io/ericaandrews.htm" title="EricaAndrews" target="_blank">ERICA ANDREWS</a></li>-->
                 <li><a href="https://ericaandrews.github.io/index.htm" title="HaightAshburyFoodProgram" target="_blank">HAIGHT ASHBURY FOOD PROGRAM</a></li>
+               
+                <button class="dropdown-btn">COMPLETED EXERCISES</button>
+                    <div class="dropdown-container">    
+                        <li><a href="https://github.com/ericaandrews/ericaandrews.github.io" title="HTML_CSS">HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;<br>&nbsp;&nbsp;JQUERY&nbsp;&nbsp;|&nbsp;&nbsp;PHP<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/java" title="JAVA">JAVA<br> Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/python" title="Python">PYTHON<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/php" title="PHP">PHP<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/unix" title="Unix">UNIX<br>Completed Exercises</a></li>
+                        <li><a href="https://github.com/ericaandrews/javascript" title="Javascript">JAVASCRIPT<br>Completed Exercises</a></li>
+                     </div>    
+                <script>
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    for(i = 0; i < dropdown.length; i++)
+                    {
+                        dropdown[i].addEventListener("click", function()
+                        {
+                            this.classList.toggle("active");
+                            var dropdownContent = this.nextElementSibling;
+                            if(dropdownContent.style.display === "block") 
+                            {
+                                dropdownContent.style.display = "none";    
+                            }
+                            else
+                            {
+                                dropdownContent.style.display = "block";    
+                            }
+                        });    
+                    }
+                </script>
                 <li><a href="https://github.com/ericaandrews" title="GitHub" target="_blank">GITHUB</a></li>
                 <li><a href="https://www.linkedin.com/in/ericarandrews/" title="LinkedIn" target="_blank">LINKEDIN</a></li>
                 <li><a href="https://twitter.com/justatweetea" title="Twitter" target="_blank">TWITTER</a></li>
-                <li><a href="https://ericaandrews.blogspot.com/" title="Blogger" target="_blank">BLOGGER</a></li>
                 <li><a href="https://devpost.com/eandrew6/challenges" title="Devpost" target="_blank">DEVPOST</a></li>
+                <li><a href="https://ericaandrews.blogspot.com/" title="Blogger" target="_blank">BLOGGER</a></li>
+                <li><a href="https://www.facebook.com/justaericaandrews" title="Facebook" target="_blank">FACEBOOK</a></li>
+                <li><a href="https://justaericaandrews.tumblr.com/" title="Tumblr" target="_blank">TUMBLR</a></li>
                 <li class="right"><a href=#about>ABOUT</a></li>
             </ul>
         </header>
@@ -29,37 +93,32 @@
         <br>
         <div id="home">
             <h1 style="margin-bottom: -30px;" id="h1">ERICA ANDREWS</h1>
-            <h4 style="margin-bottom: -20px;">VOLUNTEER WEB DEVELOPER</h4>
-            <p style="margin-bottom: -20px;">e.randrews@outlook.com</p>
-            <p style="margin-bottom: -5px;">415-871-3227</p>
-            <a href="https://ericaandrews.github.io/contact/images/ericaandrews.jpg" target="_blank"><img src="images/ericaandrews.jpg" id="img" width="50px" height="50px"></a>
+<!--            <h4 style="margin-bottom: -20px;">VOLUNTEER WEB DEVELOPER</h4>-->
+            <p style="margin-bottom: -20px;">e.randrews@outlook.com</p><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScfVhh1qm8JOoEUl7TPboHl2yRSDkRQr731cM5fFHeqfhUGcw/viewform" style="margin-bottom: -5px;">contact</a><br>
+            <a href="https://ericaandrews.github.io/contact/images/ericaandrews.jpg" target="_blank"><img src="images/ericaandrews.jpg" id="img" alt="image" width="50px" height="50px"></a>
             <p style="margin-top: -5px;">I am goal oriented toward a career in computer science and passionate for an overall understanding of computer programming. I am currently practiced in web development and seek expansion of my current knowledge of engineering.</p>
         </div>
         <div id="contact">
-            <h4>CONTACT</h4>
+<!--            <h4><u>CONTACT</u></h4>-->
+            <img src="images/IMG_25722.jpg" width="200px" height="200px" alt="image">
+            <img src="images/IMG_25792.jpg" width="200px" height="200px" alt="image">
+            <img src="images/IMG_261421.jpg" width="200px" height="200px" alt="image">
+            <img src="images/IMG_33602.jpg" width="200px" height="200px" alt="image">
+            <br>
             <form action="mailto:e.r.andrews@outlook.com?Subject=Email%20sent%20from%20Erica%20Andrews%20'Contact'%20submission" method="post" id="myform" enctype="text/plain">
-              NAME: <input type="text" name="Sender's Name" size="120" maxlength="125" autofocus="" id="name" required="required" style="width: 90%;">
+              NAME&nbsp;:<br><input type="text" name="Sender's Name" size="" maxlength="" autofocus="" id="name" required="required" style="width: 90%;">
               <br>
-              EMAIL:<input type="text" name="Sender's Email" size="120" maxlength="125" id="email" required="required" style="width: 90%;">
+              EMAIL&nbsp;:<br><input type="text" name="Sender's Email" size="" maxlength="" id="email" required="required" style="width: 90%;">
               <br>
-              OCCUPATION:<input type="text" name="Sender's Occupation" size="111" maxlength="125" id="occupation" style="width: 90%;">
+              ORGANIZATION&nbsp;:<br><input type="text" name="Sender's Occupation" size="" maxlength="" id="occupation" style="width: 90%;">
               <br><br>
               Have you any experience in the tech field?
-              <input type="hidden" value>
-              <select name="Have you any experience in the tech field">
-                <option> No</option>
-                <option>Yes</option>
-              </select>
+              <input type="text" name="Have you any experience in the tech field?" style="width: 90%;">
               <br>
               If so, how long has your experience been within the tech field?
-              <input type="hidden" value>
-              <select name="If so, how long has your experience been within the tech field">
-                <option value="0 to 6 months">0 to 6 months</option>
-                <option value="6 months to 1 year">6 months to 1 year</option>
-                <option value="1 to 2 years">1 to 2 years</option>
-                <option value="2 years +">2 years +</option>
-              </select>
-              <p>COMMENTS/QUESTIONS</p>
+              <input type="text" name="If so, how long has your experience been within the tech field?" style="width: 90%;">
+              COMMENTS/QUESTIONS
               <textarea rows="5" name="Sender's Comments" cols="75" id="comments" style="width: 90%;"></textarea>
               <br>
               <input type="submit" value="Submit">
