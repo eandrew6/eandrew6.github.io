@@ -4,3 +4,4 @@ ul{text-align: right;}
 li{display: inline-block; padding: 5px;}
 #headerUl{column-count: 2;}
 img{float: left; margin-right: 10px;}
+footer a:hover{color: #fff}
