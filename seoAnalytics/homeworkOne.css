@@ -1,0 +1,6 @@
+body{background-color: #cc9900;}
+header{margin-top: -25px;}
+ul{text-align: right;}
+li{display: inline-block; padding: 5px;}
+#headerUl{column-count: 2;}
+img{float: left; margin-right: 10px;}
