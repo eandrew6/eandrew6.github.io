@@ -1,9 +1,8 @@
 <!--DTD Added-->
 
-<?xml version="1.0"?>
 <!DOCTYPE Products [
 <!ELEMENT Products (Prod+)>
-<!ELEMENT Prod (Details, Quantity, Unit_Price, Loc)>
+<!ELEMENT Prod (Details, Quantity, Unit_Price, Color*, Loc)>
 <!ELEMENT Details (Short_Desc,Long_Desc)>
 <!ELEMENT Short_Desc (#PCDATA)>
 <!ELEMENT Long_Desc (#PCDATA)>
@@ -11,13 +10,14 @@
 <!ELEMENT Unit_Price (#PCDATA)>
 <!ELEMENT Color (#PCDATA)>
 <!ELEMENT Loc (#PCDATA)>
+<!ENTITY miu "Made in USA">
 <!ELEMENT ProdID (#PCDATA)>
 <!ATTLIST Prod ProdID CDATA "0">
 ]>
 
 <!--CNIT131A-->
 
-<!--
+
 <Products>
 
 <Prod ProdID="P00129934">
@@ -27,7 +27,7 @@
 </Details>
 <Quantity>20</Quantity>
 <Unit_Price>3.50</Unit_Price>
-<Loc>Made in USA</Loc>
+<Loc>&miu;</Loc>
 </Prod>
 
 <Prod ProdID="P1234567">
@@ -37,8 +37,8 @@
 </Details>
 <Quantity>30</Quantity>
 <Unit_Price>5.50</Unit_Price>
-<Color>White</Color>
-<Loc>Made in USA</Loc>
+<Color>White*</Color>
+<Loc>&miu;</Loc>
 </Prod>
 
 <Prod ProdID="P3256788">
@@ -48,8 +48,8 @@
 </Details>
 <Quantity>28</Quantity>
 <Unit_Price>6.50</Unit_Price>
-<Color>Red</Color>
-<Loc>Made in USA</Loc>
+<Color>Red*</Color>
+<Loc>&miu;</Loc>
 </Prod>
 
 <Prod ProdID="P0025443">
@@ -59,7 +59,7 @@
 </Details>
 <Quantity>15</Quantity>
 <Unit_Price>2.65</Unit_Price>
-<Loc>Made in USA</Loc>
+<Loc>&miu;</Loc>
 </Prod>
 
-</Products>-->
+</Products>
