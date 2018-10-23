@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Member xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
- xsi:schemaLocation="hw6.xsd">
+ xsi:schemaLocation="ericaandrews.github.io/xml_json/hw6.xsd">
 <Name>Jonathan Mark</Name>
 <Age>22</Age>
 <Job>Consultant</Job>
