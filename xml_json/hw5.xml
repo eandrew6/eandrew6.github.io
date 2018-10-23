@@ -1,3 +1,5 @@
+<!--DTD Added-->
+
 <?xml version="1.0"?>
 <!DOCTYPE Products [
 <!ELEMENT Products (Prod+)>
@@ -13,6 +15,9 @@
 <!ATTLIST Prod ProdID CDATA "0">
 ]>
 
+<!--CNIT131A-->
+
+<!--
 <Products>
 
 <Prod ProdID="P00129934">
@@ -32,7 +37,7 @@
 </Details>
 <Quantity>30</Quantity>
 <Unit_Price>5.50</Unit_Price>
-<!--<Color>White</Color>-->
+<Color>White</Color>
 <Loc>Made in USA</Loc>
 </Prod>
 
@@ -43,7 +48,7 @@
 </Details>
 <Quantity>28</Quantity>
 <Unit_Price>6.50</Unit_Price>
-<!--<Color>Red</Color>-->
+<Color>Red</Color>
 <Loc>Made in USA</Loc>
 </Prod>
 
@@ -57,4 +62,4 @@
 <Loc>Made in USA</Loc>
 </Prod>
 
-</Products>
+</Products>-->
