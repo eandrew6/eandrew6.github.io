@@ -64,7 +64,7 @@
 	
 	div.content{
 /*        Addition*/
-        display: flex;
+/*        display: flex;*/
         
 		margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
 		width:900px;
@@ -151,18 +151,26 @@
    div.col-right{float: left; margin-left: 5%; margin-bottom:20px;}
    div.sidebar-left{float: left; margin-left: 5%;}
    div.col-right p{width:100%;}
+body{font-size: 0.8em;}    
 }@media screen and (max-width:700px) {
    div.col-right p{width:90%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:650px) {
    div.col-right p{width:80%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:580px) {
    div.col-right p{width:80%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:560px) {
    div.col-right p{width:70%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:550px) {
    div.col-right p{width:60%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:500px) {
    div.col-right p{width:60%;} 
+body{font-size: 0.8em;}    
 }@media screen and (max-width:450px) {
    div.col-right p{width:50%;} 
+body{font-size: 0.8em;}        
 }
