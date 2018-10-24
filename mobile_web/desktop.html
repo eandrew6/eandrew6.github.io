@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Short Task One | Desktop Version</title>   
+<style>
+</style> 
+<script>
+    if(screen.width < 720) {
+        window.location.replace("https://www.mobile.html/");
+    }
+</script>    
+</head>
+<body>
+<h1>Simple Web Page</h1><hr> 
+<p>This is the desktop version of my wep page!</p>
+<dl>
+    <dt>WURFL Capability: is_wireless_device</dt>
+    <dd>-comes with three possible values: true, false, NULL</dd>
+    <dd>-capability will be set to false if it's a laptop even if the laptop has wireless network card.</dd>
+    <dt>WURFL Capability: has_cellular_radio</dt>
+    <dd>-capability from a group called bearer</dd>
+    <dd>-shows if the request is coming from a mobile device with phone capability or not</dd>
+    <dd>-capability tested to decide if the "panic button" would be shown to the user or not</dd>
+    <dt>WURFL Capability: can_assign_phone_number</dt>
+    <dd>-capability(true or false)</dd>
+    <dd>-showing its a mobile phone and MAY have a phone number associated to it.</dd>
+</dl>    
+</body>
+</html>
