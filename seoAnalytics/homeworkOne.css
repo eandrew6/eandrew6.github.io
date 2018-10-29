@@ -5,4 +5,11 @@ li{display: inline-block; padding: 5px;}
 #headerUl{column-count: 2;}
 img{float: left; margin-right: 10px;}
 footer a:hover{color: #fff;}
-
+@media screen and (min-width: 1240px){
+    #cliffimg, #waveimg, #sunsetimg {width: 400px;}
+    footer{margin-top: 320px;}
+}
+@media screen and (max-width: 1240px) {
+    #cliffimg, #waveimg, #sunsetimg {width: 100%;}
+    footer{margin-top: 1000px;}
+}
