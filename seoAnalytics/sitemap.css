@@ -1,0 +1,6 @@
+urlset{background-color: lightgray; display: block;}
+url{display: block; border: 1px dotted; border-collapse: collapse; width: 40%; padding : 10px;}
+lastmod{margin-left: 200px;}
+@media screen and (max-width: 1150px){
+    url{width: 50%;}
+}
