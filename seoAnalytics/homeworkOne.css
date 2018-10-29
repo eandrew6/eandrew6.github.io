@@ -8,8 +8,10 @@ footer a:hover{color: #fff;}
 @media screen and (min-width: 1240px){
     #cliffimg, #waveimg, #sunsetimg {width: 400px;}
     footer{margin-top: 320px;}
+    #facebookimg{width:20px;} 
 }
 @media screen and (max-width: 1240px) {
-    #cliffimg, #waveimg, #sunsetimg {width: 100%;}
-    footer{margin-top: 1000px;}
+    #cliffimg, #waveimg, #sunsetimg{width: 100%;}
+    #facebookimg{width:100px;} 
+    #sitemap{font-size: 2em;}
 }
