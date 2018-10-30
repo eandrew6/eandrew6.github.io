@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="ericaandrews.github.io/hw7.css"?>
+<?xml-stylesheet type="text/css" href="hw7.css"?>
 <states xmlns:e='http://www.gov.org/east' xmlns:w='http://www.gov.org/west'>     
     <e:state id="enameFlorida">    
         <e:name>Florida</e:name>
