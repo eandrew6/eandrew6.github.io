@@ -1,3 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/css" href="sitemap.css"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/css" href="sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"><table><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOne.html</loc></url><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOneAbout.html</loc></url><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOneContact.html</loc></url></table></urlset>
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <script type="text/javascript">
+    <![CDATA[
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128587673-1');
+    ]]>
+    </script>
+    <table><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOne.html</loc></url><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOneAbout.html</loc></url><url><loc>https://ericaandrews.github.io/seoAnalytics/homeworkOneContact.html</loc></url></table></urlset>
+
+
