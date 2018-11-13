@@ -1,3 +1,8 @@
+xquery version "1.0";
+declare option exist:serialize "method=xhtml media-type=text/html";
+
+let $my-doc := doc('hw8.xml')
+return
 <html>
 <head><title></title></head>
  <body>
