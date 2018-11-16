@@ -178,7 +178,7 @@
                 #body
                 {
                     background-image: url('water.gif');
-                    background-size: 25%;
+                    background-size: cover;
                 }
                 #img
                 {
