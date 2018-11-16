@@ -7,6 +7,17 @@
                 background-size: cover;
                 font-size: 10pt;
             }
+            #bodywebgallery
+            {
+                font-family: fantasy;
+                color: #444;
+                margin: 0;
+/*
+                background-image: url('water.gif');
+                background-size: cover;
+*/
+                font-size: 10pt;
+            }
             #h1
             {
                 font-size: 25pt;
@@ -175,11 +186,6 @@
 /*tablet view*/
             @media screen and (max-width: 1000px)
             {
-                #body
-                {
-                    background-image: url('water.gif');
-                    background-size: 25%;
-                }
                 #img
                 {
 /*                    display: none;*/
