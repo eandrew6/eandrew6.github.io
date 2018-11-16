@@ -185,10 +185,10 @@
 /*                    display: none;*/
                     
                 }
-                #ul
+/*                 #ul
                 {
                     padding: 5px;
-                }
+                } */
                 #ul li
                 {
                     float: left;
@@ -241,10 +241,10 @@
                 {
                     margin-top: 15%;
                 }
-                #ul
+/*                 #ul
                 {
                     padding: 5px;
-                }
+                } */
                 #ul li.right, #ul li
                 {
                     float: left;
