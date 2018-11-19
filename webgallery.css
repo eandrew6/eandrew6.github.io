@@ -215,54 +215,55 @@
                 #h1
                 {
 /*                    margin-top: 200px;*/
-                }
-                
-                
-/* CHECK TABLET VIEW; #home{margin-top: 100px}*/
-
-                
+                }                
                 #home
                 {
-                    margin-top: 100px; 
+                    margin-top: 120px; 
                     background-image: url('water.gif');
                     background-size: 300%;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
                 }
                 #about
                 {
                     background-image: url('water.gif');
                     background-size: 300%;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
 
                 }
                 #contact
                 {
                     background-image: url('water.gif');
                     background-size: 300%;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
                 }
+/*
                 #contactGallery
                 {
                     background-image: url('water.gif');
                     background-size: 300%;
                     margin-bottom: 10px;
                 }
+*/
             }
 /*mobile view*/
             @media screen and (max-width: 685px)
             {
+/*
                 #img
                 {
-/*                    display: none; */
+                    display: none; 
                 }
+*/
                 #blackWhiteImg
                 {
                     margin-top: 170px;
                 }
+/*
                 #h1
                 {
                     margin-top: 15%;
                 }
+*/
                 #ul
                 {
                     padding: 10px;
@@ -270,11 +271,11 @@
                 #ul li.right, #ul li
                 {
 /*                    float: left;*/
-                    padding: 5px;
+/*                    padding: 5px;*/
                 }
                 #home
                 {
-                    margin-top: 100px;
+                    margin-top: 120px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 10px;
