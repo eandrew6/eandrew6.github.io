@@ -165,7 +165,7 @@
                 }
                 #home
                 {
-                    margin-top: 170px; 
+                    margin-top: 220px; 
                     background-image: url('water.gif');
                     background-size: 300%;
                     margin-bottom: 25px;
@@ -197,7 +197,7 @@
                 }
                 #home
                 {
-                    margin-top: 170px;
+                    margin-top: 220px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 25px;
@@ -223,7 +223,7 @@
                 }
                 #home
                 {
-                    margin-top: 200px;
+                    margin-top: 260px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 25px;
@@ -237,7 +237,7 @@
                 }
                 #home
                 {
-                    margin-top: 240px;
+                    margin-top: 290px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 25px;
@@ -251,7 +251,7 @@
                 }
                 #home
                 {
-                    margin-top: 270px;
+                    margin-top: 290px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 25px;
@@ -280,6 +280,10 @@
             }
 @media screen and (max-width: 237px)
             {
+                #home
+                {
+                    margin-top: 310px;
+                }
                 #blackWhiteImg
                 {
                     margin-top: 270px;
@@ -293,7 +297,7 @@
                 }
                 #home
                 {
-                    margin-top: 330px;
+                    margin-top: 350px;
                     background-image: url('water.gif');
                     background-size: 420%;
                     margin-bottom: 25px;
