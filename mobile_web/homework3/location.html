@@ -91,10 +91,10 @@
     <hr>
     
         <p>The following is a map that shows your approximate location:<br></p>
-        <div id="mapDiv" style="width: 70%; height: 600px; float: left;"></div><div style="width: 25%; float: right;">By selecting the circular icon, <img src="Screen%20Shot%202018-12-03%20at%2010.40.48%20PM.png"> on the upper right side of the map, 
+        <div id="mapDiv" style="width: 70%; height: 600px; float: left;"></div><div style="width: 25%; float: right;">By selecting the circular icon, <img src="Screen%20Shot%202018-12-03%20at%2010.40.48%20PM.png" alt="map icon"> on the upper right side of the map, 
             your approximate location will be marked.</div>
-        <script type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
-        <script type="text/javascript">
+        <script src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+        <script>
             var map = null;
             function GetMap() {
                 /* Replace YOUR_BING_MAPS_KEY with your own credentials.
