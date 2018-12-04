@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" manifest="index.manifest">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script language="javascript" src="service-worker.js"></script>    
+  <title>Progressive Web Application</title>
+</head>
+<body>
+<header><h1>Progressive Web Application</h1><h6>PWA Main Characteristics</h6></header>
+<select onchange="setBG(this.value)">
+<option>Background Color</option>
+<option value="lightblue">Light Blue</option>
+<option value="lightgold">Light Gold</option></select>   
+<p>According to readings, 'Progressive Web Apps' &#40;PWA&#41; tend to have the following characteristics:<br><br>
+Reliable: when the app is launched, the PWA will load instantly, regardless of the network state. 
+For example: The using of Service Workers, written in Javascript that will pre-cache key resources of the application thus eliminating
+the dependence on the network and making sure that the user will have an instant and reliable experience.<br><br>
+Fast: 53% of users will abandon a site that takes longer than 3 seconds to load, and the users expect the application/site, when loaded, to be fast with no slow-to-respond interfaces.<br><br>
+Engaging: Without the need for any type of app store, users are able to install PWA's that will live on the user's home screen. With the help from a web app manifest file, these applications offer a very rich experience and can re-engage users with web push notifications. The manifest file allows you to control how your app appears and how its launched &#40;home screen icons to be shown, the page to load when the app is launched, the screen orientation, etc...&#41;.<br><br>
+The following are advantages of building high-quality PWA's:<br>
+These PWA's will easily delight the users and grow their engagement:<br><br>
+Worth being on the home screen: Chrome will prompt users to add the PWA to their home screen when the PWA criteria is met.<br><br>
+Reliability no matter the network status: service workers help send data faster, allowing users to complete tasks faster.<br><br>
+More engagement: you might increase engagement which might directly or indirectly increase sales, in case you are selling something in your applications, depending on how you use the push notifications. This means you will also have the benefit of improved conversions.<br><br>
+The perspective of reliability: implementing service workers to make sure the application can work even if there is no connectivity &#40;the user is offline&#41;.<br><br>
+The perspective of being fast: paying attention to the performance of the application. A difficult balance to be reached as sites and applications are richer in functionality than they were some years ago. These applications are more demanding of network and device resources. The sites and applications can go from only trivial delays that are faced as what is called small "hiccups" up to the worst delay, making the applications completely inaccessible and unresponsive to the users.<br><br>
+Web App Manifest: a simple JSON file that gives the developer the ability to control how the application will appear to the user where the user is interacting with the application. It also directs what the user can launch and defines that appearance of the application at the launch moment. Its REQUIRED for PWA's although you can use a web app manifest in any site. The following is an example of a manifest named manifest.json:<br><br><img src="Screen%20Shot%202018-12-04%20at%201.04.51%20AM.png"/><br><br>
+Include:<br><br>
+-short_name: will be used as the text on the user's home screen;<br><br>
+-name: will be used in the Web App Install banner;<br><br>
+-after creating the manifest file: add a link tag to all the pages that make your web application;<br>
+----example: &lt;link rel="manifest" href="/manifest.json"&gt;;<br><br>
+-customize the icons;<br><br>
+-add a splash screen; when the user launches the application, a lot of things happen behind the scenes; while these things are happening, the screen goes white and appears to be frozen; you can replace that white screen with some images, a title, some color, etc...;<br>
+----a splash screen is generally drawn from the icons array of the manifest file;<br>
+----the title is simply pulled from the name you defined in that manifest file;<br>
+----set a background color to be used instead of the default white by just writing; "background-color": "#2effff" in the manifest file;<br> 
+----set the launch style to control the display type of the page orientation;<br>
+----make the web application hide the browser's UI by setting the display type to standalone as: "display": "standalone";<br>
+----view the page as a normal site: set up the display type to browser as: "display": "browser";<br>
+----enforce the orientation to be landscape as: "orientation": "landscape";<br><br>
+Test if your manifest file was set up correctly by using the CDT &#40;Chrome Developer Tools&#41; and use the Manifest tab found inside the Application panel. </p>    
+</body>
+</html>

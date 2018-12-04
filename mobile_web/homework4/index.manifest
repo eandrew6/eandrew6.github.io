@@ -1,0 +1,14 @@
+CACHE MANIFEST
+*/mobile_web/homework4/index.html
+*/mobile_web/homework4/index.css
+*/mobile_web/homework4/service-worker.js
+*/mobile_web/homework4/index.manifest
+*/mobile_web/homework4/lightblue.jpg
+*/mobile_web/homework4/lightgold.jpg
+
+FALLBACK:
+*/mobile_web/homework4/lightblue.jpg
+*/mobile_web/homework4/lightgold.jpg
+
+NETWORK:
+*
