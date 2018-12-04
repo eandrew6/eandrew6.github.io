@@ -11,7 +11,8 @@
   text-align: right;
   top: 0;
   width: 100%;
-  padding: 5px;    
+  padding: 5px; 
+  z-index: 1;    
 }
 .nav a{
   border: 1px solid #ddd;
@@ -27,7 +28,7 @@
 }     
 </style>    
 </head>
-<body>
+<body onload="getLocation(), GetMap()" >
     <div class="nav">   
         <a href="index.html" class="btn btn-info">Home</a>    
         <a href="contactus.html" class="btn btn-info">Contact Us</a>
@@ -41,7 +42,123 @@
         <h3>Making learning fun</h3>
         </header>
         <h3 style="text-align: center;">Location</h3><br>
+        <p style="text-align: center;">“This web page allows the viewer to see their current location in coordinates latitude and longitude.<br> There is also a map that allows the viewer to see their current location in different settings.<br> The coordinates and map take some time to onload onto the web page, so your patience is being requested.<br> If the coordinates and map do not display information of your current location, try refreshing the page until the information is displayed.<br> Please select the "Allow" option each time the web page is refreshed.”</p>
         <p style="text-align: center;">“When we open our store, we will let you know our location here even with directions from your place to it!!!”</p>
-    </div>    
+    </div> 
+<div style="padding: 50px; height: 900px;">    
+    <p>The following are the coordinates of your position:</p> 
+    <p>Latitude:</p>
+    <p id="latitude"></p>
+    <p>Longitude: </p>
+    <p id="longitude"></p>
+    <script>
+    var x = document.getElementById("latitude");
+    var y = document.getElementById("longitude");    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+            y.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = position.coords.latitude;
+        y.innerHTML = position.coords.longitude;
+    }
+    function showError(error){
+        switch(error.code){
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                y.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.PERMISSION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                y.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                y.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR: 
+                x.innerHTML = "An unknown error occurred."
+                y.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }    
+    </script>
+    
+    <hr>
+    
+        <p>The following is a map that shows your approximate location:<br></p>
+        <div id="mapDiv" style="width: 70%; height: 600px; float: left;"></div><div style="width: 25%; float: right;">By selecting the circular icon, <img src="Screen%20Shot%202018-12-03%20at%2010.40.48%20PM.png"> on the upper right side of the map, 
+            your approximate location will be marked.</div>
+        <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+        <script type="text/javascript">
+            var map = null;
+            function GetMap() {
+                /* Replace YOUR_BING_MAPS_KEY with your own credentials.
+                    Obtain a key by signing up for a developer account at
+                    http://www.microsoft.com/maps/developers/ */
+                var cred = "AuC7eYRHKzVlFK2eua8J8MPq0gfH1Sbn8-UCbut1PzJ1M_URzwATZcn5WQ6M2jMx"; // substitute this big text by your own key
+                // Initialize map
+                map = new Microsoft.Maps.Map(document.getElementById("mapDiv"),
+                    { credentials: cred });
+                // Check if browser supports geolocation
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(locateSuccess, locateFail);
+                }
+                else {
+                    alert('I\'m sorry, but Geolocation is not supported in your current browser. Have you tried running this demo in IE9?');
+                }
+            }
+            // Successful geolocation
+            function locateSuccess(loc) {
+                // Set the user's location
+                var userLocation = new Microsoft.Maps.Location(loc.coords.latitude, loc.coords.longitude);
+                // Zoom in on user's location on map
+                map.setView({ center: userLocation, zoom: 17 });
+                // Draw circle of area where user is located
+                var locationArea = drawCircle(userLocation);
+                map.entities.push(locationArea);
+            }
+            // Unsuccessful geolocation
+            function locateFail(geoPositionError) {
+                switch (geoPositionError.code) {
+                    case 0: // UNKNOWN_ERROR
+                        alert('An unknown error occurred, sorry');
+                        break;
+                    case 1: // PERMISSION_DENIED
+                        alert('Permission to use Geolocation was denied');
+                        break;
+                    case 2: // POSITION_UNAVAILABLE
+                        alert('Couldn\'t find you...');
+                        break;
+                    case 3: // TIMEOUT
+                        alert('The Geolocation request took too long and timed out');
+                        break;
+                    default:
+                }
+            }
+            // Draw blue circle on top of user's location
+            function drawCircle(loc) {
+                var radius = 100;
+                var R = 6378137;
+                var lat = (loc.latitude * Math.PI) / 180;
+                var lon = (loc.longitude * Math.PI) / 180;
+                var d = parseFloat(radius) / R;
+                var locs = new Array();
+                for (x = 0; x <= 360; x++) {
+                    var p = new Microsoft.Maps.Location();
+                    brng = x * Math.PI / 180;
+                    p.latitude = Math.asin(Math.sin(lat) * Math.cos(d) + Math.cos(lat) * Math.sin(d) * Math.cos(brng));
+                    p.longitude = ((lon + Math.atan2(Math.sin(brng) * Math.sin(d) * Math.cos(lat), Math.cos(d) - Math.sin(lat) * Math.sin(p.latitude))) * 180) / Math.PI;
+                    p.latitude = (p.latitude * 180) / Math.PI;
+                    locs.push(p);
+                }
+                return new Microsoft.Maps.Polygon(locs, { fillColor: new Microsoft.Maps.Color(125, 0, 0, 255), strokeColor: new Microsoft.Maps.Color(0, 0, 0, 255) });
+            }
+        </script>   
+</div>    
 </body>
 </html>
