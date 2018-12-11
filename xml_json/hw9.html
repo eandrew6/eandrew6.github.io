@@ -7,10 +7,6 @@
     <meta name="description" content="XML and JSON: SVG">
     <style>
         body{background-color: #ffffcc;}
-        #grad1 {
-    height: 200px;
-    background-image: linear-gradient(red, yellow, blue);
-        }
     </style>
 </head>    
 <body>
@@ -27,8 +23,8 @@
    <circle cx="60" cy="60" r="50" stroke="red" stroke-width="6" fill="blue" />
    Sorry, your browser does not support inline SVG.
 </svg>
-<p>Gradients</p> 
-<p style="text-align: left; width: 50%;">The 'gradient' element, of SVG, is used to transition one color to another and several colors can be applied at once. The two main types of gradients are 'linear' and 'radial' of SVG. The 'linearGradient' element is used to define a unique name for the gradient. The start and end of the positions of the gradient are defined by attributes 'x1', 'x2', 'y1', and 'y2' of the 'linearGradient' element. The color range can be composed of two or more colors for the gradient and each color is specified with a 'stop' element. The 'offset' element used to define the colors beginning and end and the ellipse element is linked to the gradient by the 'fill' attribute.</p>    
+<p>Gradient</p> 
+<p style="text-align: left; width: 50%;">The 'gradient' element, of SVG, is used to transition one color to another and several colors can be applied at once. The two main types of gradients are 'linear' and 'radial' of SVG. The 'linearGradient' element is used to define a unique name for the gradient, nested between element 'defs' &#40;short for definition&#41;. The start and end of the positions of the gradient are defined by attributes 'x1', 'x2', 'y1', and 'y2' of the 'linearGradient' element. This element can be defined as horizontal &#40;created when 'y1' and 'y2' are equal and 'x1' and 'x2' differ &#41;, angular &#40;created when 'x1' and 'x2' are equal and 'y1' and 'y2' differ &#41;, or vertical &#40;created when 'x1' and 'x2' differ and 'y1' and 'y2' differ&#41;. The color range can be composed of two or more colors for the gradient and each color is specified with a 'stop' element. The 'offset' element used to define the colors beginning and end and the ellipse element is linked to the gradient by the 'fill' attribute.</p>    
 <svg height="150" width="400">
   <defs>
     <linearGradient id="grad1">
@@ -39,7 +35,7 @@
   <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
   Sorry, your browser does not support inline SVG.
 </svg><br><br>
-<p style="text-align: left; width: 50%;">I choose to directly embed the SVG code for the shapes in my HTML5 documemt. For other assignment involving embedding SVG files, I will try seperating the files and embedding the files in an XHTML document.</p>    
+<p style="text-align: left; width: 50%;">I choose to directly embed the SVG code for the shapes in my HTML5 documemt. For future assignments involving embedding SVG files, I will try seperating the files and embedding the files in an XHTML document.</p>    
 <p style="font-size: 10pt; text-align: left;">w3schools.com</p>    
 </body>
 </html>

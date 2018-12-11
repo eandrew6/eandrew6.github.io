@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON - CNIT 131A</title>
+<meta charset="utf-8">
+<meta name="description" content="XML and JSON: JSON"> 
+<style>
+    header{text-align: center;}
+    span{font-weight: bold;}
+</style>    
+</head>
+<body>
+<header><h1>Homework 10</h1><h6>JSON</h6></header> 
+<p><span>Question:</span> Suppose you have the following code in Javascript &#40;recognize the data being passed to the variable in JSON format&#41; - the <span>var</span> statement is just to declare the variable called <span>friends</span></p> 
+<img src="Screen%20Shot%202018-12-09%20at%204.37.15%20PM.png">
+<p>Then, later in the program, that variable <span>friends</span> &#40;that looks like an array, right?&#41; is used to write some data in a table. So, if you see the following command in this same Javascript code, that is referring to the above command in this same Javascript code, that is referring to the above JSON structure, what will be the content of the variable <span>tablecell1</span>? Remember, the <span>var</span> statement is only declaring the <span>tablecell1</span> variable!</p> 
+<img src="Screen%20Shot%202018-12-09%20at%204.41.31%20PM.png"><br><br>    
+<p>Answer:</p> 
+    
+<p id="tablecell1"></p> 
+<script>
+     var friends = '[' +
+    '{"name": "John","age": "28","gender": "male","profession": "sales rep"},' +
+    '{"name": "Maryenne","age": "26","gender": "female","profession": "web developer"}]';
+    friends = JSON.parse(friends);
+    var tablecell1 = '<table><tr><td>' + friends[0].name + '</td><td>' + friends[0].profession + '</td></tr></table>';
+    document.getElementById("tablecell1").innerHTML = tablecell1;
+</script>    
+    
+<a href="hw10.json">hw10.json</a>
+</body>
+</html>
