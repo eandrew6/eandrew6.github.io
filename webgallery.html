@@ -38,26 +38,19 @@
             <li><a href="https://github.com/ericaandrews/xml_json" title="XML JSON | ERICA ANDREWS" target="_blank">XML JSON<br>Completed Exercises</a></li>
             <li><a href="https://github.com/ericaandrews/mobile_web" title="MOBILE WEB | ERICA ANDREWS" target="_blank">MOBILE WEB<br>Completed Exercises</a></li>
             </div><br><br>         
-                <script>
-                    var dropdown = document.getElementsByClassName("dropdown-btn");
-                    var i;
-                    for(i = 0; i < dropdown.length; i++)
-                    {
-                        dropdown[i].addEventListener("click", function()
-                        {
-                            this.classList.toggle("active");
-                            var dropdownContent = this.nextElementSibling;
-                            if(dropdownContent.style.display === "block") 
-                            {
-                                dropdownContent.style.display = "none";    
-                            }
-                            else
-                            {
-                                dropdownContent.style.display = "block";    
-                            }
-                        });    
-                    }
-                </script>
+            <script>
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                for(i = 0; i < dropdown.length; i++){
+                     dropdown[i].addEventListener("click", function(){
+                      this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if(dropdownContent.style.display === "block"){
+                             dropdownContent.style.display = "none";
+                        }else{
+                             dropdownContent.style.display = "block";    
+                        }});}
+            </script> 
             <li><a href="https://github.com/ericaandrews" title="GITHUB | ERICA ANDREWS" target="_blank">GITHUB</a></li>         
             <li><a href="https://www.linkedin.com/in/ericarandrews/" title="LINKEDIN | ERICA ANDREWS" target="_blank">LINKEDIN</a></li>            
             <li><a href="https://twitter.com/ericarandrews" title="TWITTER | ERICA ANDREWS" target="_blank">TWITTER</a></li>              
@@ -75,5 +68,17 @@
             <img src="blackWhiteImages/IMG_23031.jpg" width="100%" alt="image">
             <img src="blackWhiteImages/IMG_23021.jpg" width="100%" alt="image">
             <img src="blackWhiteImages/IMG_23061.jpg" width="100%" alt="image">
+<!--
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("ul").style.top = "0";
+            } else {
+                document.getElementById("ul").style.top = "-500px";
+            }prevScrollpos = currentScrollPos;}
+        </script>
+-->
     </body>
 </html>
