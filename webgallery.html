@@ -8,7 +8,10 @@
         <meta name="author" content="Erica Andrews">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="webgallery.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <style>
+
+        </style>
     </head>
     <body id="bodywebgallery">
       <header>
@@ -66,8 +69,36 @@
             <img src="blackWhiteImages/IMG_22941.jpg" width="100%" alt="image">
             <img src="blackWhiteImages/IMG_22951.jpg" width="100%" alt="image">
             <img src="blackWhiteImages/IMG_23031.jpg" width="100%" alt="image">
-            <img src="blackWhiteImages/IMG_23021.jpg" width="100%" alt="image">
             <img src="blackWhiteImages/IMG_23061.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2314.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2316.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2317.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2560.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2561.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2610.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_23021.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2613.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2965.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2966.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2978.jpg" width="100%" alt="image">
+            <img src="blackWhiteImages/IMG_2981.jpg" width="100%" alt="image">
+        
+            <button onclick="btnfunction()" id="btn">^</button>
+            <script>
+                window.onscroll = function(){scrollFunction()};       
+                function scrollFunction() {
+                    if(document.body.scrollTop > 20 ||
+                      document.documentElement.scrollTop > 20) {
+                      document.getElementById("btn").style.display = "block";
+                    } else {
+                      document.getElementById("btn").style.display = "none";
+                    }
+                }      
+                function btnfunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
 <!--
         <script>
             var prevScrollpos = window.pageYOffset;
@@ -80,5 +111,7 @@
             }prevScrollpos = currentScrollPos;}
         </script>
 -->
+<!--    picture slide show  -->
+<!--    scroll up button    -->
     </body>
 </html>
