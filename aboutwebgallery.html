@@ -3,7 +3,7 @@
     <head>
         <title>ABOUT WEB GALLERY | ERICA ANDREWS</title>
         <meta charset="utf-8">
-        <meta name="description" content="'Web Gallery' is an online art display by Erica Andrews. This gallery also displays links to web pages in different fields of experiences professionally and independently.">
+        <meta name="description" content="'Web Gallery' is an online art display by Erica Andrews. This gallery also displays links to websites in different fields of experiences professionally and independently.">
         <meta name="keywords" content="linkedin, Erica, Andrews, volunteer, web, development, gallery">
         <meta name="author" content="Erica Andrews">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +12,19 @@
     </head>
     <body id="body">
       <header>
-        <ul id="ul">
+         <ul id="ul">
             <li><a href="https://ericaandrews.github.io/webgallery.html" title="HOME | ERICA ANDREWS">HOME</a></li>      
-            <li class="right"><a href="https://ericaandrews.github.io/about.html" title="ABOUT | ERICA ANDREWS">ABOUT</a></li><br><br>            
-            <div class="dropdown">
+            <li class="right"><a href="https://ericaandrews.github.io/about.html" title="ABOUT | ERICA ANDREWS">ABOUT</a></li><br><br>        
             <button class="dropdown-btn">WEB GALLERY</button>
                 <div class="dropdown-container">            
                 <li><a href="https://ericaandrews.github.io/images.html" title="IMAGES | WEB GALLERY | ERICA ANDREWS">IMAGES</a></li>                   
                 <li><a href="https://ericaandrews.github.io/aboutwebgallery.html" title="ABOUT WEB GALLERY | ERICA ANDREWS">ABOUT WEB GALLERY</a></li>
-                </div></div>        
-                <div class="dropdown">
+                </div><br>        
             <button class="dropdown-btn">VOLUNTEER WEB DEVELOPMENT</button>
                 <div class="dropdown-container"> 
                 <li><a href="https://ericaandrews.github.io/index.htm" title="HAIGHT ASHBURY FOOD PROGRAM | ERICA ANDREWS" target="_blank">HAIGHT ASHBURY FOOD PROGRAM</a></li>
                 <li><a href="https://ericaandrews.github.io/volunteerwebdeveloper.htm" title="ABOUT VOLUNTEER WEB DEVELOPER | ERICA ANDREWS" target="_blank">ABOUT VOLUNTEER WEB DEVELOPER</a></li>
-                </div></div>  
-                <div class="dropdown">
+                </div><br>        
             <button class="dropdown-btn">COMPLETED EXERCISES</button>
                 <div class="dropdown-container">    
                 <li><a href="https://github.com/ericaandrews/java" title="JAVA | ERICA ANDREWS " target="_blank">JAVA<br>Completed Exercises</a></li>
@@ -37,21 +34,28 @@
                 <li><a href="https://github.com/ericaandrews/javascript" title="JAVASCRIPT | ERICA ANDREWS" target="_blank">JAVASCRIPT<br>Completed Exercises</a></li>
                 <li><a href="https://github.com/ericaandrews/xml_json" title="XML JSON | ERICA ANDREWS" target="_blank">XML JSON<br>Completed Exercises</a></li>
                 <li><a href="https://github.com/ericaandrews/mobile_web" title="MOBILE WEB | ERICA ANDREWS" target="_blank">MOBILE WEB<br>Completed Exercises</a></li>
-                </div></div> 
-<!--drop down button -->            
-            <script>
-                var dropdown = document.getElementsByClassName("dropdown-btn");
-                var i;
-                for(i = 0; i < dropdown.length; i++){
-                     dropdown[i].addEventListener("click", function(){
-                      this.classList.toggle("active");
-                        var dropdownContent = this.nextElementSibling;
-                        if(dropdownContent.style.display === "block"){
-                             dropdownContent.style.display = "none";
-                        }else{
-                             dropdownContent.style.display = "block";    
-                        }});}
-            </script> 
+                </div><br><br> 
+<!--drop down button -->             
+                <script>
+                    var dropdown = document.getElementsByClassName("dropdown-btn");
+                    var i;
+                    for(i = 0; i < dropdown.length; i++)
+                    {
+                        dropdown[i].addEventListener("click", function()
+                        {
+                            this.classList.toggle("active");
+                            var dropdownContent = this.nextElementSibling;
+                            if(dropdownContent.style.display === "block") 
+                            {
+                                dropdownContent.style.display = "none";    
+                            }
+                            else
+                            {
+                                dropdownContent.style.display = "block";    
+                            }
+                        });    
+                    }
+                </script>
             <li><a href="https://ericaandrews.github.io/ericaandrews.jpg" target="_blank"><img src="blackWhiteImages/ericaandrews.jpg" id="img" alt="image" width="50px" height="50px"></a></li>
             <li><a href="https://github.com/ericaandrews" title="GITHUB | ERICA ANDREWS" target="_blank">GITHUB</a></li>         
             <li><a href="https://www.linkedin.com/in/ericarandrews/" title="LINKEDIN | ERICA ANDREWS" target="_blank">LINKEDIN</a></li>            
@@ -60,7 +64,8 @@
             <li><a href="https://ericarandrews.blogspot.com/" title="BLOGGER | ERICA ANDREWS" target="_blank">BLOGGER</a></li>           
             <li><a href="https://www.facebook.com/webgallery" title="FACEBOOK | ERICA ANDREWS" target="_blank">FACEBOOK</a></li>           
             <li><a href="https://ericarandrews.tumblr.com/" title="TUMBLR | ERICA ANDREWS" target="_blank">TUMBLR</a></li>
-            </ul>
+            <br><br><br>
+        </ul> 
         </header>
         <div id="h"></div><br>
         <div id="home">
@@ -69,7 +74,7 @@
             <p style="margin-bottom: -20px;">e.randrews@outlook.com</p><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Sy5lwRFlgxKnZJ33AWgx9Lp24wxEmaRFkmgwHhq8Gl8ONw/viewform?vc=0&c=0&w=1" target="_blank">contact</a><br><br>
 <!--            <a href="https://ericaandrews.github.io/ericaandrews.jpg" target="_blank"><img src="blackWhiteImages/ericaandrews.jpg" id="img" alt="image" width="50px" height="50px"></a>-->
-            <p style="margin-top: -5px;">'Web Gallery' is an online art display for a photography service that provides image adjustment in order to gain feedback. The pictures taken are captured on foot and adjusted in order to create an alternative look. The program used to apply adjustments to the pictures creates several alternatives, allowing for many selections to be chosen. Any picture can be alternated, so existing pictures can be altered as well as a picture requested. To have pictures taken or alternated, please refer to the contact link above and provide your contact information. The web gallery is open for viewing and downloads will be provided in the future.</p>
+            <p style="margin-top: -5px;">'Web Gallery' is an online art display for a photographic alternation service that provides image adjustments in order to gain feedback. The pictures taken are captured on foot and adjusted in order to create an alternative look. The program used to apply adjustments to the pictures creates several alternatives, allowing for many selections to be chosen. Any picture can be alternated, so existing pictures can be altered as well as a picture requested. To have pictures taken or alternated, please refer to the contact link above and provide your contact information. The web gallery is open for viewing and downloads will be provided in the future.</p>
         </div>
         <div id="contact">
             <br>
@@ -89,10 +94,10 @@
             </div>
         <div id="about">
             <h4>FEEDBACK</h4>
-            <p>I can be reached via email or provide your contact information in the form above in order for me to reach you. The web gallery form provides a feedback section in order for me to understand more of what I can provide to you and to learn from your commentary. In this section, please feel free to provide commentary on the web gallery located on the home page and the 'Images' link of the 'Web Gallery'. If you would like personal pictures to be alternated, please include these photo attachments in your email along with any specifics you would like to be included in the alternation.</p>
+            <p>The 'Web Gallery' can be reached via email or provide your contact information in the form above in order to reached. The form provides a feedback section in order to understand more of what can be provided to you and to learn from your commentary. In this section, please feel free to provide commentary on the online gallery located on the home page and the 'Images' link of the 'Web Gallery'. If you would like personal pictures to be alternated, please include these photo attachments in your email along with any specifics you would like to be included in the alternation.</p>
         </div>
         <footer id="footer">
-            <h4>Copyright &copy; ERICA ANDREWS 2018</h4>
+            <h4>Copyright &copy; ERICA ANDREWS 2019</h4>
         </footer>
 <!--nav disappears on scroll up -->        
 <!--
