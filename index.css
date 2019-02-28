@@ -1,0 +1,634 @@
+#body {
+     font-family: fantasy;
+     color: #444;
+     margin: 0;
+     background-image: url('water.gif');
+     background-size: cover;
+     font-size: 10pt;
+}
+#bodywebgallery {
+     font-family: fantasy;
+     color: #444;
+     margin: 0;
+     font-size: 10pt;
+     background-color: #000;
+}
+#h1 {
+     font-size: 25pt;
+}
+#home {
+     text-align: center;
+     width: 80%;
+     margin: auto;
+     background-image: url('water.gif');
+     background-size: 300%;
+     border: 2px hidden;
+     border-radius: 5px 70px 5px;
+     padding: 7px;
+}
+#contact {
+     text-align: center;
+     width: 80%;
+     margin: auto;
+     padding-bottom: 10px;
+     background-image: url('water.gif');
+     background-size: 300%;
+     border: 2px solid #777;
+     border-radius: 5px 70px 5px;
+     padding: 7px;
+}
+#contactGallery {
+     text-align: center;
+     width: 80%;
+     margin: auto;
+     padding-bottom: 10px;
+     background-image: url('water.gif');
+     background-size: 300%;
+     border: 2px solid #777;
+     border-radius: 5px 70px 5px;
+     padding: 7px;
+} 
+#about {
+     text-align: center;
+     width: 80%;
+     margin: auto;
+     background-image: url('water.gif');
+     background-size: 300%;
+     border: 2px hidden;
+     border-radius: 5px 70px 5px;
+     padding: 7px;
+} 
+footer {
+     text-shadow: 1px 1px #eee;
+     color: #555;
+     text-align: center;
+}
+#ul {
+     list-style-type: none;
+     position: fixed;
+     margin-top: 0;
+     width: 100%;
+     text-align: center;
+     padding: 0;
+     cursor: pointer;
+}
+#ul li a {
+     color: #555;
+     display: inline-block;
+     text-decoration: none;
+     text-align: center;
+     padding: 8px;
+     font-weight: bold;
+     text-shadow: 1px 1px #eee;
+} 
+#ul li a:hover {
+     background-image: url('water.gif');
+     background-size: 500px;
+     font-weight: bold;
+     color: #000;
+     border-radius: 5px;
+}
+#ul li.right {
+     float: right;
+     margin-right: 10px;
+}
+#inputtextarea {
+     width: 80%;
+} 
+#img {
+     border: 3px #ccc solid;
+} 
+#btn {
+     display: none;
+     position: fixed;
+     bottom: 50px;
+     right: 2.5%;
+     z-index: 99;
+     font-size: 60px;
+     border: none;
+     outline: none;
+     background-color: transparent;
+     color: #fff;
+     cursor: pointer;
+     padding: 15px;
+     border-radius: 4px;
+     font-weight: bold;
+}
+#btn:hover {
+     background-image: url('water.gif');
+     border-radius: 5px;
+}
+/*About*/
+#ABOUT{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#aboutMe{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 7%;
+/*    width: 425px;*/
+    border-radius: 5px;
+    color: #eee;
+}
+/*Web Gallery*/
+#WEBGALLERY{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#webGallery{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 7%;   
+    border-radius: 5px;
+    color: #eee;
+}
+/*Volunteer */
+#VOLUNTEER{
+    margin-left: 45%;  
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;      
+}
+#volunteer{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 7%;
+    border-radius: 5px;
+    color: #eee;
+}
+ 
+/*tablet view to full screen view*/
+@media screen and (min-width: 1000px) {
+#ul {
+     padding: 3px;
+     width: 12%;
+     position: absolute;
+     transition: top 0.2s;
+}
+#ul li.right {
+     float: left;
+}
+#home {
+     margin-left: 13%;
+     width: 85%;
+}
+#about {
+     margin-top: 25px;
+     margin-left: 13%;
+     width: 85%;
+}
+#footer {
+     margin-left: 13%;
+     width: 85%;
+}
+#contact {
+     margin-top: 25px;
+     margin-left: 13%;
+     width: 85%;
+}
+#paragraph{
+    color:#cc6633;
+    position:absolute;
+    z-index:1;
+    left:30%;
+    top:10%;            
+}
+}
+
+/*tablet view*/
+ @media screen and (max-width: 999px) {
+#ul {
+    padding: 10px;
+    transition: top 0.2s;
+    position: relative;
+}
+#ul li {
+    float: left;
+}
+#home {
+     background-image: url('water.gif');
+     background-size: 300%;
+     margin-bottom: 25px;
+}
+#about {
+     background-image: url('water.gif');
+     background-size: 300%;
+     margin-bottom: 25px;
+}
+#contact {
+     background-image: url('water.gif');
+     background-size: 300%;
+     margin-bottom: 25px;
+}
+#paragraph{
+    color:#cc6633;
+    position:absolute;
+    z-index:1;
+    left:20%;
+    top:40%;
+}
+/*About*/
+#ABOUT{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#aboutMe{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 5px;
+    color: #eee;
+}
+/*Web Gallery*/
+#WEBGALLERY{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#webGallery{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 5px;  
+    color: #eee;
+}
+/*Volunteer */
+#VOLUNTEER{
+    margin-left: 45%;  
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;      
+}
+#volunteer{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 10%; 
+    border-radius: 5px;
+    color: #eee;    
+}     
+}
+@media screen and (max-width: 900px) {
+#paragraph{
+    color:#cc6633;
+    position:absolute;
+    z-index:1;
+    left:15%;
+    top:35%;
+}
+}
+@media screen and (max-width: 850px) {
+#paragraph{
+    color:#cc6633;
+    position:absolute;
+    z-index:1;
+    left:15%;
+    top:35%;
+}
+}
+
+/*mobile view*/ 
+@media screen and (max-width: 685px) {
+#ul {
+     padding: 10px;
+     transition: top 0.2s;
+}
+#home {
+     background-image: url('water.gif');
+     background-size: 420%;
+     margin-bottom: 25px;
+     color: #000;
+}
+#contact {
+     background-image: url('water.gif');
+     background-size: 420%;
+     margin-bottom: 25px;
+     color: #000;
+}
+#about {
+     background-image: url('water.gif');
+     background-size: 420%;
+     margin-bottom: 25px;
+     color: #000;
+}
+#paragraph{
+    color:#cc6633;
+    position:absolute;
+    z-index:1;
+    left:5%;
+    top:35%;
+}
+/*About*/
+#ABOUT{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#aboutMe{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 15%;
+    border-radius: 5px; 
+    color: #eee;    
+}
+/*Web Gallery*/
+#WEBGALLERY{
+    margin-left: 45%;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;
+}
+#webGallery{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 15%; 
+    border-radius: 5px; 
+    color: #eee;    
+}
+/*Volunteer */
+#VOLUNTEER{
+    margin-left: 45%;  
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    text-shadow: 1px 1px #eee;
+    color: #555;      
+}
+#volunteer{
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+/*    text-shadow: 1px 1px #eee;*/
+    padding: 20px;
+    margin-top: 15%;   
+    border-radius: 5px; 
+    color: #eee;    
+}         
+}
+
+/*Dropdown button*/
+.dropdown-btn {
+    padding: 6px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline: none;
+    color: #555;
+    font-family: fantasy;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px #eee;
+}
+.dropdown-btn:hover {
+    background-image: url('water.gif');
+    background-size: 500px;
+    color: #000;
+    width: 100%;
+    border-radius: 5px;
+}
+.dropdown-container {
+    display: none;
+    font-size: 8pt;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/*tablet view*/
+@media screen and (max-width: 999px) {
+.dropdown-container {
+    display: none;
+    font-size: 8pt;
+    font-weight: bold;
+    background-image: url('water.gif');
+    background-size: cover;
+    position: relative;
+}
+.dropdown-btn:hover {
+    background-image: url('water.gif');
+    background-size: cover;
+    color: #000;
+    width: 100%;
+}
+}
+ 
+* {
+    box-sizing: border-box;
+}
+.bwimages > .bwimage {
+    padding: 0 8px;
+}
+.bwimages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.bwimage {
+    float: left;
+    width: 50%;
+}
+.demobwimage {
+    float: left;
+    width: 8.33%;
+}
+
+ /*The Slide (background)*/ 
+.Slide {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+}
+
+ /*Slide Content */
+.Slide-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+ /*The Close Button */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 1;
+}
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.mySlides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+
+ /* Next & prev buttons */
+.prevbtn,
+.nextbtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+ 
+/*Position the "next button" to the right */ 
+.nextbtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+ 
+/* On hover, add a black background color with a little bit see-through */ 
+.prevbtn:hover,
+.nextbtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+ 
+/* Number text (1/3 etc) */ 
+.slidenumber {
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+img {
+    margin-bottom: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color: #000;
+    padding: 2px;
+    color: #fff;
+}
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover,
+.currentimage:hover {
+    opacity: 1;
+}
+
+/* img.currentimage{transition: 0.3s;}*/
+/* .currentimage:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}*/
+/*image editing.html nav*/
+ 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    color: #444;
+} 
+.sidenav a:hover {
+    color: #ccc;
+} 
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    margin-left: 0;
+    text-decoration: none;
+}
+.openNav {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.openNav:hover {
+    color: #ccc;
+}
+ 
+@media screen and (max-height: 450px) {
+.sidenav {
+     padding-top: 15px;
+}
+.sidenav {
+     font-size: 18px;
+}
+}
