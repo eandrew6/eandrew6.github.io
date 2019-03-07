@@ -10,10 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webgallery.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+        #img:hover{opacity:0.5;filter:alpha(opacity=50);}
+        #img {box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);}
+    </style>
 </head>
 <body id="bodywebgallery">
    <ul id="ul">
-            <li><a href="https://ericaandrews.github.io/index.html" title="HOME | ERICA ANDREWS">HOME</a></li>
+            <li><a href="https://ericaandrews.github.io/webgallery.html" title="HOME | ERICA ANDREWS">HOME</a></li>
             <li class="right"><a href="https://ericaandrews.github.io/about.html" title="ABOUT | ERICA ANDREWS">ABOUT</a></li>
             <br>
             <br>
@@ -153,24 +157,13 @@
             <div class="mySlides">
                 <div class="slidenumber">11</div><img src="blackWhiteImages/IMG_2981.jpg" style="width:100%"></div>
             <div class="mySlides">
-                <div class="slidenumber">12</div><img src="blackWhiteImages/IMG_2316.jpg" style="width:100%"></div>   
-            <div class="mySlides">
-                <div class="slidenumber">13</div><img src="images/blueSky.jpg" style="width:100%"></div>
-            <div class="mySlides">
-                <div class="slidenumber">14</div><img src="images/darkWater.jpg" style="width:100%"></div>
-            <div class="mySlides">
-                <div class="slidenumber">15</div><img src="images/pinkClouds.jpg" style="width:100%"></div>
-            <div class="mySlides">
-                <div class="slidenumber">16</div><img src="images/water.jpg" style="width:100%"></div>
-            <div class="mySlides">
-                <div class="slidenumber">17</div><img src="images/sunOverWater.jpg" style="width:100%"></div>   
+                <div class="slidenumber">12</div><img src="blackWhiteImages/IMG_2316.jpg" style="width:100%"></div>     
             <a class="prevbtn" onclick="plusSlides(-1)">&#10094;</a> 
             <a class="nextbtn" onclick="plusSlides(1)">&#10095;</a>           
 <!--
             <div class="caption-container">
                 <p id="caption"></p>
-            </div>
-            
+            </div>          
             <div class="demobwimage"> 
                 <img class="demo cursor" src="blackWhiteImages/IMG_22921.jpg" style="width:100%" onclick="currentSlide(1)" alt="Black White Images"></div>
             <div class="demobwimage"> 
@@ -195,16 +188,6 @@
                 <img class="demo cursor" src="blackWhiteImages/IMG_2981.jpg" style="width:100%" onclick="currentSlide(11)" alt="Black White Images"></div>
             <div class="demobwimage"> 
                 <img class="demo cursor" src="blackWhiteImages/IMG_2316.jpg" style="width:100%" onclick="currentSlide(12)" alt="Black White Images"></div>         
-            <div class="demobwimage"> 
-                <img class="demo cursor" src="images/blueSky.jpg" style="width:100%" onclick="currentSlide(13)" alt="Black White Images"></div>
-            <div class="demobwimage"> 
-                <img class="demo cursor" src="images/darkWater.jpg" style="width:100%" onclick="currentSlide(14)" alt="Black White Images"></div>
-            <div class="demobwimage"> 
-                <img class="demo cursor" src="images/pinkClouds.jpg" style="width:100%" onclick="currentSlide(15)" alt="Black White Images"></div>
-            <div class="demobwimage"> 
-                <img class="demo cursor" src="images/water.jpg" style="width:100%" onclick="currentSlide(16)" alt="Black White Images"></div>
-             <div class="demobwimage"> 
-                <img class="demo cursor" src="images/sunOverWater.jpg" style="width:100%" onclick="currentSlide(17)" alt="Black White Images"></div>
 -->
         </div>
     </div>  
@@ -215,6 +198,7 @@
         function closeSlide() {
             document.getElementById('mySlide').style.display = "none";
         }
+        
         var slideIndex = 1;
         showSlides(slideIndex);
         function plusSlides(n) {
@@ -246,5 +230,8 @@
         }
     </script>
     <!-- <script>var prevScrollpos=window.pageYOffset; window.onscroll=function(){var currentScrollPos=window.pageYOffset; if (prevScrollpos > currentScrollPos){document.getElementById("ul").style.top="0";}else{document.getElementById("ul").style.top="-500px";}prevScrollpos=currentScrollPos;}</script> -->
+<footer>
+    <p>&copy; ERICA ANDREWS 2019</p>
+</footer>
 </body>
 </html>

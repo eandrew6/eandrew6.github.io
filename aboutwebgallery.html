@@ -9,15 +9,22 @@
     <meta name="author" content="Erica Andrews">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webgallery.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+        #img:hover{opacity:0.5;filter:alpha(opacity=50);}
+        #img {box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);}
+        #logo:hover{opacity:0.5;filter:alpha(opacity=50);}
+        #logo {box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);}
+    </style>
+    </head>
 <body id="body">
     <header>
 <ul id="ul">
-            <li><a href="https://ericaandrews.github.io/index.html" title="HOME | ERICA ANDREWS">HOME</a></li>
+            <li><a href="https://ericaandrews.github.io/webgallery.html" title="HOME | ERICA ANDREWS">HOME</a></li>
             <li class="right"><a href="https://ericaandrews.github.io/about.html" title="ABOUT | ERICA ANDREWS">ABOUT</a></li>
             <br>
             <br>
+            
             <button class="dropdown-btn">WEB GALLERY</button>
             <div class="dropdown-container">
                 <li><a href="https://ericaandrews.github.io/imageediting.html" title="IMAGE EDITING | WEB GALLERY | ERICA ANDREWS">IMAGE EDITING</a></li>
@@ -75,6 +82,8 @@
     <div id="h"></div>
     <br>
     <div id="home">
+         <a id="logo" href="" title="Volunteer | Erica Andrews">
+            <img src="images/water.jpg" alt="image" width="100px" height="75px" style="border-radius:50%;margin-bottom: -40px;"></a>
         <p style="margin-bottom: -30px;" id="h1">ERICA ANDREWS</p>
         <p style="margin-bottom: -20px;">VOLUNTEER</p>
         <p style="margin-bottom: -20px;">e.randrews@outlook.com</p>
@@ -108,8 +117,8 @@
         <p>The 'Web Gallery' can be reached via email or provide your contact information in the form above in order to reached. The form provides a feedback section in order to understand more of what can be provided to you and to learn from your commentary. In this section, please feel free to provide commentary on the online gallery located on the home page and the 'Images' link of the 'Web Gallery'. If you would like personal pictures to be alternated, please include these photo attachments in your email along with any specifics you would like to be included in the alternation.</p>
     </div>
     <footer id="footer">
-        <h4>Copyright &copy; ERICA ANDREWS 2019</h4> </footer>
+        <p>&copy; ERICA ANDREWS 2019</p> 
+    </footer>
     <!-- <script>var prevScrollpos=window.pageYOffset; window.onscroll=function(){var currentScrollPos=window.pageYOffset; if (prevScrollpos > currentScrollPos){document.getElementById("ul").style.top="0";}else{document.getElementById("ul").style.top="-500px";}prevScrollpos=currentScrollPos;}</script>-->
 </body>
-
 </html>
