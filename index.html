@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>ERICA ANDREWS</title>
     <meta name="description" content="This is the portfolio of Erica Andrews. This webpage displays links to websites in different fields of experiences professionally and independently.">
@@ -11,6 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <style>
+        #img:hover{opacity:0.5;filter:alpha(opacity=50);}
+        #img {box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);}
+    </style>
 </head>
 <body id="bodywebgallery">
     <header>
@@ -76,26 +79,11 @@
     <img src="blackWhiteImages/IMG_22951.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_23031.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_23061.jpg" width="100%" alt="image" class="indexslideshow"> 
-<!--    <img src="blackWhiteImages/IMG_23021.jpg" width="100%" alt="image" class="indexslideshow">-->
-    
-<!--    <img src="blackWhiteImages/IMG_2314.jpg" width="100%" alt="image" class="indexslideshow"> -->
     <img src="blackWhiteImages/IMG_2316.jpg" width="100%" alt="image" class="indexslideshow"> 
-<!--    <img src="blackWhiteImages/IMG_2317.jpg" width="100%" alt="image" class="indexslideshow"> -->
-<!--    <img src="blackWhiteImages/IMG_2561.jpg" width="100%" alt="image" class="indexslideshow"> -->
-<!--    <img src="blackWhiteImages/IMG_2613.jpg" width="100%" alt="image" class="indexslideshow"> -->
     <img src="blackWhiteImages/IMG_2965.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_2966.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_2978.jpg" width="100%" alt="image" class="indexslideshow"> 
-    <img src="blackWhiteImages/IMG_2981.jpg" width="100%" alt="image" class="indexslideshow"> 
-    
-<!--
-    <img src="images/blueSky.jpg" width="100%" alt="image" class="indexslideshow">
-    <img src="images/darkWater.jpg" width="100%" alt="image" class="indexslideshow">
-    <img src="images/pinkClouds.jpg" width="100%" alt="image" class="indexslideshow">
-    <img src="images/water.jpg" width="100%" alt="image" class="indexslideshow">
-    <img src="images/sunOverWater.jpg" width="100%" alt="image" class="indexslideshow">
--->
-    
+    <img src="blackWhiteImages/IMG_2981.jpg" width="100%" alt="image" class="indexslideshow">   
     <a onclick="myShow.previous()" class="prevbtn">&#10094;</a>
     <a onclick="myShow.next()" class="nextbtn">&#10095;</a>
     <script>
@@ -109,13 +97,13 @@
     <script>
     function about(){
         document.getElementById("aboutMe").innerHTML = "I am goal oriented toward a career in computer science and passionate for an overall understanding of computer programming. I am currently practiced in web development and seek expansion of my current knowledge of engineering. This website is apart of my practice in learning how to incorporate different ways, styles, and design for making beautiful websites. I wish to be a master, so with the knowledge I learn, I should be a pebble closer to that goal. This home site will include links to completed exercises and social media's professionally and independently. I look forward to improving upon this site and continuing to practice.";
-//      document.getElementById("aboutMe").style.backgroundColor = "#eee";
-        document.getElementById("aboutMe").style.color = "#000";
+        document.getElementById("ABOUT").style.color = "#880088";
+        document.getElementById("aboutMe").style.color = "#880088";
         document.getElementById("aboutMe").style.backgroundImage = "url(blackWhiteImages/IMG_22941.jpg)";
-
     }
     function noAbout(){
         document.getElementById("aboutMe").innerHTML = "";
+        document.getElementById("ABOUT").style.color = "";
         document.getElementById("aboutMe").style.backgroundColor = "transparent";
         document.getElementById("aboutMe").style.backgroundImage = "";
     }
@@ -128,12 +116,13 @@
     <script>
     function webgallery(){
         document.getElementById("webGallery").innerHTML = "'Web Gallery' is an online art display for a photographic alternation service that provides image adjustments in order to gain feedback. The pictures taken are captured on foot and adjusted in order to create an alternative look. The program used to apply adjustments to the pictures creates several alternatives, allowing for many selections to be chosen. Any picture can be alternated, so existing pictures can be altered as well as a picture requested. To have pictures taken or alternated, please refer to the contact link above and provide your contact information. The web gallery is open for viewing and downloads will be provided in the future.";
-//      document.getElementById("webGallery").style.backgroundColor = "#eee";
-        document.getElementById("webGallery").style.color = "#000";     
+        document.getElementById("webGallery").style.color = "#880088"; 
+        document.getElementById("WEBGALLERY").style.color = "#880088";
         document.getElementById("webGallery").style.backgroundImage = "url(blackWhiteImages/IMG_22941.jpg)";
     }
     function noWebGallery(){
         document.getElementById("webGallery").innerHTML = "";
+        document.getElementById("WEBGALLERY").style.color = "";
         document.getElementById("webGallery").style.backgroundColor = "transparent";
         document.getElementById("webGallery").style.backgroundImage = "";
     }
@@ -146,12 +135,13 @@
     <script>
     function volunteer(){
         document.getElementById("volunteer").innerHTML = "'Volunteer' is a position I have been granted by contributing to many organizations. I currently volunteer for a non-profit and a theater and I have contributed toward three other non-profits, hackathons, a school and a library. I contribute currently to a non-profit as a volunteer web developer by creating ideas for a future newsletter. I hope to continue to contribute to another non-profit I currently volunteer for as a 'Web Design Intern' and practice photo editing.";
-//      document.getElementById("volunteer").style.backgroundColor = "#eee";
-        document.getElementById("volunteer").style.color = "#000";     
+        document.getElementById("volunteer").style.color = "#880088";  
+        document.getElementById("VOLUNTEER").style.color = "#880088"; 
         document.getElementById("volunteer").style.backgroundImage = "url(blackWhiteImages/IMG_22941.jpg)";    
     }
     function noVolunteer(){
         document.getElementById("volunteer").innerHTML = "";
+        document.getElementById("VOLUNTEER").style.color = "";
         document.getElementById("volunteer").style.backgroundColor = "transparent";
         document.getElementById("volunteer").style.backgroundImage = "";
     }
@@ -172,15 +162,7 @@
     <img src="blackWhiteImages/IMG_2966.jpg" width="100%" alt="image"> 
     <img src="blackWhiteImages/IMG_2978.jpg" width="100%" alt="image"> 
     <img src="blackWhiteImages/IMG_2981.jpg" width="100%" alt="image"> 
-    
-<!--
-    <img src="images/blueSky.jpg" width="100%" alt="image">
-    <img src="images/darkWater.jpg" width="100%" alt="image">
-    <img src="images/pinkClouds.jpg" width="100%" alt="image">
-    <img src="images/water.jpg" width="100%" alt="image">
-    <img src="images/sunOverWater.jpg" width="100%" alt="image">
--->
-    
+     
     <button onclick="btnfunction()" id="btn">^</button>  
     <script>
         window.onscroll = function() {
