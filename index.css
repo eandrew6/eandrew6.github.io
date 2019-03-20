@@ -120,7 +120,7 @@ footer {
 }
 /*About*/
 #ABOUT{
-    margin-left: 45%;
+    margin-left: 75%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -138,7 +138,7 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-    margin-left: 45%;
+    margin-left: 75%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -156,7 +156,7 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-    margin-left: 45%;  
+    margin-left: 75%;  
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -245,7 +245,7 @@ footer {
 }
 /*About*/
 #ABOUT{
-    margin-left: 45%;
+    margin-left: 65%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -263,7 +263,7 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-    margin-left: 45%;
+    margin-left: 65%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -281,7 +281,7 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-    margin-left: 45%;  
+    margin-left: 65%;  
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -350,7 +350,7 @@ footer {
 }
 /*About*/
 #ABOUT{
-    margin-left: 45%;
+    margin-left: 55%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -368,7 +368,7 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-    margin-left: 45%;
+    margin-left: 55%;
     position: absolute;
     z-index: 1;
     background: transparent;
@@ -386,7 +386,7 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-    margin-left: 45%;  
+    margin-left: 55%;  
     position: absolute;
     z-index: 1;
     background: transparent;
