@@ -1,143 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-<head>
-    <title>Form Processing</title>
-    
+
+<!--<head>-->
+    <title>Forms | ERICA ANDREWS</title>
+
+<!--javascript required input alert upon submit    -->
+<script>
+    function validateForm(){
+        var name_1 = document.forms["myForm"]["name"].value;
+        var email_1 = document.forms["myForm"]["email"].value;
+        var comment_1 = document.forms["myForm"]["comments"].value;
+
+        if(name_1 == "")
+        {
+            alert("Please enter your name");
+            return false;
+        }
+        if(email_1 == "")
+        {
+            alert("Please enter your email");
+            return false;
+        }
+        if(comment_1 == "")
+        {
+            alert("Please enter your comment");
+            return false;
+        }
+    }
+</script>
+
     <style type="text/css">
-        body
-        {
-            background: URL('images/water.jpg');  
-            background-size: 100%;
-            background-color: #eeeeee;
-            font-family: monospace;
-        }
-        #form
-        {
-            margin: 0px auto;
-            padding: 25px;
-            border: 2px inset;
-            border-radius: 30px;
-            width: 700px;
-            padding: 20px;
-            background-color: #ffffff;
-            text-align: left; 
-            color: #003399;
-        }
         header
         {
-            font-family: monospace;
-            font-size: 15pt;
-            color: #ffffff;
+            font-family: fantasy;
+            font-size: 30pt;
+            color: #000000;
+            margin-top: 10px;
+            margin-bottom: 10px;
             text-align: center;
-            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ff6600, 0 0 5px #777777; 
+            text-shadow: 1px 1px 2px #ffff00, 0 0 25px #ffcccc, 0 0 5px #777777;
         }
-        #p
+        body
         {
             text-align: center;
             font-family: fantasy;
-            color: #ffffff;
-            font-size: 11pt; 
-        }
-        #link
-        {
-            text-align: center;
-            font-family: fantasy;
-            font-size: 10pt; 
         }
         a
         {
-            color: #ff9900;
+            color: #aaaaaa;
         }
-        legend
+        a:hover
+        {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+        form
+        {
+            width: 500px;
+            margin:0px auto;
+            text-align: left;
+            background: #dddddd;
+            padding: 12px;
+            font-size: 10pt;
+        }
+        td.space
+        {
+            text-align: left;
+            font-size: 10pt;
+        }
+        .print1
+        {
+            font-size: 8pt;
+            margin: 0px;
+            padding: 0px;
+        }
+        .highlight
+        {
+            background-color: #ffff99;
+        }
+        a
+        {
+            color: #aaaaaa;
+        }
+        legend, 
         {
             text-align: center;
         }
-        fieldset
+        #textarea
         {
-            color: #ff9900;
-        }
-        #small
-        {
-            font-size: 10pt;
-            font-family: 'courier';
+            margin-left: auto;
+            margin-right: auto;
         }
         footer
         {
             text-align: center;
-        }
-        @media screen and (max-width: 1000px)
-        {
-            body{
-                background-size: cover;
-            }
+            margin-top: 10px;
         }
     </style>
-    
-</head>
-
+<!--</head>-->
 <body>
-     <br>
-    <header><h1>Thank You</h1></header>
-    <?php
+    <header>Form</header>
+    <a href="https://ericaandrews.github.io/projectnine.html">Home Page</a>
+    <p>Please fill out the feedback form below and click submit. The <span class="highlight">* labeled</span> next to some are<span class="highlight"> required fields</span>.</p>
 
-    $msg = "E-mail sent from Erica's 'Contact Form' site\n";
-    $msg .= "Sender's Name:  $_POST[name]\n";
-    $msg .= "Sender's E-mail:  $_POST[email]\n";
-    $msg .= "Sender's Occupation:  $_POST[occupation]\n";
+    <form  name="myForm" action="form.php" enctype="text/plain" id="myform" onsubmit="return validateForm()" method="post">
+        <fieldset>
+             Name: * <input type="text" name="name" size="45" maxlength="50">
+                <br>
+             Email: * <input type="text" name="email" size="45" maxlength="50">
+                <br>
+             Occupation: <input type="text" name="occupation" size="45" maxlength="50">
+                <br>
+        </fieldset>
 
-    $msg.= "\nSender's response to whether they have web site development experience: ";
+        <p>Which of the following pages did you view so far?</p>
+        <p class="print1">Choose all that apply:</p>
+        <table>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Message Alert" value=messageAlert checked="checked">Message Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Input Box with Button with Alert" value=inputBoxWithButtonWithAlert>Input Box with Button with Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="OnMouseOverOnMouseOut Event" value=onMouseOver/OnMouseOutEvent>OnMouseOver/OnMouseOut Event Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="checkbox" name="Drop-Down Menu Nav" value=dropDownMenuNav>Drop-Down Menu Nav Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                    <input type="checkbox" name="Pop-Up Window" value=popUpWindow>Pop-Up Window Site
+                </td>
+            </tr>
+            <tr>
+                 <td class="space">
+                    <input type="checkbox" name="Password Protection" value=passwordProtection>Password Protection Site
+                </td>
+            </tr>
+            <tr>
+                 <td class="space">
+                    <input type="checkbox" name="JQuery" value=jQuery>JQuery Site
+                </td>
+            </tr>
+        </table>
 
-        $selected=$_POST['selected'];
-        if($selected){
-            foreach ($selected as $s) {$msg .= "$s  ";}
-        }
+        <p>Which one would you say captured your interest the most?</p>
+        <p class="print1">Choose one only:</p>
+        <table>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=messageAlert checked="checked">Message Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=inputBoxWithButtonWithAlert>Input Box with Button with Alert Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=onMouseOver/OnMouseOutEvent>OnMouseOver/OnMouseOut Event Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=dropDownMenuNav>Drop-Down Menu Nav Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=popUpWindow>Pop-Up Window Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=passwordProtection>Password Protection Site
+                </td>
+            </tr>
+            <tr>
+                <td class="space">
+                <input type="radio" name="choice" value=jQuery>JQuery Site
+                </td>
+            </tr>
+        </table>
 
-    $msg .= "\nSender's response, after selected 'yes', to how much web site development experience they have: ";
+        <p>Are you interested in any of the following?</p>
+            <select name="interest" size="3" multiple="multiple">
+            <option value="none">None</option>
+            <option value="webDevelopment">Web Development</option>
+            <option value="webDesign">Web Design</option>
+            <option value="softwareDevelopment">Software Development</option>
+            <option value="computerProgramming">Computer Programming</option>
+            </select>
 
-        $selections=$_POST['selections'];
-        if ($selections){
-         foreach ($selections as $ss) {$msg .=  "$ss  ";}
-        }
+        <p>Comments*</p>
+        <textarea name="comments" rows="5" cols="60" id="textarea"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
 
-    $msg .= "\nSender's Comments & Questions:   $_POST[comments]\n";
-
-    $to = "e.r.andrews@outlook.com";
-    $subject = "Erica Andrews Contact Form";
-    $mailheaders = "From: Erica Andrews Contact Form\n";
-
-    mail($to, $subject, $msg, $mailheaders);
-    ?>
-    <p id="p">eureka.web.dev@gmail.com</p>
-           <div id="link">
-            <a href="https://ericaandrews.github.io/contact.html">Home</a>
-            </div>
-          <br>
-            <div id="form">
-                <p><b>The following email has been sent to Erica Andrews:</b></p>
-                <p>
-                    <b>Your Name: </b>    
-                    <?php echo "$_POST[name]"; ?>
-                    <br><br>      
-                    <b>Your Email: </b>
-                    <?php echo "$_POST[email]"; ?>
-                    <br><br>
-                    <b>Your Occupation: </b>
-                    <?php echo "$_POST[occupation]"; ?>
-                    <br><br>
-                    <b>Your Comments and Questions: </b>
-                    <?php echo "$_POST[comments]"; ?>
-                    <br>
-                </p>
-            </div>
-  
-<!--
-    if (mail($to, $subject, $msg, $mailheaders)) {
-       echo("<p>Email successfully sent!</p>");
-      } else {
-       echo("<p>Email delivery failed</p>");
-      }
--->
-
-</body>    
+</body>
 </html>

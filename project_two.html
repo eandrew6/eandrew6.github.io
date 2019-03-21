@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<title>EMBEDDED STYLE SHEET EXAMPLE</title>
+
+<style>
+
+body {
+     background-color: #333333; /*changed from #000000*/
+     text-align:center; /* Hack for IE/Win */ 
+     margin-top: 10px; /*changed from 20px*/
+     }
+
+    
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 140px;
+    margin-right: 100px;
+    
+}
+    
+#mainNav li {
+	float: left;
+	width: 10em;
+ 
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url('IMAGES_2_CNIT132/link.png') no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url('IMAGES_2_CNIT132/go.png') no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url('IMAGES_2_CNIT132/home.png') no-repeat 5px 52%;
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+.content {
+    
+        width:950px; /*changed from 900 pixels*/
+
+        margin: 0px auto; padding: 10px; /*changed from 15 pixels*/
+            text-align: left; /* Counteract to IE/Win Hack */
+
+        background-color:#eee;
+        }    
+
+
+
+.pol { 
+    
+	 text-align: center;
+     font-size: 24px;
+     }
+
+
+h1 {
+
+font:  24pt arial;
+color: #8f0052; 
+text-align: center;
+}
+
+
+h2 {
+
+font:  18pt arial;
+color: #8f0052; /*changed from #FF0000*/
+text-align: left;
+}
+
+
+h3 {
+
+font-family: 'Century Schoolbook'; /*changed from TimesRoman*/
+font-size: 12pt; /*changed from 16pt*/
+color: #0000ff;
+text-align: left; /*changed from right*/
+}
+
+h4 {
+
+font-family: verdana; /*changed from OldEnglish*/
+font-size: 12pt; /*changed from 14pt*/
+color: #8f0052; /*changed from #ff00ff*/
+text-align: center;
+}
+
+
+p.left  {
+
+font-family: helvetica; /*changed from 'comic sans ms'*/
+font-size: 11pt; /*changed from 10pt*/ 
+color: #777777; /*changed from #000000*/
+text-align: left;
+font-weight: bold;
+text-indent: .3in; /*changed from .6in*/
+}
+
+
+p.right  {
+
+font-family: 'comic san ms'; /*changed from verdana, helvetica, san-serif*/
+font-size: 11pt; /*changed from 10pt*/
+color: #000000;
+text-align: center; /*changed from right*/
+background-color: #ccccff; /*changed from #fffff0*/
+border-style: double; /*changed from dotted*/
+border-color: #9900ff; /*changed from #a020f0*/
+padding: 3em; /*changed from 1em*/
+}
+
+p.ital  {
+
+font-family: script; /*changed from 'Century Schoolbook'*/
+font-size: 11pt; /*changed from 12pt*/
+color: #777777; /*changed from #9c3ece*/
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+
+/*added paragraph class (p.new)*/
+
+p.new  {
+
+font-family: verdana;
+font-size: 8pt;
+color: #777777;
+text-align: center;
+border-style: outset ridge double;
+padding: 3em;
+}
+
+
+a {
+
+color: #0000ff; 
+text-decoration: none;
+}
+
+a:hover { 
+
+color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+<section>
+
+
+  <ul id="mainNav">
+
+        <li><a href="Embedded_Style_Sheet.html" target="_self" id="homeLink">Embedded Style Sheet</a></li>
+        <li><a href="Linked_Style_Sheet.html" target="_self" id="Link1">Linked Style Sheet 1</a></li>
+        <li><a href="Linked_Style_Sheet_2.html" target="_self" id="Link2">Linked Style Sheet 2</a></li>
+        <li><a href="Full_Cascade.html" target="_self" id="Link3">Full Cascade</a></li>
+    </ul>
+
+<br>
+
+    <h1>Embedded Style Sheet Example</h1>
+
+    <p class="new">
+
+Hello all and welcome to my Homework_Two assignment. This will be my first "Embedded Style Sheet" assignment in CSS for this course, followed by a "Linked Style Sheet" in CSS requirement times two. Within this assignment, we are enhancing the awesome CSS code materials provided by a very knowledgeable professor. I am learning lots and cannot wait to learn more. Critique!
+</p>
+
+
+    <p class="pol">The politics of the 21st century</p>
+
+    <h2>Lefties and Righties</h2>
+
+
+    <p class="left">
+
+Socialists are to the left of liberals.
+ Most liberals are Democrats, although some have
+wandered over to the Green party. Republicans are right-wingers. 
+Most Republicans are 
+conservative. What does conservative mean? Do they want to
+conserve the environment? Do they want to conserve the 2nd amendment?
+Do they want to conserve a woman's right to choose an abortion?
+ Do they want to conserve a separation between church and state?
+
+<a href="http://www.microsoft.com">Click here</a>
+for Bill Gates.</p>
+
+
+    <h3>San Francisco Giants</h3>
+
+    <p class="right">
+
+It may just be that the Giants have seen the last of Hunter Pence this season, and what a 
+loss it will be. Pence is not only the offensive catalyst, but his presence both on the 
+field and in the clubhouse is immense. Right now, the right fielder has been relegated to 
+the dugout, and that may not change any time soon as he re-injured his surgically repaired hamstring muscle a few days ago. 
+The Giants are now just one game behind the first-place Dodgers in the National League West entering the games of Aug. 27. 
+
+<a href="http://www.sfgiants.com">Click here</a> for your 
+San Francisco Giants!
+</p>
+
+    <h4>Personal Responsibility</h4>
+
+    <p class="ital">
+The name of the game is personal responsibility. That means that you
+just need to take care of yourself and not
+care about things like community involvement, poor people, or 
+the obscene gap between the rich and poor in this country.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+
+<p class="center">
+ 
+<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fhills.ccsf.edu%2F~eandrew6%2FEmbedded_Style_Sheet.html">
+<img style="border:0;width:88px;height:31px" src="IMAGES_2_CNIT132/w3c_html5.png" alt="HTML5"></a>
+
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fhills.ccsf.edu%2F~eandrew6%2FEmbedded_Style_Sheet.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+ <img style="border:0;width:88px;height:31px" src="IMAGES_2_CNIT132/w3c_css.png" alt="Valid CSS!">
+</a>
+
+</p>
+     
+</footer>
+
+</body>
+    
+</html>
