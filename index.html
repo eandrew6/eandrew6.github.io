@@ -147,11 +147,26 @@
         document.getElementById("volunteer").style.backgroundImage = "";
     }
     </script>
-<!--    Completed Exercises--> 
-    
-<!--    'Completed Exercises' is a list of technical subjects that lead to online exercises posted on a 'Github' account. The subjects include technical languages, technical projects, and technical related subjects. By selecting some of the projects, the code is available to view and apply and a table of contents of the visuals of the projects will be provided. Tutorials will be added in the future and step by step instructions are provided for some technical solutions. -->
-    
     <img src="blackWhiteImages/IMG_22931.jpg" width="100%" alt="image"> 
+
+<!--    Completed Exercises--> 
+    <h1 id="COMPLETEDEXERCISE" onmouseover="completedexercise()" onmouseout="noCompletedexercise()" style="">COMPLETED EXERCISE</h1>
+    <h2 id="completedexercise" style="";></h2>
+    <script>
+    function completedexercise(){
+        document.getElementById("completedexercise").innerHTML = "'Completed Exercises' is a list of technical subjects that lead to online posted exercises. The subjects include technical languages, technical projects, and technical related subjects. By selecting some of the projects, the code is available to view and apply and a table of contents of the visuals of the projects will be provided. Tutorials will be added in the future and step by step instructions are provided for some technical solutions.";
+        document.getElementById("completedexercise").style.color = "#880088";  
+        document.getElementById("COMPLETEDEXERCISE").style.color = "#880088"; 
+        document.getElementById("completedexercise").style.backgroundImage = "url(blackWhiteImages/IMG_22941.jpg)";    
+    }
+    function noCompletedexercise(){
+        document.getElementById("completedexercise").innerHTML = "";
+        document.getElementById("COMPLETEDEXERCISE").style.color = "";
+        document.getElementById("completedexercise").style.backgroundColor = "transparent";
+        document.getElementById("completedexercise").style.backgroundImage = "";
+    }
+    </script>    
+    
     <img src="blackWhiteImages/IMG_22951.jpg" width="100%" alt="image"> 
     <img src="blackWhiteImages/IMG_23031.jpg" width="100%" alt="image"> 
     <img src="blackWhiteImages/IMG_23061.jpg" width="100%" alt="image"> 
