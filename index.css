@@ -173,7 +173,7 @@ footer {
     color: #eee;
 }
 /*Volunteer */
-#COMPLETEDEXERCISE{
+#COMPLETEDEXERCISE{ 
     margin-left: 75%;  
     position: absolute;
     z-index: 1;
@@ -186,7 +186,7 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 7%;
+    margin-top: 10%;
     border-radius: 5px;
     color: #eee;
 } 
@@ -328,7 +328,7 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 10%; 
+    margin-top: 15%; 
     border-radius: 5px;
     color: #eee;    
 }      
@@ -415,7 +415,7 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 15%; 
+    margin-top: 25%; 
     border-radius: 5px; 
     color: #eee;    
 }
@@ -451,7 +451,7 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 15%;   
+    margin-top: 25%;   
     border-radius: 5px; 
     color: #eee;    
 }     
