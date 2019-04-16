@@ -20,7 +20,7 @@
      text-align: center;
      width: 80%;
      margin: auto;
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 300%;
      border: 2px hidden;
      border-radius: 5px 70px 5px;
@@ -31,7 +31,7 @@
      width: 80%;
      margin: auto;
      padding-bottom: 10px;
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 300%;
      border: 2px solid #777;
      border-radius: 5px 70px 5px;
@@ -82,7 +82,7 @@ footer {
      text-shadow: 1px 1px #eee;
 } 
 #ul li a:hover {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 500px;
      font-weight: bold;
      color: #880088;
@@ -239,17 +239,17 @@ footer {
     float: left;
 }
 #home {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 300%;
      margin-bottom: 25px;
 }
 #about {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 300%;
      margin-bottom: 25px;
 }
 #contact {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 300%;
      margin-bottom: 25px;
 }
@@ -359,19 +359,19 @@ footer {
      transition: top 0.2s;
 }
 #home {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 420%;
      margin-bottom: 25px;
      color: #000;
 }
 #contact {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 420%;
      margin-bottom: 25px;
      color: #000;
 }
 #about {
-     background-image: url('blackWhiteImages/IMG_22941.jpg');
+     background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 420%;
      margin-bottom: 25px;
      color: #000;
@@ -472,7 +472,7 @@ footer {
     font-size: 10pt;
 }
 .dropdown-btn:hover {
-    background-image: url('blackWhiteImages/IMG_22941.jpg');
+    background-image: url('blackWhiteImages/IMG_2294.jpg');
     background-size: 500px;
     width: 100%;
     border-radius: 5px;
@@ -495,13 +495,13 @@ footer {
 .dropdown-container {
     display: none;
     font-weight: bold;
-    background-image: url('blackWhiteImages/IMG_22941.jpg');
+    background-image: url('blackWhiteImages/IMG_2294.jpg');
     background-size: cover;
     position: relative;
     font-size: 8pt;
 }
 .dropdown-btn:hover {
-    background-image: url('blackWhiteImages/IMG_22941.jpg');
+    background-image: url('blackWhiteImages/IMG_2294.jpg');
     background-size: cover;
     width: 100%;
     color: #880088;
