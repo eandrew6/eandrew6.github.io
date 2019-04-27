@@ -1,5 +1,5 @@
 #body {
-     font-family: fantasy;
+     font-family:;
      color: #444;
      margin: 0;
      background-image: url('bw.gif');
@@ -7,7 +7,7 @@
      font-size: 10pt;
 }
 #bodywebgallery {
-     font-family: fantasy;
+     font-family:;
      color: #444;
      margin: 0;
      font-size: 10pt;
@@ -414,7 +414,7 @@ footer {
     background: none;
     outline: none;
     color: #555;
-    font-family: fantasy;
+    font-family: ;
     font-weight: bold;
     cursor: pointer;
     text-shadow: 1px 1px #eee;
