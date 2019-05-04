@@ -26,6 +26,7 @@
      border-radius: 5px 70px 5px;
      padding: 7px;
      font-weight: ;
+     font-size: 14pt;
 /*     opacity: 0.8;*/
 }
 #contact {
@@ -59,6 +60,7 @@
      border: 2px hidden;
      border-radius: 5px 70px 5px;
      padding: 7px;
+     font-size: 14pt;
 } 
 footer {
      text-shadow: 1px 1px #eee;
