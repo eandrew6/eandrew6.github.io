@@ -26,7 +26,6 @@
      font-size: 12pt;   
      border-radius: 5px 70px 5px;
      padding: 7px;
-     font-weight: 
 /*     opacity: 0.8;*/
 }
 #contact {
@@ -82,13 +81,11 @@ footer {
      text-decoration: none;
      text-align: center;
      padding: 8px;
-     font-weight: ;
      text-shadow: 1px 1px #eee;
 } 
 #ul li a:hover {
      background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 500px;
-     font-weight: ;
      color: #880088;
      border-radius: 5px;
 }
@@ -116,7 +113,6 @@ footer {
      cursor: pointer;
      padding: 15px;
      border-radius: 4px;
-     font-weight: ;
 }
 #btn:hover {
      background-image: url('water.gif');
@@ -124,14 +120,12 @@ footer {
 }
 /*About*/
 #ABOUT{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #aboutMe{
     text-align: center;
@@ -146,14 +140,12 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #webGallery{
     text-align: center;
@@ -168,14 +160,12 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-/*
     margin-left: 45%;  
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;      
-*/
 }
 #volunteer{
     text-align: center;
@@ -219,11 +209,11 @@ footer {
      width: 85%;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:30%;
-    top:10%;            
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top: 10%;            
 }
 }
 /**********************************************************************/
@@ -253,22 +243,20 @@ footer {
      margin-bottom: 25px;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:20%;
-    top:40%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 40%;
 }
 /*About*/
 #ABOUT{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #aboutMe{
     text-align: center;
@@ -283,14 +271,12 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #webGallery{
     text-align: center;
@@ -305,14 +291,12 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-/*
     margin-left: 45%;  
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;      
-*/
 }
 #volunteer{
     text-align: center;
@@ -328,20 +312,20 @@ footer {
 }
 @media screen and (max-width: 900px) {
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:15%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 35%;
 }
 }
 @media screen and (max-width: 850px) {
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:15%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 35%;
 }
 }
 /**********************************************************************/
@@ -370,22 +354,20 @@ footer {
      color: #000;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:5%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 35%;
 }
 /*About*/
 #ABOUT{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #aboutMe{
     text-align: center;
@@ -400,14 +382,12 @@ footer {
 }
 /*Web Gallery*/
 #WEBGALLERY{
-/*
     margin-left: 45%;
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;
-*/
 }
 #webGallery{
     text-align: center;
@@ -422,14 +402,12 @@ footer {
 }
 /*Volunteer */
 #VOLUNTEER{
-/*
     margin-left: 45%;  
     position: absolute;
     z-index: 1;
     background: transparent;
     text-shadow: 1px 1px #eee;
     color: #555;      
-*/
 }
 #volunteer{
     text-align: center;
@@ -453,7 +431,6 @@ footer {
     outline: none;
     color: #555;
     font-family: Times New Roman;
-    font-weight: ;
     cursor: pointer;
     text-shadow: 1px 1px #eee;
     font-size: 10pt;
@@ -463,12 +440,10 @@ footer {
     background-size: 500px;
     width: 100%;
     border-radius: 5px;
-    font-weight: ;
     color: #880088;
 }
 .dropdown-container {
     display: none;
-    font-weight: ;
     position: relative;
     width: 100%;
     overflow: auto;
@@ -480,7 +455,6 @@ footer {
 @media screen and (max-width: 999px) {
 .dropdown-container {
     display: none;
-    font-weight: ;
 /*    background-image: url('blackWhiteImages/IMG_2294.jpg');*/
     background-color: #eee;
     background-size: cover;
@@ -492,7 +466,6 @@ footer {
     background-size: cover;
     width: 100%;
     color: #880088;
-    font-weight: ;
 }
 }
 /**********************************************************************/
@@ -548,7 +521,6 @@ footer {
     top: 10px;
     right: 50px;
     font-size: 45px;
-    font-weight: ;
     z-index: 1;
 }
 .close:hover,
@@ -574,7 +546,6 @@ footer {
     padding: 16px;
     margin-top: -50px;
     color: #fff;
-    font-weight: ;
     font-size: 30px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
