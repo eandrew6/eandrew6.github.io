@@ -1,5 +1,5 @@
 #body {
-     font-family:;
+     font-family: Times New Roman;
      color: #444;
      margin: 0;
      background-image: url('water.gif');
@@ -7,7 +7,7 @@
      font-size: 10pt;
 }
 #bodywebgallery {
-     font-family:;
+     font-family: Times New Roman;
      color: #444;
      margin: 0;
      font-size: 10pt;
@@ -78,17 +78,15 @@ footer {
      text-decoration: none;
      text-align: center;
      padding: 8px;
-     font-weight: ;
      text-shadow: 1px 1px #eee;
 } 
 #ul li a:hover {
      background-image: url('blackWhiteImages/IMG_2294.jpg');
      background-size: 500px;
-     font-weight: ;
      color: #880088;
      border-radius: 5px;
 }
-#ul li.right {
+#ul li.about {
      float: right;
      margin-right: 10px;
 }
@@ -112,7 +110,6 @@ footer {
      cursor: pointer;
      padding: 15px;
      border-radius: 4px;
-     font-weight: ;
 }
 #btn:hover {
      background-image: url('water.gif');
@@ -190,6 +187,7 @@ footer {
     border-radius: 5px;
     color: #eee;
 } 
+/**********************************************************************/
 /*tablet view to full screen view*/
 @media screen and (min-width: 1000px) {
 #ul {
@@ -198,7 +196,7 @@ footer {
      position: absolute;
      transition: top 0.2s;
 }
-#ul li.right {
+#ul li.about, #ul li.home {
      float: left;
 }
 #home {
@@ -220,14 +218,14 @@ footer {
      width: 85%;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:30%;
-    top:10%;            
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top: 10%;            
 }
 }
-
+/**********************************************************************/
 /*tablet view*/
  @media screen and (max-width: 999px) {
 #ul {
@@ -254,11 +252,11 @@ footer {
      margin-bottom: 25px;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:20%;
-    top:40%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 40%;
 }
 /*About*/
 #ABOUT{
@@ -328,30 +326,30 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 15%; 
+    margin-top: 10%; 
     border-radius: 5px;
     color: #eee;    
 }      
 }
 @media screen and (max-width: 900px) {
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:15%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 35%;
 }
 }
 @media screen and (max-width: 850px) {
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:15%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 35%;
 }
 }
-
+/**********************************************************************/
 /*mobile view*/ 
 @media screen and (max-width: 685px) {
 #ul {
@@ -377,11 +375,11 @@ footer {
      color: #000;
 }
 #paragraph{
-    color:#cc6633;
-    position:absolute;
-    z-index:1;
-    left:5%;
-    top:35%;
+    color: #cc6633;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 35%;
 }
 /*About*/
 #ABOUT{
@@ -399,7 +397,8 @@ footer {
     padding: 20px;
     margin-top: 15%;
     border-radius: 5px; 
-    color: #eee;    
+    color: #eee; 
+    font-size: 13pt;
 }
 /*Web Gallery*/
 #WEBGALLERY{
@@ -415,9 +414,10 @@ footer {
     position: absolute;
     z-index: 2;
     padding: 20px;
-    margin-top: 25%; 
+    margin-top: 15%; 
     border-radius: 5px; 
-    color: #eee;    
+    color: #eee; 
+    font-size: 13pt;
 }
 /*Volunteer */
 #VOLUNTEER{
@@ -435,7 +435,8 @@ footer {
     padding: 20px;
     margin-top: 15%;   
     border-radius: 5px; 
-    color: #eee;    
+    color: #eee;  
+    font-size: 13pt;
 }
 /*Completed Exercises */
 #COMPLETEDEXERCISE{
@@ -453,10 +454,11 @@ footer {
     padding: 20px;
     margin-top: 25%;   
     border-radius: 5px; 
-    color: #eee;    
+    color: #eee; 
+    font-size: 13pt;
 }     
 }
-
+/**********************************************************************/
 /*Dropdown button*/
 .dropdown-btn {
     padding: 6px;
@@ -465,8 +467,7 @@ footer {
     background: none;
     outline: none;
     color: #555;
-    font-family: "Times New Roman";
-    font-weight: ;
+    font-family: Times New Roman;
     cursor: pointer;
     text-shadow: 1px 1px #eee;
     font-size: 10pt;
@@ -476,12 +477,10 @@ footer {
     background-size: 500px;
     width: 100%;
     border-radius: 5px;
-    font-weight: ;
     color: #880088;
 }
 .dropdown-container {
     display: none;
-    font-weight: ;
     position: relative;
     width: 100%;
     overflow: auto;
@@ -494,7 +493,6 @@ footer {
 @media screen and (max-width: 999px) {
 .dropdown-container {
     display: none;
-    font-weight: ;
     background-image: url('blackWhiteImages/IMG_2294.jpg');
     background-size: cover;
     position: relative;
@@ -505,10 +503,10 @@ footer {
     background-size: cover;
     width: 100%;
     color: #880088;
-    font-weight: ;
 }
 }
- 
+/**********************************************************************/
+/*slide show*/
 * {
     box-sizing: border-box;
 }
@@ -560,7 +558,6 @@ footer {
     top: 10px;
     right: 50px;
     font-size: 45px;
-    font-weight: ;
     z-index: 1;
 }
 .close:hover,
@@ -586,7 +583,6 @@ footer {
     padding: 16px;
     margin-top: -50px;
     color: #fff;
-    font-weight: ;
     font-size: 30px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
