@@ -16,7 +16,7 @@
     </style>
 </head>
 <body id="bodywebgallery">
-    <header id="header">
+    <header>
         <ul id="ul">
             <li class="home"><a href="https://ericaandrews.github.io/index.html" title="ERICA ANDREWS">ERICA ANDREWS</a></li>
             <li class="about"><a href="https://ericaandrews.github.io/about.html" title="ABOUT | ERICA ANDREWS">ABOUT</a></li>
@@ -74,7 +74,6 @@
         </ul>
     </header>
         
-<!--
     <img src="blackWhiteImages/IMG_2292.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_2965.jpg" width="100%" alt="image" class="indexslideshow"> 
     <img src="blackWhiteImages/IMG_2294.jpg" width="100%" alt="image" class="indexslideshow"> 
@@ -87,17 +86,17 @@
     <img src="blackWhiteImages/IMG_2290.jpg" width="100%" alt="image" class="indexslideshow">
     <img src="blackWhiteImages/IMG_2539.jpg" width="100%" alt="image" class="indexslideshow">  
     <img src="blackWhiteImages/IMG_2981.jpg" width="100%" alt="image" class="indexslideshow">   
+    
     <img src="blackWhiteImages/IMG_2651.jpg" width="100%" alt="image" class="indexslideshow">  
     <img src="blackWhiteImages/IMG_2957.jpg" width="100%" alt="image" class="indexslideshow"> 
     
     
-    <a onclick="myShow.previous()" class="prevbtn"></a>
-    <a onclick="myShow.next()" class="nextbtn"></a>
+    <a onclick="myShow.previous()" class="prevbtn">&#10094;</a>
+    <a onclick="myShow.next()" class="nextbtn">&#10095;</a>
     <script>
         myShow = w3.slideshow(".indexslideshow", 0);
         w3.slideshow(".indexslideshow", 3000);
     </script>
--->
     
 <!--    About-->
     <h1 id="ABOUT" onmouseover="about()" onmouseout="noAbout()" style="">ABOUT</h1>
@@ -161,7 +160,7 @@
     <h2 id="completedexercise" style="";></h2>
     <script>
     function completedexercise(){
-        document.getElementById("completedexercise").innerHTML = "Completed Exercises is a list of technical subjects that lead to online posted exercises. The subjects include technical languages, technical projects, and technical related subjects. By selecting some of the projects, the code is available to view and apply and a table of contents of the visuals of some projects will be provided. Tutorials will be added in the future and step by step instructions are provided for some technical solutions.";
+        document.getElementById("completedexercise").innerHTML = "Completed Exercises is a list of technical subjects that lead to projects posted online. The subjects include technical languages, technical projects, and technical related subjects. By selecting some of the projects, the code is available to view and apply and a table of contents of the visuals of some projects will be provided. Tutorials will be added in the future and step by step instructions are provided for some technical solutions.";
         document.getElementById("completedexercise").style.color = "#880088";  
         document.getElementById("COMPLETEDEXERCISE").style.color = "#880088"; 
         document.getElementById("completedexercise").style.backgroundImage = "url(blackWhiteImages/IMG_2294.jpg)";    
