@@ -3,21 +3,30 @@ Completed Exercises is a list of technical subjects that lead to online posted e
 
 JAVA | Completed Exercises
 https://github.com/ericarandrews/java
+
 PYTHON | Completed Exercises
 https://github.com/ericarandrews/python
+
 PHP | Completed Exercises
 https://github.com/ericarandrews/php
+
 UNIX | Completed Exercises
 https://github.com/ericarandrews/unix
+
 JAVASCRIPT | Completed Exercises
 https://github.com/ericarandrews/javascript
+
 XML JSON | Completed Exercises
 https://github.com/ericarandrews/xml_json
+
 MOBILE WEB | Completed Exercises
 https://github.com/ericarandrews/mobile_web
+
 SERVER SIDE TECH WEB | Completed Exercises
 https://github.com/ericarandrews/serverSideTech_Web
+
 SQL DATABASES NOSQL | Completed Exercises
 https://github.com/ericarandrews/sql_databases_nosql
+
 PROJECTS | HTML & CSS | Completed Exercises
 https://ericarandrews.github.io/projects.html
