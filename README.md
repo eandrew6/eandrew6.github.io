@@ -1,2 +1,2 @@
 # ericaandrews.github.io
-This folder stores projects involving webpages created with HTML, CSS, Javascript, JQuery, and/or PHP.
+Completed Exercises is a list of technical subjects that lead to online posted exercises. The subjects include technical languages, technical projects, and technical related subjects. By selecting some of the projects, the code is available to view and apply and a table of contents of the visuals of some projects will be provided. Tutorials will be added in the future and step by step instructions are provided for some technical solutions.
