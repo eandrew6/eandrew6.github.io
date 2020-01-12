@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Interactive Web Pages with Javascript - Object Model & Miscellaneous JQuery">
+    <meta charset="utf-8">
+    <title>OBJECT MODEL & MISCELLANEOUS JQUERY</title>
+<link rel="stylesheet" href="objectModel_miscellaneousJQuery.css" type="text/css">   
+<script src="https://code.jquery.com/jquery-1.7.1.js"></script>
+<script>
+$(document).ready(function() {
+ $('.answer').hide();
+ $('.main h6').toggle(
+		function() {
+	       $(this).next('.answer').slideDown();
+		   $(this).addClass('close');
+		},
+		function() {
+		   $(this).next('.answer').fadeOut();
+		   $(this).removeClass('close');
+	  }
+	); 
+}); 
+</script>    
+</head>
+<body>
+    <div id="border">
+        <div id="center">
+            <span id="nav">
+                <a href="objectModel_miscellaneousJquery.html" id="navparts">Home -</a>
+                <a href="partone_objectModel_miscellaneousJquery.html" id="navpartss">Part 1 -</a>
+                <a href="parttwo_objectModel_miscellaneousJquery.html" id="navpartsss">Part 2 -</a>
+                <a href="partthree_objectModel_miscellaneousJquery.html" id="navpartssss">Part 3 </a>
+            </span>
+            </div>
+	<div class="main">
+        <h6>+ Part One - Class Name Property</h6>
+      <div class="answer">
+        <p>This webpage allows the user to select a page layout and formatting through the user of the className property. The user may choose at least three form elements from among radio buttons, select items, checkboxes, and buttons to allow the user to change the background color, font size, font family, font style, and font weight.<br><a href="partone_objectModel_miscellaneousJquery.html">Click Here - Part One</a></p>
+      </div>
+      <h6>+ Part Two - Nav Bar_Drop-Down Menu</h6>
+      <div class="answer">
+        <p>This webpage contains a script that displays a top navigation bar containing a link to Homework 1 and five other links that will be to the cover page for each Homework 2 - Homework 6. When you mouseover any of these other links, a drop-down menu that contains the links of homework parts (part 1, part 2, etc...) is displayed.<br><a href="parttwo_objectModel_miscellaneousJquery.html">Click Here - Part Two</a></p>
+      </div>
+      <h6>+ Part Three - jQuery_Slide-Show</h6>
+      <div class="answer">
+        <p>This webpage contains a slide-show using jQuery.<br><a href="partthree_objectModel_miscellaneousJquery.html">Click Here - Part Three</a></p>
+    </div>
+</div>
+</div>
+</body>    
+</html>
