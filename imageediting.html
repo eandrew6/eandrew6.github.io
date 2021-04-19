@@ -86,7 +86,7 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 21 || document.documentElement.scrollTop > 21) {
                 document.getElementById("btn").style.display = "block";
             } else {
                 document.getElementById("btn").style.display = "none";
@@ -143,6 +143,8 @@
             <img src="blackWhiteImages/IMG_3386.jpg" width="100%" onclick="openSlide();currentSlide(19)" class="currentimage cursor"></div>
         <div class="bwimage"> 
             <img src="blackWhiteImages/IMG_3290.jpg" width="100%" onclick="openSlide();currentSlide(20)" class="currentimage cursor"></div>
+        <div class="bwimage"> 
+            <img src="blackWhiteImages/IMG_3476.jpg" width="100%" onclick="openSlide();currentSlide(21)" class="currentimage cursor"></div>
     </div>
     <div id="mySlide" class="Slide"><span class="close cursor" onclick="closeSlide()">&times;</span>
         <div class="Slide-content">
@@ -186,6 +188,8 @@
                 <div class="slidenumber">19</div><img src="blackWhiteImages/IMG_3386.jpg" width="100%"></div>
             <div class="mySlides">
                 <div class="slidenumber">20</div><img src="blackWhiteImages/IMG_3290.jpg" width="100%"></div>
+            <div class="mySlides">
+                <div class="slidenumber">21</div><img src="blackWhiteImages/IMG_3476.jpg" width="100%"></div>
             <a class="prevbtn" onclick="plusSlides(-1)">&#10094;</a> 
             <a class="nextbtn" onclick="plusSlides(1)">&#10095;</a>           
         </div>
